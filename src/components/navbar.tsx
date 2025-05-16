@@ -1,8 +1,14 @@
 "use client"
 
+import { ModeToggle } from "@/components/mode-toggle"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,11 +19,10 @@ import {
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { signInWithDiscord } from "@/lib/supabase"
+import { useSession } from "@supabase/auth-helpers-react"
 import { BookOpen, Menu, Search, User } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
-
-import { ModeToggle } from "./mode-toggle"
 
 // This would normally come from an authentication context
 const isLoggedIn = false
@@ -169,14 +174,21 @@ export default function Navbar() {
 }
 
 function SignInDialog() {
+  const session = useSession()
+  console.log(session)
+
   return (
     <Dialog>
       <DialogTrigger>
-        <Button className="cursor-pointer">Sign In</Button>
+        <Button className="cursor-pointer">
+          {isLoggedIn ? "Profile" : "Sign In"}
+        </Button>
       </DialogTrigger>
 
       <DialogContent closeButton={false}>
         <div className="px-4 py-8 sm:rounded-lg">
+          <DialogTitle className="sr-only">Sign in</DialogTitle>
+
           <div className="animate-fade-in flex flex-col justify-center text-center">
             <span className="text-accent-foreground text-sm font-medium">
               Sign in with
