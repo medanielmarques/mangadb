@@ -1,5 +1,5 @@
-import { MangaGrid } from "@/components/manga-grid";
-import { SearchBar } from "@/components/search-bar";
+import { MangaGrid } from "@/components/manga-grid"
+import { SearchBar } from "@/components/search-bar"
 
 export default function Home() {
   return (
@@ -53,5 +53,5 @@ export default function Home() {
         <MangaGrid />
       </section>
     </div>
-  );
+  )
 }
