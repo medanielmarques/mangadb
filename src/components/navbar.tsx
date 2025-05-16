@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { signInWithDiscord } from "@/lib/supabase"
+import { signInWithDiscord, signOut } from "@/lib/supabase"
 import { useSession } from "@supabase/auth-helpers-react"
 import { BookOpen, Menu, Search, User } from "lucide-react"
 import Link from "next/link"
@@ -32,6 +32,8 @@ const user = {
 }
 
 export default function Navbar() {
+  const session = useSession()
+
   const [showSearch, setShowSearch] = useState(false)
 
   return (
@@ -163,7 +165,11 @@ export default function Navbar() {
               </DropdownMenu>
             ) : (
               <div className="flex items-center gap-2">
-                <SignInDialog />
+                {session?.user ? (
+                  <Button onClick={signOut}>Sign Out</Button>
+                ) : (
+                  <SignInDialog />
+                )}
               </div>
             )}
           </div>
@@ -174,15 +180,10 @@ export default function Navbar() {
 }
 
 function SignInDialog() {
-  const session = useSession()
-  console.log(session)
-
   return (
     <Dialog>
       <DialogTrigger>
-        <Button className="cursor-pointer">
-          {isLoggedIn ? "Profile" : "Sign In"}
-        </Button>
+        <Button>Sign In</Button>
       </DialogTrigger>
 
       <DialogContent closeButton={false}>

@@ -1,7 +1,6 @@
 import Navbar from "@/components/navbar"
-import { ThemeProvider } from "@/components/theme-provider"
+import Providers from "@/components/providers"
 import "@/styles/globals.css"
-import { TRPCReactProvider } from "@/trpc/react"
 import { type Metadata } from "next"
 import { Inter } from "next/font/google"
 
@@ -19,18 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={inter.className}>
       <body>
-        <TRPCReactProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Navbar />
-
-            <main className="min-h-screen pt-16">{children}</main>
-          </ThemeProvider>
-        </TRPCReactProvider>
+        <Providers>
+          <Navbar />
+          <main className="min-h-screen pt-16">{children}</main>
+        </Providers>
       </body>
     </html>
   )
