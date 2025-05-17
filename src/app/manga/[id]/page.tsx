@@ -2,7 +2,16 @@ import { ArcList } from "@/components/arc-list"
 import { StarRating } from "@/components/star-rating"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Textarea } from "@/components/ui/textarea"
 import { VolumeList } from "@/components/volume-list"
 import { BookmarkIcon, HeartIcon, ShareIcon } from "lucide-react"
 import Image from "next/image"
@@ -98,10 +107,7 @@ export default function MangaPage({ params }: { params: { id: string } }) {
             <p className="text-muted-foreground">{mangaData.synopsis}</p>
           </div>
 
-          <div>
-            <h2 className="mb-4 text-xl font-semibold">Your Rating</h2>
-            <StarRating editable size="lg" />
-          </div>
+          <MangaRating mangaId={params.id} mangaTitle={mangaData.title} />
         </div>
       </div>
 
@@ -119,5 +125,43 @@ export default function MangaPage({ params }: { params: { id: string } }) {
         </TabsContent>
       </Tabs>
     </div>
+  )
+}
+
+function MangaRating({
+  mangaId,
+  mangaTitle,
+}: {
+  mangaId: string
+  mangaTitle: string
+}) {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button>Review {mangaTitle}</Button>
+      </DialogTrigger>
+
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Review {mangaTitle}</DialogTitle>
+        </DialogHeader>
+
+        <DialogDescription>
+          <div className="bg-card mb-12 rounded-lg pt-4">
+            <div className="mb-6">
+              <StarRating editable size="lg" />
+            </div>
+
+            <div className="mb-4">
+              <Textarea
+                placeholder="Write your review (optional)"
+                className="min-h-32"
+              />
+            </div>
+            <Button>Submit Review</Button>
+          </div>
+        </DialogDescription>
+      </DialogContent>
+    </Dialog>
   )
 }

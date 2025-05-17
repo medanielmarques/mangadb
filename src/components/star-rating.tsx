@@ -38,7 +38,7 @@ export function StarRating({
 
   return (
     <div className="flex items-center">
-      {[...Array(10)].map((_, index) => (
+      {[...(Array(10) as number[])].map((_, index) => (
         <Star
           key={index}
           className={cn(
