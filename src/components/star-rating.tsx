@@ -55,7 +55,7 @@ export function StarRating({
       ))}
       {displayRating > 0 && (
         <span className="text-muted-foreground ml-2 text-sm">
-          {displayRating.toFixed(1)}
+          {displayRating.toFixed(0)}
         </span>
       )}
     </div>

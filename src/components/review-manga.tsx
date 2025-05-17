@@ -71,21 +71,23 @@ export function ReviewManga({
           <DialogTitle>Review {mangaTitle}</DialogTitle>
         </DialogHeader>
 
-        <DialogDescription>
-          <div className="bg-card mb-12 rounded-lg pt-4">
-            <div className="mb-6">
-              <StarRating editable size="lg" />
-            </div>
-
-            <div className="mb-4">
-              <Textarea
-                placeholder="Write your review (optional)"
-                className="min-h-32"
-              />
-            </div>
-            <Button>Submit Review</Button>
-          </div>
+        <DialogDescription className="sr-only">
+          Review {mangaTitle}
         </DialogDescription>
+
+        <div className="bg-card mb-12 rounded-lg pt-4">
+          <div className="mb-6">
+            <StarRating editable size="lg" />
+          </div>
+
+          <div className="mb-4">
+            <Textarea
+              placeholder="Write your review (optional)"
+              className="min-h-32"
+            />
+          </div>
+          <Button>Submit Review</Button>
+        </div>
       </DialogContent>
     </Dialog>
   )
