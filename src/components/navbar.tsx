@@ -28,7 +28,7 @@ import { useState } from "react"
 const isLoggedIn = false
 const user = {
   username: "mangafan123",
-  avatarUrl: "/placeholder.svg?height=32&width=32",
+  avatarUrl: "/one-piece-cover.webp?height=32&width=32",
 }
 
 export default function Navbar() {
@@ -137,7 +137,7 @@ export default function Navbar() {
                   <Button variant="ghost" size="icon" className="rounded-full">
                     <Avatar className="h-8 w-8">
                       <AvatarImage
-                        src={user.avatarUrl || "/placeholder.svg"}
+                        src={user.avatarUrl || "/one-piece-cover.webp"}
                         alt={user.username}
                       />
                       <AvatarFallback>

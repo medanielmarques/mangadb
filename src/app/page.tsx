@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero Section with Search */}
       <section className="relative mb-12 overflow-hidden rounded-xl py-20">
         <div className="from-primary/20 to-primary/5 absolute inset-0 z-0 bg-gradient-to-r" />
-        <div className="absolute inset-0 z-[-1] bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 z-[-1] bg-[url('/zoro.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <h1 className="mb-6 text-4xl font-bold md:text-5xl">
             Discover and Track Your Favorite Manga

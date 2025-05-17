@@ -1,17 +1,17 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { ArcList } from "@/components/arc-list"
 import { StarRating } from "@/components/star-rating"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { VolumeList } from "@/components/volume-list"
 import { BookmarkIcon, HeartIcon, ShareIcon } from "lucide-react"
 import Image from "next/image"
-import { VolumeList } from "@/components/volume-list"
-import { ArcList } from "@/components/arc-list"
 
 // This would normally come from an API or database
 const mangaData = {
   id: "1",
   title: "One Piece",
-  coverImage: "/placeholder.svg?height=600&width=400",
+  coverImage: "/one-piece-cover.webp?height=600&width=400",
   author: "Eiichiro Oda",
   artist: "Eiichiro Oda",
   status: "Ongoing",
@@ -28,12 +28,12 @@ const mangaData = {
 export default function MangaPage({ params }: { params: { id: string } }) {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-3">
         {/* Cover Image */}
         <div className="md:col-span-1">
-          <div className="relative aspect-[2/3] rounded-lg overflow-hidden shadow-lg">
+          <div className="relative aspect-[2/3] overflow-hidden rounded-lg shadow-lg">
             <Image
-              src={mangaData.coverImage || "/placeholder.svg"}
+              src={mangaData.coverImage || "/one-piece-cover.webp"}
               alt={mangaData.title}
               fill
               className="object-cover"
@@ -58,23 +58,26 @@ export default function MangaPage({ params }: { params: { id: string } }) {
 
         {/* Manga Details */}
         <div className="md:col-span-2">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">{mangaData.title}</h1>
-          <div className="flex items-center gap-4 mb-4">
+          <h1 className="mb-2 text-3xl font-bold md:text-4xl">
+            {mangaData.title}
+          </h1>
+          <div className="mb-4 flex items-center gap-4">
             <StarRating rating={mangaData.rating} />
             <span className="text-muted-foreground">
-              {mangaData.rating}/10 ({mangaData.ratingCount.toLocaleString()} ratings)
+              {mangaData.rating}/10 ({mangaData.ratingCount.toLocaleString()}{" "}
+              ratings)
             </span>
           </div>
 
           <div className="mb-6">
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="mb-4 flex flex-wrap gap-2">
               {mangaData.genres.map((genre) => (
                 <Badge key={genre} variant="secondary">
                   {genre}
                 </Badge>
               ))}
             </div>
-            <div className="grid grid-cols-2 gap-y-2 text-sm mb-4">
+            <div className="mb-4 grid grid-cols-2 gap-y-2 text-sm">
               <div className="text-muted-foreground">Author</div>
               <div>{mangaData.author}</div>
               <div className="text-muted-foreground">Artist</div>
@@ -91,12 +94,12 @@ export default function MangaPage({ params }: { params: { id: string } }) {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-xl font-semibold mb-2">Synopsis</h2>
+            <h2 className="mb-2 text-xl font-semibold">Synopsis</h2>
             <p className="text-muted-foreground">{mangaData.synopsis}</p>
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold mb-4">Your Rating</h2>
+            <h2 className="mb-4 text-xl font-semibold">Your Rating</h2>
             <StarRating editable size="lg" />
           </div>
         </div>
@@ -104,7 +107,7 @@ export default function MangaPage({ params }: { params: { id: string } }) {
 
       {/* Tabs for Volumes and Arcs */}
       <Tabs defaultValue="volumes" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 mb-8">
+        <TabsList className="mb-8 grid w-full grid-cols-2">
           <TabsTrigger value="volumes">Volumes & Chapters</TabsTrigger>
           <TabsTrigger value="arcs">Story Arcs</TabsTrigger>
         </TabsList>

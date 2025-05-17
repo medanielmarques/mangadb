@@ -1,7 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { ThumbsDown, ThumbsUp } from "lucide-react"
+
 import { StarRating } from "./star-rating"
 import { Button } from "./ui/button"
-import { ThumbsDown, ThumbsUp } from "lucide-react"
 
 // This would normally come from an API or database
 const reviewData = [
@@ -10,7 +11,7 @@ const reviewData = [
     user: {
       id: "101",
       username: "mangafan123",
-      avatarUrl: "/placeholder.svg?height=40&width=40",
+      avatarUrl: "/one-piece-cover.webp?height=40&width=40",
     },
     rating: 9.5,
     content:
@@ -24,7 +25,7 @@ const reviewData = [
     user: {
       id: "102",
       username: "otakumaster",
-      avatarUrl: "/placeholder.svg?height=40&width=40",
+      avatarUrl: "/one-piece-cover.webp?height=40&width=40",
     },
     rating: 8.0,
     content:
@@ -38,7 +39,7 @@ const reviewData = [
     user: {
       id: "103",
       username: "animelover99",
-      avatarUrl: "/placeholder.svg?height=40&width=40",
+      avatarUrl: "/one-piece-cover.webp?height=40&width=40",
     },
     rating: 7.5,
     content:
@@ -52,7 +53,7 @@ const reviewData = [
 export function ReviewList({ chapterId }: { chapterId: string }) {
   if (reviewData.length === 0) {
     return (
-      <div className="text-center py-12 text-muted-foreground">
+      <div className="text-muted-foreground py-12 text-center">
         No reviews yet. Be the first to review this chapter!
       </div>
     )
@@ -61,26 +62,33 @@ export function ReviewList({ chapterId }: { chapterId: string }) {
   return (
     <div className="space-y-6">
       {reviewData.map((review) => (
-        <div key={review.id} className="border rounded-lg p-4">
+        <div key={review.id} className="rounded-lg border p-4">
           <div className="flex items-start gap-4">
             <Avatar>
-              <AvatarImage src={review.user.avatarUrl || "/placeholder.svg"} alt={review.user.username} />
-              <AvatarFallback>{review.user.username.slice(0, 2).toUpperCase()}</AvatarFallback>
+              <AvatarImage
+                src={review.user.avatarUrl || "/one-piece-cover.webp"}
+                alt={review.user.username}
+              />
+              <AvatarFallback>
+                {review.user.username.slice(0, 2).toUpperCase()}
+              </AvatarFallback>
             </Avatar>
             <div className="flex-1">
-              <div className="flex items-center gap-2 mb-1">
+              <div className="mb-1 flex items-center gap-2">
                 <span className="font-medium">{review.user.username}</span>
-                <span className="text-xs text-muted-foreground">{new Date(review.date).toLocaleDateString()}</span>
+                <span className="text-muted-foreground text-xs">
+                  {new Date(review.date).toLocaleDateString()}
+                </span>
               </div>
               <StarRating rating={review.rating} />
               <p className="mt-2 text-sm">{review.content}</p>
-              <div className="flex items-center gap-4 mt-3">
+              <div className="mt-3 flex items-center gap-4">
                 <Button variant="ghost" size="sm" className="h-8 px-2">
-                  <ThumbsUp className="h-4 w-4 mr-1" />
+                  <ThumbsUp className="mr-1 h-4 w-4" />
                   <span>{review.likes}</span>
                 </Button>
                 <Button variant="ghost" size="sm" className="h-8 px-2">
-                  <ThumbsDown className="h-4 w-4 mr-1" />
+                  <ThumbsDown className="mr-1 h-4 w-4" />
                   <span>{review.dislikes}</span>
                 </Button>
               </div>

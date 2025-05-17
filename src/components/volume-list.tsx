@@ -1,6 +1,12 @@
-import Link from "next/link"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+
 import { StarRating } from "./star-rating"
 
 // This would normally come from an API or database
@@ -9,21 +15,31 @@ const volumeData = [
     id: "1",
     number: 1,
     title: "Romance Dawn",
-    coverImage: "/placeholder.svg?height=200&width=150",
+    coverImage: "/one-piece-cover.webp?height=200&width=150",
     releaseDate: "1997-12-24",
     chapters: [
       { id: "1", number: 1, title: "Romance Dawn", rating: 8.7 },
       { id: "2", number: 2, title: "They Call Him Luffy", rating: 8.5 },
       { id: "3", number: 3, title: "Morgan versus Luffy", rating: 8.6 },
-      { id: "4", number: 4, title: "Marine Captain Axe-Hand Morgan", rating: 8.4 },
-      { id: "5", number: 5, title: "Pirate King and Master Swordsman", rating: 8.9 },
+      {
+        id: "4",
+        number: 4,
+        title: "Marine Captain Axe-Hand Morgan",
+        rating: 8.4,
+      },
+      {
+        id: "5",
+        number: 5,
+        title: "Pirate King and Master Swordsman",
+        rating: 8.9,
+      },
     ],
   },
   {
     id: "2",
     number: 2,
     title: "Buggy the Clown",
-    coverImage: "/placeholder.svg?height=200&width=150",
+    coverImage: "/one-piece-cover.webp?height=200&width=150",
     releaseDate: "1998-04-08",
     chapters: [
       { id: "6", number: 6, title: "The First Person", rating: 8.3 },
@@ -37,7 +53,7 @@ const volumeData = [
     id: "3",
     number: 3,
     title: "Don't Get Fooled Again",
-    coverImage: "/placeholder.svg?height=200&width=150",
+    coverImage: "/one-piece-cover.webp?height=200&width=150",
     releaseDate: "1998-06-04",
     chapters: [
       { id: "11", number: 11, title: "Take Flight", rating: 8.5 },
@@ -53,25 +69,27 @@ export function VolumeList({ mangaId }: { mangaId: string }) {
   return (
     <div className="space-y-6">
       {volumeData.map((volume) => (
-        <div key={volume.id} className="border rounded-lg overflow-hidden">
-          <div className="flex items-center p-4 bg-muted/50">
+        <div key={volume.id} className="overflow-hidden rounded-lg border">
+          <div className="bg-muted/50 flex items-center p-4">
             <div className="font-semibold">
               Volume {volume.number}: {volume.title}
             </div>
-            <div className="ml-auto text-sm text-muted-foreground">
+            <div className="text-muted-foreground ml-auto text-sm">
               {new Date(volume.releaseDate).toLocaleDateString()}
             </div>
           </div>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value={`volume-${volume.id}`} className="border-0">
-              <AccordionTrigger className="px-4 py-2 hover:no-underline">Chapters</AccordionTrigger>
+              <AccordionTrigger className="px-4 py-2 hover:no-underline">
+                Chapters
+              </AccordionTrigger>
               <AccordionContent className="px-4 pb-4">
                 <div className="space-y-2">
                   {volume.chapters.map((chapter) => (
                     <Link
                       key={chapter.id}
                       href={`/manga/${mangaId}/chapter/${chapter.id}`}
-                      className="flex items-center p-2 hover:bg-muted rounded-md transition-colors"
+                      className="hover:bg-muted flex items-center rounded-md p-2 transition-colors"
                     >
                       <div className="mr-2">
                         <Badge variant="outline">{chapter.number}</Badge>
