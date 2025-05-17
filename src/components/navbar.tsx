@@ -38,126 +38,124 @@ export default function Navbar() {
   const session = useSession()
 
   return (
-    <header className="bg-background/80 fixed z-50 w-full border-b backdrop-blur-md">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle menu</span>
-                </Button>
-              </SheetTrigger>
+    <header className="bg-background/80 z-50 border-b backdrop-blur-md">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <div className="flex items-center">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-5 w-5" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
 
-              <SheetTitle className="sr-only">MangaDB</SheetTitle>
+            <SheetTitle className="sr-only">MangaDB</SheetTitle>
 
-              <SheetContent side="left">
-                <nav className="grid gap-6 text-lg font-medium">
-                  <Link
-                    href="/"
-                    className="flex items-center gap-2 text-lg font-semibold"
-                  >
-                    <BookOpen className="h-5 w-5" />
-                    <span>MangaDB</span>
-                  </Link>
-                  <Link href="/" className="hover:text-primary">
-                    Home
-                  </Link>
-                  <Link href="/browse" className="hover:text-primary">
-                    Browse
-                  </Link>
-                  <Link href="/genres" className="hover:text-primary">
-                    Genres
-                  </Link>
-                  <Link href="/rankings" className="hover:text-primary">
-                    Rankings
-                  </Link>
-                </nav>
-              </SheetContent>
-            </Sheet>
+            <SheetContent side="left">
+              <nav className="grid gap-6 text-lg font-medium">
+                <Link
+                  href="/"
+                  className="flex items-center gap-2 text-lg font-semibold"
+                >
+                  <BookOpen className="h-5 w-5" />
+                  <span>MangaDB</span>
+                </Link>
+                <Link href="/" className="hover:text-primary">
+                  Home
+                </Link>
+                <Link href="/browse" className="hover:text-primary">
+                  Browse
+                </Link>
+                <Link href="/genres" className="hover:text-primary">
+                  Genres
+                </Link>
+                <Link href="/rankings" className="hover:text-primary">
+                  Rankings
+                </Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
 
-            <Link href="/" className="flex items-center gap-2 font-semibold">
-              <BookOpen className="h-5 w-5" />
-              <span className="hidden md:inline-block">MangaDB</span>
+          <Link href="/" className="flex items-center gap-2 font-semibold">
+            <BookOpen className="h-5 w-5" />
+            <span className="hidden md:inline-block">MangaDB</span>
+          </Link>
+
+          <nav className="ml-10 hidden items-center gap-6 md:flex">
+            <Link
+              href="/"
+              className="hover:text-primary text-sm font-medium transition-colors"
+            >
+              Home
             </Link>
+            <Link
+              href="/browse"
+              className="hover:text-primary text-sm font-medium transition-colors"
+            >
+              Browse
+            </Link>
+            <Link
+              href="/genres"
+              className="hover:text-primary text-sm font-medium transition-colors"
+            >
+              Genres
+            </Link>
+            <Link
+              href="/rankings"
+              className="hover:text-primary text-sm font-medium transition-colors"
+            >
+              Rankings
+            </Link>
+          </nav>
+        </div>
 
-            <nav className="ml-10 hidden items-center gap-6 md:flex">
-              <Link
-                href="/"
-                className="hover:text-primary text-sm font-medium transition-colors"
-              >
-                Home
-              </Link>
-              <Link
-                href="/browse"
-                className="hover:text-primary text-sm font-medium transition-colors"
-              >
-                Browse
-              </Link>
-              <Link
-                href="/genres"
-                className="hover:text-primary text-sm font-medium transition-colors"
-              >
-                Genres
-              </Link>
-              <Link
-                href="/rankings"
-                className="hover:text-primary text-sm font-medium transition-colors"
-              >
-                Rankings
-              </Link>
-            </nav>
-          </div>
+        <div className="flex items-center gap-4">
+          {session?.user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full">
+                  <Avatar className="h-8 w-8">
+                    <AvatarImage
+                      src={user.avatarUrl || "/one-piece-cover.webp"}
+                      alt={user.username}
+                    />
 
-          <div className="flex items-center gap-4">
-            {session?.user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon" className="rounded-full">
-                    <Avatar className="h-8 w-8">
-                      <AvatarImage
-                        src={user.avatarUrl || "/one-piece-cover.webp"}
-                        alt={user.username}
-                      />
+                    <AvatarFallback>
+                      {user.username.slice(0, 2).toUpperCase()}
+                    </AvatarFallback>
+                  </Avatar>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem asChild>
+                  <Link href="/profile">
+                    <User className="mr-2 h-4 w-4" />
+                    <span>Profile</span>
+                  </Link>
+                </DropdownMenuItem>
 
-                      <AvatarFallback>
-                        {user.username.slice(0, 2).toUpperCase()}
-                      </AvatarFallback>
-                    </Avatar>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuItem asChild>
-                    <Link href="/profile">
-                      <User className="mr-2 h-4 w-4" />
-                      <span>Profile</span>
-                    </Link>
-                  </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/library">
+                    <BookOpen className="mr-2 h-4 w-4" />
+                    <span>My Library</span>
+                  </Link>
+                </DropdownMenuItem>
 
-                  <DropdownMenuItem asChild>
-                    <Link href="/library">
-                      <BookOpen className="mr-2 h-4 w-4" />
-                      <span>My Library</span>
-                    </Link>
-                  </DropdownMenuItem>
+                <DropdownMenuSeparator />
 
-                  <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={signOut}>
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>Sign Out</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <div className="flex items-center gap-2">
+              <SignInDialog />
+            </div>
+          )}
 
-                  <DropdownMenuItem onClick={signOut}>
-                    <LogOut className="mr-2 h-4 w-4" />
-                    <span>Sign Out</span>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <div className="flex items-center gap-2">
-                <SignInDialog />
-              </div>
-            )}
-
-            <ToggleTheme />
-          </div>
+          <ToggleTheme />
         </div>
       </div>
     </header>
