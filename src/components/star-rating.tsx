@@ -1,8 +1,8 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { Star } from "lucide-react"
 import { useState } from "react"
-import { cn } from "@/lib/utils"
 
 interface StarRatingProps {
   rating?: number
@@ -11,7 +11,12 @@ interface StarRatingProps {
   onChange?: (rating: number) => void
 }
 
-export function StarRating({ rating = 0, editable = false, size = "md", onChange }: StarRatingProps) {
+export function StarRating({
+  rating = 0,
+  editable = false,
+  size = "md",
+  onChange,
+}: StarRatingProps) {
   const [hoverRating, setHoverRating] = useState(0)
   const [selectedRating, setSelectedRating] = useState(0)
 
@@ -39,14 +44,20 @@ export function StarRating({ rating = 0, editable = false, size = "md", onChange
           className={cn(
             sizeClasses[size],
             "cursor-pointer transition-colors",
-            index < displayRating ? "text-yellow-500 fill-yellow-500" : "text-muted-foreground",
+            index < displayRating
+              ? "fill-yellow-500 text-yellow-500"
+              : "text-muted-foreground",
           )}
           onClick={() => handleClick(index)}
           onMouseEnter={() => editable && setHoverRating(index + 1)}
           onMouseLeave={() => editable && setHoverRating(0)}
         />
       ))}
-      {displayRating > 0 && <span className="ml-2 text-sm text-muted-foreground">{displayRating.toFixed(1)}</span>}
+      {displayRating > 0 && (
+        <span className="text-muted-foreground ml-2 text-sm">
+          {displayRating.toFixed(1)}
+        </span>
+      )}
     </div>
   )
 }

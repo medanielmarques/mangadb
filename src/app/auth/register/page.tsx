@@ -1,13 +1,19 @@
 "use client"
 
-import type React from "react"
-
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Checkbox } from "@/components/ui/checkbox"
 import Link from "next/link"
+import type React from "react"
 import { useState } from "react"
 
 export default function RegisterPage() {
@@ -34,11 +40,15 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="container mx-auto flex items-center justify-center min-h-[calc(100vh-4rem)] py-8">
+    <div className="container mx-auto flex min-h-[calc(100vh-4rem)] items-center justify-center py-8">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
-          <CardDescription>Enter your details below to create your account</CardDescription>
+          <CardTitle className="text-2xl font-bold">
+            Create an account
+          </CardTitle>
+          <CardDescription>
+            Enter your details below to create your account
+          </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4">
@@ -92,12 +102,14 @@ export default function RegisterPage() {
                 id="agreeTerms"
                 name="agreeTerms"
                 checked={formData.agreeTerms}
-                onCheckedChange={(checked) => setFormData({ ...formData, agreeTerms: checked as boolean })}
+                onCheckedChange={(checked) =>
+                  setFormData({ ...formData, agreeTerms: checked as boolean })
+                }
                 required
               />
               <label
                 htmlFor="agreeTerms"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                className="text-sm leading-none font-medium peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               >
                 I agree to the{" "}
                 <Link href="/terms" className="text-primary hover:underline">
@@ -111,7 +123,7 @@ export default function RegisterPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col">
-            <Button type="submit" className="w-full mb-4">
+            <Button type="submit" className="mb-4 w-full">
               Create account
             </Button>
             <div className="text-center text-sm">
