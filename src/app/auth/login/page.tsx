@@ -1,12 +1,18 @@
 "use client"
 
-import type React from "react"
-
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
+import type React from "react"
 import { useState } from "react"
 
 export default function LoginPage() {
@@ -20,11 +26,13 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="container mx-auto flex items-center justify-center min-h-[calc(100vh-4rem)] py-8">
+    <div className="container mx-auto flex min-h-[calc(100vh-4rem)] items-center justify-center py-8">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold">Login</CardTitle>
-          <CardDescription>Enter your email and password to access your account</CardDescription>
+          <CardDescription>
+            Enter your email and password to access your account
+          </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4">
@@ -42,7 +50,10 @@ export default function LoginPage() {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <Label htmlFor="password">Password</Label>
-                <Link href="/auth/forgot-password" className="text-sm text-primary hover:underline">
+                <Link
+                  href="/auth/forgot-password"
+                  className="text-primary text-sm hover:underline"
+                >
                   Forgot password?
                 </Link>
               </div>
@@ -56,12 +67,15 @@ export default function LoginPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col">
-            <Button type="submit" className="w-full mb-4">
+            <Button type="submit" className="mb-4 w-full">
               Login
             </Button>
             <div className="text-center text-sm">
               Don&apos;t have an account?{" "}
-              <Link href="/auth/register" className="text-primary hover:underline">
+              <Link
+                href="/auth/register"
+                className="text-primary hover:underline"
+              >
                 Register
               </Link>
             </div>
