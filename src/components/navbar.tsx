@@ -183,7 +183,7 @@ function SignInDialog() {
   return (
     <Dialog>
       <DialogTrigger>
-        <Button>Sign In</Button>
+        <Button asChild>Sign In</Button>
       </DialogTrigger>
 
       <DialogContent closeButton={false}>
