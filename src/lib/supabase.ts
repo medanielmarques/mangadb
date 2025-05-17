@@ -12,6 +12,9 @@ function getBaseUrl() {
 export async function signInWithDiscord() {
   await supabase.auth.signInWithOAuth({
     provider: "discord",
+    options: {
+      redirectTo: getBaseUrl() || "http://localhost:3000",
+    },
   })
 }
 
