@@ -1,0 +1,161 @@
+# MangaDB - IMDb-style Manga Database Application
+
+## Project Overview
+
+MangaDB is an IMDb-inspired platform dedicated to manga content. It provides a centralized hub for discovering, organizing, rating, and exploring manga titles. Users can access individual manga pages, view chapter lists organized by volumes or story arcs, and engage with the community through reviews and ratings.
+
+## Core Features
+
+### Manga Page
+
+- Title display
+- Synopsis
+- Cover image
+- Authors and illustrators
+- Release year
+- Genres
+- Status (ongoing, completed)
+- Overall rating (user average)
+- Volume and story arc listings
+
+### Chapter List
+
+- Volume-based organization
+- Story arc organization
+- Volume cover display
+- Story arc representative artwork
+
+### Chapter Page
+
+- Chapter title
+- Chapter number
+- Associated volume and story arc
+- Synopsis/summary (when available)
+- Chapter rating
+- User reviews and comments
+
+### User System
+
+- Registration and login (Supabase Auth)
+- Reading progress tracking
+- Manga and chapter ratings
+- Comments and reviews
+
+### Discovery Features (Future Releases)
+
+- Genre, status, year, and rating filters
+- Text-based title search
+
+## Technical Stack
+
+### Frontend
+
+- Next.js 14
+- shadcn/ui + TailwindCSS
+- React Query + TRPC
+- Client-side state management
+
+### Backend
+
+- Next.js API routes
+- TRPC Controllers + Use Cases architecture
+- Supabase (PostgreSQL) database
+- Supabase Auth integration
+
+## Architecture Guidelines
+
+### Best Practices
+
+1. Modular API structure with Controllers and Use Cases
+2. Zod schema validation for client-server consistency
+3. Database entity normalization
+4. Optimistic updates via server actions/TRPC mutations
+5. Clear loading states and responsive UX
+6. Context-based component organization
+7. Scalable data handling (pagination, caching, partial data)
+8. Comprehensive error handling
+
+### Anti-patterns to Avoid
+
+1. Business logic in frontend
+2. Data denormalization
+3. Direct UI-to-fetch coupling
+4. Mixed controller responsibilities
+5. Hardcoded static data
+6. Poor domain modeling
+
+## Database Schema
+
+### Core Entities
+
+- Manga
+- Volume
+- Story Arc
+- Chapter
+- User
+- Review
+- Rating
+
+### Key Relationships
+
+- Manga -> Volumes (1:N)
+- Manga -> Story Arcs (1:N)
+- Volume -> Chapters (1:N)
+- Story Arc -> Chapters (1:N)
+- User -> Reviews (1:N)
+- User -> Ratings (1:N)
+
+## Development Rules
+
+### Code Organization
+
+1. Feature-based directory structure
+2. Shared components in dedicated folders
+3. Clear separation of concerns
+4. Type-safe API contracts
+5. Consistent naming conventions
+
+### State Management
+
+1. Server-side state via TRPC
+2. Client-side cache with React Query
+3. Form state with React Hook Form
+4. UI state with local state/context
+
+### Testing Strategy
+
+1. Unit tests for business logic
+2. Integration tests for API routes
+3. E2E tests for critical flows
+4. Component testing with testing-library
+
+### Performance Considerations
+
+1. Image optimization
+2. Lazy loading
+3. Pagination implementation
+4. Caching strategies
+5. API response optimization
+
+## Deployment Guidelines
+
+### Environment Setup
+
+1. Development
+2. Staging
+3. Production
+
+### Security Measures
+
+1. Authentication flow
+2. API route protection
+3. Data validation
+4. Rate limiting
+5. Error handling
+
+### Monitoring
+
+1. Error tracking
+2. Performance metrics
+3. User analytics
+4. Server monitoring
