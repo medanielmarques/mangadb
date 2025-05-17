@@ -1,6 +1,6 @@
 "use client"
 
-import { ModeToggle } from "@/components/mode-toggle"
+import { ToggleTheme } from "@/components/toggle-theme"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import {
@@ -16,16 +16,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { signInWithDiscord, signOut } from "@/lib/supabase"
 import { useSession } from "@supabase/auth-helpers-react"
-import { BookOpen, Menu, Search, User } from "lucide-react"
+import { BookOpen, LogOut, Menu, User } from "lucide-react"
 import Link from "next/link"
-import { useState } from "react"
 
 // This would normally come from an authentication context
-const isLoggedIn = false
+
 const user = {
   username: "mangafan123",
   avatarUrl: "/one-piece-cover.webp?height=32&width=32",
@@ -33,8 +31,6 @@ const user = {
 
 export default function Navbar() {
   const session = useSession()
-
-  const [showSearch, setShowSearch] = useState(false)
 
   return (
     <header className="bg-background/80 fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-md">
@@ -107,31 +103,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            {showSearch ? (
-              <div className="relative w-full max-w-sm">
-                <Search className="text-muted-foreground absolute top-2.5 left-2.5 h-4 w-4" />
-                <Input
-                  type="search"
-                  placeholder="Search manga..."
-                  className="w-full pl-8"
-                  autoFocus
-                  onBlur={() => setShowSearch(false)}
-                />
-              </div>
-            ) : (
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setShowSearch(true)}
-              >
-                <Search className="h-5 w-5" />
-                <span className="sr-only">Search</span>
-              </Button>
-            )}
-
-            <ModeToggle />
-
-            {isLoggedIn ? (
+            {session?.user ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="icon" className="rounded-full">
@@ -140,6 +112,7 @@ export default function Navbar() {
                         src={user.avatarUrl || "/one-piece-cover.webp"}
                         alt={user.username}
                       />
+
                       <AvatarFallback>
                         {user.username.slice(0, 2).toUpperCase()}
                       </AvatarFallback>
@@ -153,25 +126,29 @@ export default function Navbar() {
                       <span>Profile</span>
                     </Link>
                   </DropdownMenuItem>
+
                   <DropdownMenuItem asChild>
                     <Link href="/library">
                       <BookOpen className="mr-2 h-4 w-4" />
                       <span>My Library</span>
                     </Link>
                   </DropdownMenuItem>
+
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem>Logout</DropdownMenuItem>
+
+                  <DropdownMenuItem onClick={signOut}>
+                    <LogOut className="mr-2 h-4 w-4" />
+                    <span>Sign Out</span>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
               <div className="flex items-center gap-2">
-                {session?.user ? (
-                  <Button onClick={signOut}>Sign Out</Button>
-                ) : (
-                  <SignInDialog />
-                )}
+                <SignInDialog />
               </div>
             )}
+
+            <ToggleTheme />
           </div>
         </div>
       </div>
@@ -182,8 +159,8 @@ export default function Navbar() {
 function SignInDialog() {
   return (
     <Dialog>
-      <DialogTrigger>
-        <Button asChild>Sign In</Button>
+      <DialogTrigger asChild>
+        <Button variant="outline">Sign In</Button>
       </DialogTrigger>
 
       <DialogContent closeButton={false}>
