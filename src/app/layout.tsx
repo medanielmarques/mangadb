@@ -7,7 +7,6 @@ import { Inter } from "next/font/google"
 export const metadata: Metadata = {
   title: "MangaDB - Track and Rate Your Favorite Manga",
   description: "Discover, track, and rate your favorite manga series",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
 }
 
 const inter = Inter({ subsets: ["latin"] })
@@ -17,6 +16,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning className={inter.className}>
+      <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>"
+      />
       <body>
         <Providers>
           <Navbar />

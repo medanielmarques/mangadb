@@ -1,9 +1,9 @@
+import { ReviewList } from "@/components/review-list"
 import { StarRating } from "@/components/star-rating"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
-import { ReviewList } from "@/components/review-list"
 
 // This would normally come from an API or database
 const chapterData = {
@@ -16,6 +16,7 @@ const chapterData = {
   releaseDate: "1997-07-22",
   rating: 8.7,
   ratingCount: 9876,
+  saga: "Romance Dawn",
 }
 
 export default function ChapterPage({
@@ -26,24 +27,33 @@ export default function ChapterPage({
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
-        <Link href={`/manga/${params.id}`} className="text-primary hover:underline flex items-center gap-1">
+        <Link
+          href={`/manga/${params.id}`}
+          className="text-primary flex items-center gap-1 hover:underline"
+        >
           <ChevronLeft className="h-4 w-4" />
           Back to {chapterData.mangaTitle}
         </Link>
       </div>
 
       <div className="mb-12">
-        <h1 className="text-3xl font-bold mb-2">
+        <h1 className="mb-2 text-3xl font-bold">
           Chapter {chapterData.number}: {chapterData.title}
         </h1>
         <div className="text-muted-foreground mb-4">
-          Volume {chapterData.volume} • Released {new Date(chapterData.releaseDate).toLocaleDateString()}
+          Volume {chapterData.volume} • Released{" "}
+          {new Date(chapterData.releaseDate).toLocaleDateString()}
         </div>
 
-        <div className="flex items-center gap-4 mb-6">
+        <div className="text-muted-foreground mb-4">
+          Saga {chapterData.saga}
+        </div>
+
+        <div className="mb-6 flex items-center gap-4">
           <StarRating rating={chapterData.rating} />
           <span className="text-muted-foreground">
-            {chapterData.rating}/10 ({chapterData.ratingCount.toLocaleString()} ratings)
+            {chapterData.rating}/10 ({chapterData.ratingCount.toLocaleString()}{" "}
+            ratings)
           </span>
         </div>
 
@@ -58,20 +68,23 @@ export default function ChapterPage({
       </div>
 
       {/* Chapter Rating Section */}
-      <div className="bg-card rounded-lg p-6 mb-12 border">
-        <h2 className="text-xl font-semibold mb-4">Rate This Chapter</h2>
+      <div className="bg-card mb-12 rounded-lg border p-6">
+        <h2 className="mb-4 text-xl font-semibold">Rate This Chapter</h2>
         <div className="mb-6">
           <StarRating editable size="lg" />
         </div>
         <div className="mb-4">
-          <Textarea placeholder="Write your review (optional)" className="min-h-32" />
+          <Textarea
+            placeholder="Write your review (optional)"
+            className="min-h-32"
+          />
         </div>
         <Button>Submit Rating</Button>
       </div>
 
       {/* Reviews Section */}
       <div>
-        <h2 className="text-2xl font-bold mb-6">Reviews</h2>
+        <h2 className="mb-6 text-2xl font-bold">Reviews</h2>
         <ReviewList chapterId={params.chapterId} />
       </div>
     </div>
