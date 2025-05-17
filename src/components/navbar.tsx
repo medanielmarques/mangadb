@@ -16,7 +16,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import { signInWithDiscord, signOut } from "@/lib/supabase"
 import { useSession } from "@supabase/auth-helpers-react"
 import { BookOpen, LogOut, Menu, User } from "lucide-react"
@@ -33,7 +38,7 @@ export default function Navbar() {
   const session = useSession()
 
   return (
-    <header className="bg-background/80 fixed top-0 right-0 left-0 z-50 border-b backdrop-blur-md">
+    <header className="bg-background/80 fixed z-50 w-full border-b backdrop-blur-md">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -44,6 +49,9 @@ export default function Navbar() {
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
+
+              <SheetTitle className="sr-only">MangaDB</SheetTitle>
+
               <SheetContent side="left">
                 <nav className="grid gap-6 text-lg font-medium">
                   <Link
