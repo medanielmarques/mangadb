@@ -1,4 +1,5 @@
 import { ArcList } from "@/components/arc-list"
+import { FavoriteManga } from "@/components/favorite-manga"
 import { ReviewManga } from "@/components/review-manga"
 import { StarRating } from "@/components/star-rating"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import { TooltipContent } from "@/components/ui/tooltip"
 import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { VolumeList } from "@/components/volume-list"
-import { HeartIcon, ShareIcon } from "lucide-react"
+import { ShareIcon } from "lucide-react"
 import Image from "next/image"
 
 // This would normally come from an API or database
@@ -49,18 +50,7 @@ export default function MangaPage({ params }: { params: { id: string } }) {
             <div className="flex gap-2">
               <ReviewManga mangaId={params.id} mangaTitle={mangaData.title} />
 
-              <TooltipProvider delayDuration={100}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="flex-1">
-                      <HeartIcon className="h-5 w-5" />
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent side="bottom">
-                    <p>Add to Library</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+              <FavoriteManga />
 
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
