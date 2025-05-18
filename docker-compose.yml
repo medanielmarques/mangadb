@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:15.6-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+    container_name: mangadb
+volumes:
+  db:
+    driver: local
