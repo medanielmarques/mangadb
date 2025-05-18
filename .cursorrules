@@ -74,6 +74,7 @@ MangaDB is an IMDb-inspired platform dedicated to manga content. It provides a c
 6. Context-based component organization
 7. Scalable data handling (pagination, caching, partial data)
 8. Comprehensive error handling
+9. Use conventional commits for the commit messages
 
 ### Anti-patterns to Avoid
 
