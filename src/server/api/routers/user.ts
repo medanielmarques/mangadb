@@ -1,5 +1,5 @@
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
-import { createUserUseCase } from "@/server/api/use-cases/create-user"
+import { createUserUseCase } from "@/server/api/use-cases/user/create-user"
 import { z } from "zod"
 
 export const userRouter = createTRPCRouter({
