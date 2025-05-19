@@ -13,7 +13,7 @@ export async function signInWithDiscord() {
   await supabase.auth.signInWithOAuth({
     provider: "discord",
     options: {
-      redirectTo: getBaseUrl() || "http://localhost:3000",
+      redirectTo: getBaseUrl() || "http://localhost:3001",
     },
   })
 }

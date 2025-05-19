@@ -74,6 +74,7 @@ MangaDB is an IMDb-inspired platform dedicated to manga content. It provides a c
 6. Context-based component organization
 7. Scalable data handling (pagination, caching, partial data)
 8. Comprehensive error handling
+9. Use conventional commits for the commit messages
 
 ### Anti-patterns to Avoid
 
@@ -94,7 +95,6 @@ MangaDB is an IMDb-inspired platform dedicated to manga content. It provides a c
 - Chapter
 - User
 - Review
-- Rating
 
 ### Key Relationships
 
@@ -103,7 +103,6 @@ MangaDB is an IMDb-inspired platform dedicated to manga content. It provides a c
 - Volume -> Chapters (1:N)
 - Story Arc -> Chapters (1:N)
 - User -> Reviews (1:N)
-- User -> Ratings (1:N)
 
 ## Development Rules
 
@@ -136,6 +135,34 @@ MangaDB is an IMDb-inspired platform dedicated to manga content. It provides a c
 3. Pagination implementation
 4. Caching strategies
 5. API response optimization
+
+### General rules
+
+- Always try the simplest solution first.
+- If you can't find the answer, ask the user.
+- If you need to do something more complex, ask the user.
+- If you are unsure about something, ask the user.
+- Never modify the original shadcn components under src/components/ui. If you need to change something, call the original component and modify it passing className prop.
+- Never remove comments from the code.
+- Never create React components inside other React components
+- Never use barrel exports
+- Never change random pieces of copy language, unless I explicitly ask you to do that
+- Prefer types over interfaces
+
+### Naming conventions
+
+- File naming convention is kebab-case, example: `research-assistant.tsx`
+- Component naming convention is PascalCase, example: `ResearchAssistant`
+- Functions and variables naming convention is camelCase, example: `generateResearch`
+- Constants naming convention is UPPER_CASE, example: `MINUTES_INTERVAL`
+- Types naming convention is PascalCase, example: `type ResearchResponse`
+
+### Backend file structure
+
+- All backend related code is under the folder src/server/api
+- It has a main file that exports all the routers: root.ts, and then each router has its own file
+- Routers are under the folder src/server/api/routers and they should act as controllers, that means they shouldnt have business logic, they should just call the use cases
+- Use cases are under folder src/server/api/use-cases. They should have the logic to perform actions, such as business logic, db operations, etc
 
 ## Deployment Guidelines
 
