@@ -1,5 +1,7 @@
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
 import { createMangaUseCase } from "@/server/api/use-cases/manga/create-manga"
+import { getMangaByIdUseCase } from "@/server/api/use-cases/manga/get-manga-by-id"
+import { getMangasUseCase } from "@/server/api/use-cases/manga/get-mangas"
 import { updateMangaUseCase } from "@/server/api/use-cases/manga/update-manga"
 import {
   manga_demographic,
@@ -9,6 +11,16 @@ import {
 import { z } from "zod"
 
 export const mangaRouter = createTRPCRouter({
+  get: publicProcedure.query(async () => {
+    return await getMangasUseCase()
+  }),
+
+  getById: publicProcedure
+    .input(z.object({ id: z.string() }))
+    .query(async ({ input }) => {
+      return await getMangaByIdUseCase(input)
+    }),
+
   create: publicProcedure
     .input(
       z.object({
