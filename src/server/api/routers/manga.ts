@@ -1,5 +1,6 @@
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
 import { createMangaUseCase } from "@/server/api/use-cases/manga/create-manga"
+import { deleteMangaUseCase } from "@/server/api/use-cases/manga/delete-manga"
 import { getMangaByIdUseCase } from "@/server/api/use-cases/manga/get-manga-by-id"
 import { getMangasUseCase } from "@/server/api/use-cases/manga/get-mangas"
 import { updateMangaUseCase } from "@/server/api/use-cases/manga/update-manga"
@@ -66,5 +67,11 @@ export const mangaRouter = createTRPCRouter({
     )
     .mutation(async ({ input }) => {
       await updateMangaUseCase(input)
+    }),
+
+  delete: publicProcedure
+    .input(z.object({ id: z.string() }))
+    .mutation(async ({ input }) => {
+      return await deleteMangaUseCase(input)
     }),
 })
