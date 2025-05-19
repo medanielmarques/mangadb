@@ -12,7 +12,7 @@ import {
 import { z } from "zod"
 
 export const mangaRouter = createTRPCRouter({
-  get: publicProcedure.query(async () => {
+  getAll: publicProcedure.query(async () => {
     return await getMangasUseCase()
   }),
 
