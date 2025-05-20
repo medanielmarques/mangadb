@@ -8,10 +8,11 @@ export const env = createEnv({
       .enum(["development", "test", "production"])
       .default("development"),
 
-    AWS_S3_REGION: z.string(),
-    AWS_S3_ACCESS_KEY_ID: z.string(),
-    AWS_S3_SECRET_ACCESS_KEY: z.string(),
-    AWS_S3_BUCKET_NAME: z.string(),
+    SUPABASE_STORAGE_REGION: z.string(),
+    SUPABASE_STORAGE_ACCESS_KEY_ID: z.string(),
+    SUPABASE_STORAGE_SECRET_ACCESS_KEY: z.string(),
+    SUPABASE_STORAGE_BUCKET_NAME: z.string(),
+    SUPABASE_STORAGE_ENDPOINT: z.string(),
   },
 
   client: {
@@ -27,13 +28,17 @@ export const env = createEnv({
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
-    AWS_S3_REGION: process.env.AWS_S3_REGION,
-    AWS_S3_ACCESS_KEY_ID: process.env.AWS_S3_ACCESS_KEY_ID,
-    AWS_S3_SECRET_ACCESS_KEY: process.env.AWS_S3_SECRET_ACCESS_KEY,
-    AWS_S3_BUCKET_NAME: process.env.AWS_S3_BUCKET_NAME,
+
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
+
+    SUPABASE_STORAGE_REGION: process.env.SUPABASE_STORAGE_REGION,
+    SUPABASE_STORAGE_ACCESS_KEY_ID: process.env.SUPABASE_STORAGE_ACCESS_KEY_ID,
+    SUPABASE_STORAGE_SECRET_ACCESS_KEY:
+      process.env.SUPABASE_STORAGE_SECRET_ACCESS_KEY,
+    SUPABASE_STORAGE_BUCKET_NAME: process.env.SUPABASE_STORAGE_BUCKET_NAME,
+    SUPABASE_STORAGE_ENDPOINT: process.env.SUPABASE_STORAGE_ENDPOINT,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
