@@ -1,20 +1,45 @@
 import { storageService } from "@/server/api/services/storage"
+import { db } from "@/server/db"
+import { images } from "@/server/db/schema"
+import { TRPCError } from "@trpc/server"
 
-export async function uploadVolumeCoverUseCase(
-  mangaId: string,
-  volumeNumber: number,
-  file: Buffer,
-  contentType: string,
-) {
+export async function uploadVolumeCoverUseCase({
+  mangaId,
+  volumeNumber,
+  volumeId,
+  file,
+  contentType,
+}: {
+  mangaId: string
+  volumeNumber: number
+  volumeId: string
+  file: Buffer
+  contentType: string
+}) {
   const path = `${mangaId}/covers/volume-${volumeNumber}.${contentType.split("/")[1]}`
 
   try {
     const filePath = await storageService.uploadFile(path, file, contentType)
-    // Here you would update your database with the file path
+
+    await db.insert(images).values({
+      url: filePath,
+      type: "volume_cover",
+      mangaId,
+      volumeId,
+      filename: `volume-${volumeNumber}.${contentType.split("/")[1]}`,
+      size: file.length,
+      mimeType: contentType,
+      width: 100,
+      height: 100,
+    })
+
     return filePath
   } catch (error) {
-    // Handle error appropriately
-    throw new Error("Failed to upload volume cover")
+    console.error(error)
+    throw new TRPCError({
+      code: "INTERNAL_SERVER_ERROR",
+      message: "Failed to upload volume cover",
+    })
   }
 }
 
