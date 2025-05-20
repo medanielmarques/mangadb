@@ -1,4 +1,3 @@
-// src/server/api/services/storage.ts
 import { BUCKET_NAME, s3Client } from "@/server/config/storage"
 import {
   DeleteObjectCommand,
