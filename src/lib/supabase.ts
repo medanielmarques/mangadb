@@ -1,12 +1,13 @@
+import { env } from "@/env"
 import { createClient } from "@supabase/supabase-js"
 
 export const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+  env.NEXT_PUBLIC_SUPABASE_URL!,
+  env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
 )
 
 function getBaseUrl() {
-  return process.env.NEXT_PUBLIC_BASE_URL
+  return env.NEXT_PUBLIC_BASE_URL
 }
 
 export async function signInWithDiscord() {

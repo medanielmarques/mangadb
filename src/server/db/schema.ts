@@ -35,6 +35,8 @@ export const manga_demographic = pgEnum("demographic", [
   "kodomo",
 ])
 
+export const image_type = pgEnum("image_type", ["volume_cover", "manga_cover"])
+
 export const users = pgTable("users", {
   id: text("id").notNull().unique(),
   email: text("email").notNull(),
@@ -49,9 +51,9 @@ export const mangas = pgTable("mangas", {
   title: text("title").notNull(),
   description: text("description").notNull(),
   authors: varchar("authors").array().notNull(),
-  artists: varchar("artists").array().notNull(),
+  artists: varchar("artists").array(),
   status: manga_status("status").notNull(),
-  translation_status: manga_translation_status("translation_status").notNull(),
+  translation_status: manga_translation_status("translation_status"),
   demographic: manga_demographic("demographic").notNull(),
   genres: varchar("genres").array().notNull(),
   themes: varchar("themes").array().notNull(),
@@ -145,3 +147,20 @@ export const reviews = pgTable(
     unique("user_id_chapter_id_unique").on(table.userId, table.chapterId),
   ],
 )
+
+export const images = pgTable("images", {
+  id: text("id").notNull().unique().$default(nanoid()),
+  url: text("url").notNull(),
+  type: image_type("image_type").notNull(),
+  mangaId: text("manga_id").references(() => mangas.id),
+  volumeId: text("volume_id").references(() => volumes.id),
+  filename: text("filename").notNull(),
+  size: integer("size").notNull(),
+  mimeType: text("mime_type").notNull(),
+  width: integer("width"),
+  height: integer("height"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at")
+    .defaultNow()
+    .$onUpdate(() => new Date()),
+})
