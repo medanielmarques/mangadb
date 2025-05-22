@@ -111,7 +111,14 @@ export async function getMangaDetails(mangaId: string) {
 
 export async function syncManga() {
   try {
-    const MangaName = await getMangaDetails("[manga-id]")
+    // One Piece
+    await getMangaDetails("a1c7c817-4e59-43b7-9365-09675a149a6f")
+
+    // Berserk
+    await getMangaDetails("801513ba-a712-498c-8f57-cae55b38cc92")
+
+    // Hunter x Hunter
+    await getMangaDetails("db692d58-4b13-4174-ae8c-30c515c0689c")
 
     return "Sync completed successfully"
   } catch (error) {

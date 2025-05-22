@@ -1,3 +1,4 @@
+import { syncChapters } from "@/server/api/services/chapters-sync"
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
 import { createChapterUseCase } from "@/server/api/use-cases/chapter/create-chapter"
 import { deleteChapterUseCase } from "@/server/api/use-cases/chapter/delete-chapter"
@@ -56,4 +57,8 @@ export const chapterRouter = createTRPCRouter({
     .mutation(async ({ input }) => {
       return await deleteChapterUseCase(input)
     }),
+
+  sync: publicProcedure.query(async () => {
+    return await syncChapters()
+  }),
 })
