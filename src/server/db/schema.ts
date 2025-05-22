@@ -100,28 +100,22 @@ export const storyArcs = pgTable("story_arcs", {
     .$onUpdate(() => new Date()),
 })
 
-export const chapters = pgTable(
-  "chapters",
-  {
-    id: text("id").notNull().unique().$default(nanoid()),
-    number: integer("number").notNull(),
-    volumeId: text("volume_id").notNull(),
-    storyArcId: text("story_arc_id").notNull(),
-    title: text("title").notNull(),
-    publishedAt: timestamp("published_at").notNull(),
-    createdAt: timestamp("created_at").defaultNow().notNull(),
-    updatedAt: timestamp("updated_at")
-      .defaultNow()
-      .$onUpdate(() => new Date()),
-  },
-  (table) => [
-    unique("volume_id_story_arc_id_number_unique").on(
-      table.volumeId,
-      table.storyArcId,
-      table.number,
-    ),
-  ],
-)
+export const chapters = pgTable("chapters", {
+  id: text("id").notNull().unique().$default(nanoid()),
+  number: integer("number").notNull(),
+  mangaId: text("manga_id")
+    .notNull()
+    .references(() => mangas.id),
+  volumeNumber: integer("volume_number").notNull(),
+  storyArcId: text("story_arc_id"),
+  title: text("title").notNull(),
+  chapterLength: integer("chapter_length"),
+  publishedAt: timestamp("published_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at")
+    .defaultNow()
+    .$onUpdate(() => new Date()),
+})
 
 export const reviews = pgTable(
   "reviews",
