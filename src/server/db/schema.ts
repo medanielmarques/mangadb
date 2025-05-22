@@ -16,7 +16,7 @@ const nanoid = (defaultLength = 20) => customAlphabet(alphabet, defaultLength)
 export const manga_status = pgEnum("status", [
   "ongoing",
   "completed",
-  "on_hiatus",
+  "hiatus",
   "cancelled",
 ])
 
