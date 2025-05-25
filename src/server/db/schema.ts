@@ -153,7 +153,7 @@ export const reviews = pgTable(
 export const images = pgTable("images", {
   id: text("id").notNull().unique().$default(nanoid()),
   url: text("url").notNull(),
-  type: text("type").notNull(),
+  type: image_type("type").notNull(),
   entityId: text("entity_id").notNull(),
   filename: text("filename").notNull(),
   metadata: jsonb("metadata"),

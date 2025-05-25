@@ -1,0 +1,1 @@
+ALTER TABLE "images" ALTER COLUMN "type" SET DATA TYPE image_type;
