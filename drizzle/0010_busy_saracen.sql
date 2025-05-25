@@ -1,0 +1,1 @@
+ALTER TABLE "volumes" DROP COLUMN "cover_art_url";

@@ -64,6 +64,20 @@
       "when": 1748175636030,
       "tag": "0008_flaky_nuke",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1748189602874,
+      "tag": "0009_clumsy_tyrannus",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1748189633579,
+      "tag": "0010_busy_saracen",
+      "breakpoints": true
     }
   ]
 }

@@ -1,6 +1,7 @@
 import {
   boolean,
   integer,
+  jsonb,
   pgEnum,
   pgTable,
   text,
@@ -84,7 +85,6 @@ export const volumes = pgTable(
     pagesInUs: integer("pages_in_us"),
     firstChapter: integer("first_chapter"),
     lastChapter: integer("last_chapter"),
-    coverArtUrl: text("cover_art_url"),
     completedAt: timestamp("completed_at"),
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt: timestamp("updated_at")
@@ -153,14 +153,10 @@ export const reviews = pgTable(
 export const images = pgTable("images", {
   id: text("id").notNull().unique().$default(nanoid()),
   url: text("url").notNull(),
-  type: image_type("image_type").notNull(),
-  mangaId: text("manga_id").references(() => mangas.id),
-  volumeId: text("volume_id").references(() => volumes.id),
+  type: text("type").notNull(),
+  entityId: text("entity_id").notNull(),
   filename: text("filename").notNull(),
-  size: integer("size").notNull(),
-  mimeType: text("mime_type").notNull(),
-  width: integer("width"),
-  height: integer("height"),
+  metadata: jsonb("metadata"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")
     .defaultNow()
