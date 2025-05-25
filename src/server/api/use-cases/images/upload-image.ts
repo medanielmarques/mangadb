@@ -41,27 +41,34 @@ export async function uploadImageUseCase({
   file,
   contentType,
   metadata,
+  filename,
 }: {
   entityId: string
   entityType: "manga_cover" | "volume_cover"
   file: Buffer
   contentType: string
   metadata?: ImageMetadata
+  filename: string
 }) {
-  const path = `${entityId}/${entityType}.${contentType.split("/")[1]}`
+  if (!contentType.startsWith("image/")) {
+    throw new TRPCError({
+      code: "BAD_REQUEST",
+      message: "Content type must be an image",
+    })
+  }
 
   try {
-    const filePath = await storageService.uploadFile(path, file, contentType)
+    const url = await storageService.uploadFile(filename, file, contentType)
 
     await db.insert(images).values({
-      url: filePath,
+      url,
       type: entityType,
       entityId,
-      filename: `${entityType}.${contentType.split("/")[1]}`,
+      filename,
       metadata,
     })
 
-    return filePath
+    return url
   } catch (error) {
     console.error(error)
     throw new TRPCError({

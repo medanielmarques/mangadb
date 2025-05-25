@@ -1,4 +1,5 @@
-import volumesData from "@/data/one-piece-volumes-sample.json"
+import volumesData from "@/data/one-piece-volumes.json"
+import { uploadImageUseCase } from "@/server/api/use-cases/images/upload-image"
 import { db } from "@/server/db"
 import { volumes } from "@/server/db/schema"
 import { nanoid } from "nanoid"
@@ -58,5 +59,34 @@ async function insertVolumesBatch(
     firstChapter: volume.firstChapter,
   }))
 
-  await db.insert(volumes).values(formattedVolumes)
+  const insertedVolumes = await db
+    .insert(volumes)
+    .values(formattedVolumes)
+    .returning({ id: volumes.id, number: volumes.number })
+
+  insertedVolumes.forEach(async (volume) => {
+    const coverUrl = volumesBatch.find(
+      (v) => v.volumeNumber === volume.number,
+    )?.coverArtUrl
+
+    if (!coverUrl) {
+      throw new Error("Failed to find cover image")
+    }
+
+    const coverImage = await fetch(coverUrl)
+
+    if (!coverImage) {
+      throw new Error("Failed to fetch cover image")
+    }
+
+    const extension = coverImage.headers.get("content-type")?.split("/")[1]
+
+    await uploadImageUseCase({
+      entityId: volume.id,
+      entityType: "volume_cover",
+      file: Buffer.from(await coverImage.arrayBuffer()),
+      contentType: coverImage.headers.get("content-type") ?? "",
+      filename: `volume-cover/${mangaId}/volume-${volume.number}.${extension}`,
+    })
+  })
 }
