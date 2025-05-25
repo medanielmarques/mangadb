@@ -57,6 +57,13 @@
       "when": 1747947830630,
       "tag": "0007_tense_wasp",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1748175636030,
+      "tag": "0008_flaky_nuke",
+      "breakpoints": true
     }
   ]
 }

@@ -76,7 +76,15 @@ export const volumes = pgTable(
       .notNull()
       .references(() => mangas.id),
     title: text("title").notNull(),
-    publishedAt: timestamp("published_at").notNull(),
+    publishedAtJapan: timestamp("published_at_japan"),
+    publishedAtUs: timestamp("published_at_us"),
+    isbnJapan: text("isbn_japan"),
+    isbnUs: text("isbn_us"),
+    pagesInJapan: integer("pages_in_japan"),
+    pagesInUs: integer("pages_in_us"),
+    firstChapter: integer("first_chapter"),
+    lastChapter: integer("last_chapter"),
+    coverArtUrl: text("cover_art_url"),
     completedAt: timestamp("completed_at"),
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt: timestamp("updated_at")
