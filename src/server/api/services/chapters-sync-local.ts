@@ -1,4 +1,4 @@
-import chaptersData from "@/cheerio-one-piece-chapters.json"
+import chaptersData from "@/data/one-piece-chapters.json"
 import { db } from "@/server/db"
 import { chapters } from "@/server/db/schema"
 

@@ -1,5 +1,4 @@
-import volumesData from "@/cheerio-one-piece-volumes.json"
-import { uploadVolumeCoverUseCase } from "@/server/api/use-cases/manga/upload-volume-cover"
+import volumesData from "@/data/one-piece-volumes-sample.json"
 import { db } from "@/server/db"
 import { volumes } from "@/server/db/schema"
 import { nanoid } from "nanoid"
