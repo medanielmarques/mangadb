@@ -1,0 +1,1 @@
+ALTER TABLE "images" ADD CONSTRAINT "entity_id_type_unique" UNIQUE("entity_id","type");
