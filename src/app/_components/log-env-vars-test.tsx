@@ -2,9 +2,12 @@
 
 export default function LogEnvVarsTest() {
   console.log("process.env", process.env)
-  console.log("VERCEL_BRANCH_URL", process.env.VERCEL_BRANCH_URL)
-  console.log("VERCEL_URL", process.env.VERCEL_URL)
-  console.log("VERCEL_ENV", process.env.VERCEL_ENV)
+  console.log(
+    "NEXT_PUBLIC_VERCEL_BRANCH_URL",
+    process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL,
+  )
+  console.log("NEXT_PUBLIC_VERCEL_URL", process.env.NEXT_PUBLIC_VERCEL_URL)
+  console.log("NEXT_PUBLIC_VERCEL_ENV", process.env.NEXT_PUBLIC_VERCEL_ENV)
 
   return null
 }
