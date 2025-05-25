@@ -1,6 +1,11 @@
 import { MangaGrid } from "@/components/manga-grid"
 
 export default function Home() {
+  console.log("process.env", process.env)
+  console.log("VERCEL_BRANCH_URL", process.env.VERCEL_BRANCH_URL)
+  console.log("VERCEL_URL", process.env.VERCEL_URL)
+  console.log("VERCEL_ENV", process.env.VERCEL_ENV)
+
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Trending Manga Section */}

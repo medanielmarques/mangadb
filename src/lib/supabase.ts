@@ -7,6 +7,10 @@ export const supabase = createClient(
 )
 
 function getBaseUrl() {
+  if (process.env.NODE_ENV === "preview") {
+    return process.env.VERCEL_BRANCH_URL
+  }
+
   return env.NEXT_PUBLIC_BASE_URL
 }
 
