@@ -2,8 +2,8 @@ import * as cheerio from "cheerio"
 import fs from "fs"
 
 const INPUT_FILE = "src/one-piece-volumes.html"
-const OUTPUT_VOLUMES_FILE = "src/cheerio-one-piece-volumes-2.json"
-const OUTPUT_CHAPTERS_FILE = "src/cheerio-one-piece-chapters-2.json"
+const OUTPUT_VOLUMES_FILE = "src/cheerio-one-piece-volumes.json"
+const OUTPUT_CHAPTERS_FILE = "src/cheerio-one-piece-chapters.json"
 
 type Volume = {
   volumeTitle: string
@@ -51,7 +51,11 @@ function extractVolumeData(
   const japanRow = $table.find("tr").eq(2)
   const usRow = $table.find("tr").eq(3)
   const chaptersList = $table.find("ul").first()
-  const coverArtUrl = cleanCoverArtUrl($table.find("img").first().attr("src"))
+  let coverArtUrl = cleanCoverArtUrl($table.find("img").first().attr("src"))
+
+  if (coverArtUrl.includes("data:image")) {
+    coverArtUrl = cleanCoverArtUrl($table.find("img").first().attr("data-src"))
+  }
 
   const firstChapter = extractChapterNumber(
     chaptersList.find("li").first().text(),
