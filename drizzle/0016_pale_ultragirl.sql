@@ -1,0 +1,1 @@
+DROP INDEX "volumes_manga_id_is_latest_complete_volume_unique_idx";

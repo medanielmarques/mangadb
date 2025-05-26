@@ -103,9 +103,6 @@ export const volumes = pgTable(
       index("volumes_is_latest_complete_volume_idx").on(
         table.isLatestCompleteVolume,
       ),
-      index("volumes_manga_id_is_latest_complete_volume_unique_idx")
-        .on(table.mangaId, table.isLatestCompleteVolume)
-        .where(sql`${table.isLatestCompleteVolume} = true`),
     ]
   },
 )
