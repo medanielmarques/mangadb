@@ -1,5 +1,7 @@
+import { sql } from "drizzle-orm"
 import {
   boolean,
+  index,
   integer,
   jsonb,
   pgEnum,
@@ -95,7 +97,17 @@ export const volumes = pgTable(
       .defaultNow()
       .$onUpdate(() => new Date()),
   },
-  (table) => [unique("manga_id_number_unique").on(table.mangaId, table.number)],
+  (table) => {
+    return [
+      unique("manga_id_number_unique").on(table.mangaId, table.number),
+      index("volumes_is_latest_complete_volume_idx").on(
+        table.isLatestCompleteVolume,
+      ),
+      index("volumes_manga_id_is_latest_complete_volume_unique_idx")
+        .on(table.mangaId, table.isLatestCompleteVolume)
+        .where(sql`${table.isLatestCompleteVolume} = true`),
+    ]
+  },
 )
 
 export const storyArcs = pgTable("story_arcs", {

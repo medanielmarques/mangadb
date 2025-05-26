@@ -1,0 +1,2 @@
+CREATE INDEX "volumes_is_latest_complete_volume_idx" ON "volumes" USING btree ("is_latest_complete_volume");--> statement-breakpoint
+CREATE INDEX "volumes_manga_id_is_latest_complete_volume_unique_idx" ON "volumes" USING btree ("manga_id","is_latest_complete_volume") WHERE "volumes"."is_latest_complete_volume" = true;
