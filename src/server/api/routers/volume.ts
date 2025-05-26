@@ -38,6 +38,7 @@ export const volumeRouter = createTRPCRouter({
         title: z.string(),
         publishedAt: z.date(),
         completedAt: z.date().optional(),
+        isComplete: z.boolean().optional(),
       }),
     )
     .mutation(async ({ input }) => {
