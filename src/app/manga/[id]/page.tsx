@@ -46,7 +46,7 @@ export default function MangaPage({ params }: { params: { id: string } }) {
             />
           </div>
           <div className="mt-4 flex flex-col gap-2">
-            <Button className="w-full">Add to Library</Button>
+            {/* <Button className="w-full">Add to Library</Button> */}
             <div className="flex gap-2">
               <ReviewManga mangaId={params.id} mangaTitle={mangaData.title} />
 
@@ -114,9 +114,9 @@ export default function MangaPage({ params }: { params: { id: string } }) {
 
       {/* Tabs for Volumes and Arcs */}
       <Tabs defaultValue="volumes" className="w-full">
-        <TabsList className="mb-8 grid w-full grid-cols-2">
+        <TabsList className="mb-8 grid w-full grid-cols-1">
           <TabsTrigger value="volumes">Volumes & Chapters</TabsTrigger>
-          <TabsTrigger value="arcs">Story Arcs</TabsTrigger>
+          {/* <TabsTrigger value="arcs">Story Arcs</TabsTrigger> */}
         </TabsList>
 
         <TabsContent value="volumes">

@@ -23,24 +23,6 @@ const mangaData = [
     coverImage: "/one-piece-cover.webp?height=300&width=200",
     rating: 9.3,
   },
-  {
-    id: "4",
-    title: "Vinland Saga",
-    coverImage: "/one-piece-cover.webp?height=300&width=200",
-    rating: 9.0,
-  },
-  {
-    id: "5",
-    title: "Attack on Titan",
-    coverImage: "/one-piece-cover.webp?height=300&width=200",
-    rating: 8.9,
-  },
-  {
-    id: "6",
-    title: "Fullmetal Alchemist",
-    coverImage: "/one-piece-cover.webp?height=300&width=200",
-    rating: 9.1,
-  },
 ]
 
 export function MangaGrid() {
