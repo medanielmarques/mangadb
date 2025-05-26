@@ -77,7 +77,3 @@ export async function uploadImageUseCase({
     })
   }
 }
-
-export async function deleteImageUseCase(path: string) {
-  await storageService.deleteFile(path)
-}
