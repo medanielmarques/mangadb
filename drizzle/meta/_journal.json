@@ -120,6 +120,13 @@
       "when": 1748296997764,
       "tag": "0016_pale_ultragirl",
       "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1748297095721,
+      "tag": "0017_volumes_manga_id_is_latest_complete_volume_unique",
+      "breakpoints": true
     }
   ]
 }
