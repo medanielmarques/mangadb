@@ -1,0 +1,1 @@
+ALTER TABLE "chapters" ALTER COLUMN "manga_id" SET NOT NULL;

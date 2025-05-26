@@ -1,6 +1,7 @@
 import {
   boolean,
   integer,
+  jsonb,
   pgEnum,
   pgTable,
   text,
@@ -16,7 +17,7 @@ const nanoid = (defaultLength = 20) => customAlphabet(alphabet, defaultLength)
 export const manga_status = pgEnum("status", [
   "ongoing",
   "completed",
-  "on_hiatus",
+  "hiatus",
   "cancelled",
 ])
 
@@ -55,10 +56,10 @@ export const mangas = pgTable("mangas", {
   status: manga_status("status").notNull(),
   translation_status: manga_translation_status("translation_status"),
   demographic: manga_demographic("demographic").notNull(),
-  genres: varchar("genres").array().notNull(),
-  themes: varchar("themes").array().notNull(),
+  genres: varchar("genres").array(),
+  themes: varchar("themes").array(),
   format: varchar("format").array(),
-  publishers: varchar("publishers").array().notNull(),
+  publishers: varchar("publishers").array(),
   publishedAt: timestamp("published_at").notNull(),
   completedAt: timestamp("completed_at"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
@@ -76,7 +77,14 @@ export const volumes = pgTable(
       .notNull()
       .references(() => mangas.id),
     title: text("title").notNull(),
-    publishedAt: timestamp("published_at").notNull(),
+    publishedAtJapan: timestamp("published_at_japan"),
+    publishedAtUs: timestamp("published_at_us"),
+    isbnJapan: text("isbn_japan"),
+    isbnUs: text("isbn_us"),
+    pagesInJapan: integer("pages_in_japan"),
+    pagesInUs: integer("pages_in_us"),
+    firstChapter: integer("first_chapter"),
+    lastChapter: integer("last_chapter"),
     completedAt: timestamp("completed_at"),
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt: timestamp("updated_at")
@@ -100,28 +108,22 @@ export const storyArcs = pgTable("story_arcs", {
     .$onUpdate(() => new Date()),
 })
 
-export const chapters = pgTable(
-  "chapters",
-  {
-    id: text("id").notNull().unique().$default(nanoid()),
-    number: integer("number").notNull(),
-    volumeId: text("volume_id").notNull(),
-    storyArcId: text("story_arc_id").notNull(),
-    title: text("title").notNull(),
-    publishedAt: timestamp("published_at").notNull(),
-    createdAt: timestamp("created_at").defaultNow().notNull(),
-    updatedAt: timestamp("updated_at")
-      .defaultNow()
-      .$onUpdate(() => new Date()),
-  },
-  (table) => [
-    unique("volume_id_story_arc_id_number_unique").on(
-      table.volumeId,
-      table.storyArcId,
-      table.number,
-    ),
-  ],
-)
+export const chapters = pgTable("chapters", {
+  id: text("id").notNull().unique().$default(nanoid()),
+  number: integer("number").notNull(),
+  mangaId: text("manga_id")
+    .notNull()
+    .references(() => mangas.id),
+  volumeNumber: integer("volume_number").notNull(),
+  storyArcId: text("story_arc_id"),
+  title: text("title").notNull(),
+  chapterLength: integer("chapter_length"),
+  publishedAt: timestamp("published_at"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at")
+    .defaultNow()
+    .$onUpdate(() => new Date()),
+})
 
 export const reviews = pgTable(
   "reviews",
@@ -148,19 +150,19 @@ export const reviews = pgTable(
   ],
 )
 
-export const images = pgTable("images", {
-  id: text("id").notNull().unique().$default(nanoid()),
-  url: text("url").notNull(),
-  type: image_type("image_type").notNull(),
-  mangaId: text("manga_id").references(() => mangas.id),
-  volumeId: text("volume_id").references(() => volumes.id),
-  filename: text("filename").notNull(),
-  size: integer("size").notNull(),
-  mimeType: text("mime_type").notNull(),
-  width: integer("width"),
-  height: integer("height"),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-  updatedAt: timestamp("updated_at")
-    .defaultNow()
-    .$onUpdate(() => new Date()),
-})
+export const images = pgTable(
+  "images",
+  {
+    id: text("id").notNull().unique().$default(nanoid()),
+    url: text("url").notNull(),
+    type: image_type("type").notNull(),
+    entityId: text("entity_id").notNull(),
+    filename: text("filename").notNull(),
+    metadata: jsonb("metadata"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at")
+      .defaultNow()
+      .$onUpdate(() => new Date()),
+  },
+  (table) => [unique("entity_id_type_unique").on(table.entityId, table.type)],
+)

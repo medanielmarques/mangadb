@@ -1,0 +1,6800 @@
+[
+  {
+    "chapterTitleEnglish": "Romance Dawn —The Dawn of the Adventure—",
+    "chapterTitleJapanese": "ROMANCE DAWN（ロマンスドーン）—冒険の夜明け—, Romansu Dōn -Bōken no Yoake-?",
+    "chapterNumber": 1,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "That Guy, \"Straw Hat Luffy\"",
+    "chapterTitleJapanese": "その男\"麦わらのルフィ\", Sono Otoko \"Mugiwara no Rufi\"?",
+    "chapterNumber": 2,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "Introducing Pirate Hunter Zoro",
+    "chapterTitleJapanese": "”海賊狩りのゾロ\"登場, \"Kaizoku-gari no Zoro\" Tōjō?",
+    "chapterNumber": 3,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "Marine Captain \"Axe-Hand Morgan\"",
+    "chapterTitleJapanese": "海軍大佐”斧手のモーガン”, Kaigun Taisa \"Onote no Mōgan\"?",
+    "chapterNumber": 4,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "The Pirate King and the Great Swordsman",
+    "chapterTitleJapanese": "海賊王と大剣豪, Kaizoku-Ō to Daikengō?",
+    "chapterNumber": 5,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "The First",
+    "chapterTitleJapanese": "1人目, Hitorime?",
+    "chapterNumber": 6,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "Friends",
+    "chapterTitleJapanese": "友達, Tomodachi?",
+    "chapterNumber": 7,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "Introducing Nami",
+    "chapterTitleJapanese": "ナミ登場, Nami Tōjō?",
+    "chapterNumber": 8,
+    "volumeNumber": 1
+  },
+  {
+    "chapterTitleEnglish": "Devilish Woman",
+    "chapterTitleJapanese": "魔性の女, Mashō no Onna?",
+    "chapterNumber": 9,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Incident at the Tavern",
+    "chapterTitleJapanese": "酒場の一件, Sakaba no Ikken?",
+    "chapterNumber": 10,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Flight",
+    "chapterTitleJapanese": "敗走, Haisō?",
+    "chapterNumber": 11,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Dog",
+    "chapterTitleJapanese": "犬, Inu?",
+    "chapterNumber": 12,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Treasure",
+    "chapterTitleJapanese": "宝物, Takaramono?",
+    "chapterNumber": 13,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Reckless!!",
+    "chapterTitleJapanese": "無謀っ!!, Mubō!!?",
+    "chapterNumber": 14,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Gong",
+    "chapterTitleJapanese": "GONG（ゴング）, Gongu?",
+    "chapterNumber": 15,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Versus!! The Buggy Pirates",
+    "chapterTitleJapanese": "VERSUS（バーサス）!!バギー海賊団, Bāsasu!! Bagī Kaizokudan?",
+    "chapterNumber": 16,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "Character",
+    "chapterTitleJapanese": "格, Kaku?",
+    "chapterNumber": 17,
+    "volumeNumber": 2
+  },
+  {
+    "chapterTitleEnglish": "The Pirate \"Buggy the Clown\"",
+    "chapterTitleJapanese": "海賊”道化のバギー”, Kaizoku \"Dōke no Bagī\"?",
+    "chapterNumber": 18,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "Devil Fruit",
+    "chapterTitleJapanese": "悪魔の実, Akuma no Mi?",
+    "chapterNumber": 19,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "The Way of the Thief",
+    "chapterTitleJapanese": "泥棒道, Dorobōdō?",
+    "chapterNumber": 20,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "Town",
+    "chapterTitleJapanese": "町, Machi?",
+    "chapterNumber": 21,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "You're the Rare Breed",
+    "chapterTitleJapanese": "あんたが珍獣, Anta ga Chinjū?",
+    "chapterNumber": 22,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "Captain Usopp Appears",
+    "chapterTitleJapanese": "キャプテン･ウソップ登場, Kyaputen Usoppu Tōjō?",
+    "chapterNumber": 23,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "Things That Can't Be Faked",
+    "chapterTitleJapanese": "偽れぬもの, Itsuwarenu Mono?",
+    "chapterNumber": 24,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "800 Lies",
+    "chapterTitleJapanese": "ウソ800, Uso 800?",
+    "chapterNumber": 25,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "Captain Kuro's Plan",
+    "chapterTitleJapanese": "キャプテン･クロの一計, Kyaputen Kuro no Ikkei?",
+    "chapterNumber": 26,
+    "volumeNumber": 3
+  },
+  {
+    "chapterTitleEnglish": "Plan",
+    "chapterTitleJapanese": "筋, Suji?",
+    "chapterNumber": 27,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Crescent Moon",
+    "chapterTitleJapanese": "三日月, Mikazuki?",
+    "chapterNumber": 28,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Hill Road",
+    "chapterTitleJapanese": "坂道, Sakamichi?",
+    "chapterNumber": 29,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Great!!!",
+    "chapterTitleJapanese": "GREAT（グレイト）!!!, Gureito!!!?",
+    "chapterNumber": 30,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Truth",
+    "chapterTitleJapanese": "真実, Shinjitsu?",
+    "chapterNumber": 31,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Great Misfortune",
+    "chapterTitleJapanese": "大凶, Daikyō?",
+    "chapterNumber": 32,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "The Man Who Makes No Sound",
+    "chapterTitleJapanese": "音無き男, Otonaki Otoko?",
+    "chapterNumber": 33,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Butler Klahadore",
+    "chapterTitleJapanese": "執事クラハドール, Shitsuji Kurahadōru?",
+    "chapterNumber": 34,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "Neo Hill Road",
+    "chapterTitleJapanese": "ネオ坂道, Neo Sakamichi?",
+    "chapterNumber": 35,
+    "volumeNumber": 4
+  },
+  {
+    "chapterTitleEnglish": "After Them!!",
+    "chapterTitleJapanese": "追え!!, Oe!!?",
+    "chapterNumber": 36,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "The Pirate \"Kuro of a Hundred Plans\"",
+    "chapterTitleJapanese": "海賊\"百計のクロ\", Kaizoku \"Hyakkei no Kuro\"?",
+    "chapterNumber": 37,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "Pirate Crew",
+    "chapterTitleJapanese": "海賊団, Kaizokudan?",
+    "chapterNumber": 38,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "For Whom the Bell Tolls",
+    "chapterTitleJapanese": "誰が為に鐘は鳴る, Taga Tame ni Kane wa Naru?",
+    "chapterNumber": 39,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "The Usopp Pirates",
+    "chapterTitleJapanese": "ウソップ海賊団, Usoppu Kaizokudan?",
+    "chapterNumber": 40,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "To the Sea",
+    "chapterTitleJapanese": "海へ, Umi-e?",
+    "chapterNumber": 41,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "Yosaku and Johnny",
+    "chapterTitleJapanese": "ヨサクとジョニー, Yosaku to Jonī?",
+    "chapterNumber": 42,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "Introducing Sanji",
+    "chapterTitleJapanese": "サンジ登場, Sanji Tōjō?",
+    "chapterNumber": 43,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "Three Cooks",
+    "chapterTitleJapanese": "三人のコック, Sannin no Kokku?",
+    "chapterNumber": 44,
+    "volumeNumber": 5
+  },
+  {
+    "chapterTitleEnglish": "Before the Storm",
+    "chapterTitleJapanese": "嵐前, Arashi Mae?",
+    "chapterNumber": 45,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "An Uninvited Guest",
+    "chapterTitleJapanese": "招かれざる客, Manekarezaru Kyaku?",
+    "chapterNumber": 46,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "Pirate Fleet Admiral \"Don Krieg\"",
+    "chapterTitleJapanese": "海賊艦隊提督\"首領･クリーク\", Kaizoku Kantai Teitoku \"Don Kurīku\"?",
+    "chapterNumber": 47,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "Leave That Path Alone",
+    "chapterTitleJapanese": "その航路、やめときな, Sono Kōro, Yametoki na?",
+    "chapterNumber": 48,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "Storm",
+    "chapterTitleJapanese": "嵐, Arashi?",
+    "chapterNumber": 49,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "To Each His Own Way",
+    "chapterTitleJapanese": "己々が路, Onoono ga Michi?",
+    "chapterNumber": 50,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "Roronoa Zoro Falls Into the Sea",
+    "chapterTitleJapanese": "ロロノア・ゾロ海に散る, Roronoa Zoro Umi ni Chiru?",
+    "chapterNumber": 51,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "The Oath",
+    "chapterTitleJapanese": "誓い, Chikai?",
+    "chapterNumber": 52,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "Sabagashira No. 1",
+    "chapterTitleJapanese": "サバガシラ1号, Sabagashira Ichi-Gō?",
+    "chapterNumber": 53,
+    "volumeNumber": 6
+  },
+  {
+    "chapterTitleEnglish": "Pearl-san",
+    "chapterTitleJapanese": "パールさん, Pāru-san?",
+    "chapterNumber": 54,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "Jungle Blood",
+    "chapterTitleJapanese": "JUNGLE（ジャングル） BLOOD（ブラッド）, Janguru Buraddo?",
+    "chapterNumber": 55,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "No Way",
+    "chapterTitleJapanese": "やなこった, Ya na Kotta?",
+    "chapterNumber": 56,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "Because of Dreams",
+    "chapterTitleJapanese": "夢在るがゆえ, Yumearu ga Yue?",
+    "chapterNumber": 57,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "Crap-Geezer",
+    "chapterTitleJapanese": "クソジジイ, Kuso Jijī?",
+    "chapterNumber": 58,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "Obligation",
+    "chapterTitleJapanese": "恩, On?",
+    "chapterNumber": 59,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "Propriety",
+    "chapterTitleJapanese": "ケジメ, Kejime?",
+    "chapterNumber": 60,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "The Demon",
+    "chapterTitleJapanese": "鬼, Oni?",
+    "chapterNumber": 61,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "MH5",
+    "chapterTitleJapanese": "M（エム）・H（エイチ）・5（ファイブ）, Emu-Eichi-Fuaibu?",
+    "chapterNumber": 62,
+    "volumeNumber": 7
+  },
+  {
+    "chapterTitleEnglish": "I Won't Die",
+    "chapterTitleJapanese": "死なねェよ, Shinanē yo?",
+    "chapterNumber": 63,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "The Mighty Battle Spear",
+    "chapterTitleJapanese": "大戦槍, Daisensō?",
+    "chapterNumber": 64,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "Prepared",
+    "chapterTitleJapanese": "覚悟, Kakugo?",
+    "chapterNumber": 65,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "The Spear Is Stifled",
+    "chapterTitleJapanese": "噛み殺した槍, Kami Koroshita Yari?",
+    "chapterNumber": 66,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "Soup",
+    "chapterTitleJapanese": "SOUP（スープ）, Sūpu?",
+    "chapterNumber": 67,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "The Fourth",
+    "chapterTitleJapanese": "4人目, Yoninme?",
+    "chapterNumber": 68,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "Arlong Park",
+    "chapterTitleJapanese": "アーロンパーク, Āron Pāku?",
+    "chapterNumber": 69,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "The Great Adventure of Usopp the Man",
+    "chapterTitleJapanese": "男ウソップ大冒険, Otoko Usoppu Daibōken?",
+    "chapterNumber": 70,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "Lords of All Creation",
+    "chapterTitleJapanese": "万物の霊長, Banbutsu no Reichō?",
+    "chapterNumber": 71,
+    "volumeNumber": 8
+  },
+  {
+    "chapterTitleEnglish": "Appropriate",
+    "chapterTitleJapanese": "分相応, Bunsōō?",
+    "chapterNumber": 72,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "The Monster From the \"Grand Line\"",
+    "chapterTitleJapanese": "\"偉大なる航路\"から来た怪物, \"Gurando Rain\" Kara Kita Kaibutsu?",
+    "chapterNumber": 73,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "Business",
+    "chapterTitleJapanese": "仕事（ビジネス）, Bijinesu?",
+    "chapterNumber": 74,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "Sea Charts and Fish-Man",
+    "chapterTitleJapanese": "海図と魚人, Kaizu to Gyojin?",
+    "chapterNumber": 75,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "Sleep",
+    "chapterTitleJapanese": "ねる, Neru?",
+    "chapterNumber": 76,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "The First Step Toward a Dream",
+    "chapterTitleJapanese": "夢の一歩, Yume no Ippo?",
+    "chapterNumber": 77,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "Bell-mère-san",
+    "chapterTitleJapanese": "ベルメールさん, Berumēru-san?",
+    "chapterNumber": 78,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "To Live",
+    "chapterTitleJapanese": "生きる, Ikiru?",
+    "chapterNumber": 79,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "A Crime is a Crime",
+    "chapterTitleJapanese": "罪は罪, Tsumi wa Tsumi?",
+    "chapterNumber": 80,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "Tears",
+    "chapterTitleJapanese": "涙, Namida?",
+    "chapterNumber": 81,
+    "volumeNumber": 9
+  },
+  {
+    "chapterTitleEnglish": "OK, Let's STAND UP!",
+    "chapterTitleJapanese": "OK（オーケー）, Let's（レッツ） STAND（スタン） UP（ダップ）!, Ōkē, Rettsu, Sutan Dappu!?",
+    "chapterNumber": 82,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Luffy in Black",
+    "chapterTitleJapanese": "ルフィ IN（イン） BLACK（ブラック）, Rufi In Burakku?",
+    "chapterNumber": 83,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Zombie",
+    "chapterTitleJapanese": "ゾンビ, Zonbi?",
+    "chapterNumber": 84,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Three Sword Style vs. Six Sword Style",
+    "chapterTitleJapanese": "三刀流対六刀流, Santōryū tai Rokutōryū?",
+    "chapterNumber": 85,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Chivalry vs. Fish-Man Karate",
+    "chapterTitleJapanese": "騎士道VS（バーサス）魚人空手, Kishidō Bāsasu Gyojin Karate?",
+    "chapterNumber": 86,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "It's Over!!",
+    "chapterTitleJapanese": "終わったんだ!!, Owattanda!!?",
+    "chapterNumber": 87,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Die!!!",
+    "chapterTitleJapanese": "死んで!!!, Shinde!!!?",
+    "chapterNumber": 88,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Switch",
+    "chapterTitleJapanese": "交替, Kōtai?",
+    "chapterNumber": 89,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "What Can You Do?",
+    "chapterTitleJapanese": "何ができる, Nani ga Dekiru?",
+    "chapterNumber": 90,
+    "volumeNumber": 10
+  },
+  {
+    "chapterTitleEnglish": "Darts",
+    "chapterTitleJapanese": "DARTS（ダーツ）, Dātsu?",
+    "chapterNumber": 91,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Happiness",
+    "chapterTitleJapanese": "幸せ, Shiawase?",
+    "chapterNumber": 92,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Going Down",
+    "chapterTitleJapanese": "下へまいります, Shita e Mairimasu?",
+    "chapterNumber": 93,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "The Second",
+    "chapterTitleJapanese": "二人目, Futarime?",
+    "chapterNumber": 94,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Spin, Pinwheel",
+    "chapterTitleJapanese": "まわれ風車, Maware Kazaguruma?",
+    "chapterNumber": 95,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Greatest Evil of the East",
+    "chapterTitleJapanese": "東一番の悪, Higashi Ichiban no Waru?",
+    "chapterNumber": 96,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Sandai Kitetsu",
+    "chapterTitleJapanese": "三代鬼徹, Sandai Kitetsu?",
+    "chapterNumber": 97,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Dark Clouds",
+    "chapterTitleJapanese": "暗雲, An'un?",
+    "chapterNumber": 98,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "Luffy Died",
+    "chapterTitleJapanese": "ルフィが死んだ, Rufi ga Shinda?",
+    "chapterNumber": 99,
+    "volumeNumber": 11
+  },
+  {
+    "chapterTitleEnglish": "The Legend Has Begun",
+    "chapterTitleJapanese": "伝説は始まった, Densetsu wa Hajimatta?",
+    "chapterNumber": 100,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "Reverse Mountain",
+    "chapterTitleJapanese": "リヴァースマウンテン, Rivāsu Maunten?",
+    "chapterNumber": 101,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "Now, the Grand Line",
+    "chapterTitleJapanese": "さて、偉大なる航路, Sate, Gurando Rain?",
+    "chapterNumber": 102,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "The Whale",
+    "chapterTitleJapanese": "クジラ, Kujira?",
+    "chapterNumber": 103,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "Cape Promise",
+    "chapterTitleJapanese": "約束の岬, Yakusoku no Misaki?",
+    "chapterNumber": 104,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "Log Pose",
+    "chapterTitleJapanese": "記録指針, Rogu Pōsu?",
+    "chapterNumber": 105,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "The Town of Welcome",
+    "chapterTitleJapanese": "歓迎の町, Kangei no Machi?",
+    "chapterNumber": 106,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "Moonlight and Tombstones",
+    "chapterTitleJapanese": "月光と墓標, Gekkō to Bohyō?",
+    "chapterNumber": 107,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "100 Bounty Hunters",
+    "chapterTitleJapanese": "100人の賞金稼ぎ, Hyakunin no Shōkin Kasegi?",
+    "chapterNumber": 108,
+    "volumeNumber": 12
+  },
+  {
+    "chapterTitleEnglish": "Responsibility Problem",
+    "chapterTitleJapanese": "責任問題, Sekinin Mondai?",
+    "chapterNumber": 109,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "The Night Isn't Over",
+    "chapterTitleJapanese": "夜は終わらない, Yoru wa Owaranai?",
+    "chapterNumber": 110,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "The Secret Criminal Organization",
+    "chapterTitleJapanese": "秘密犯罪会社, Himitsu Hanzai Gaisha?",
+    "chapterNumber": 111,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Zoro",
+    "chapterTitleJapanese": "ルフィVS（バーサス）ゾロ, Rufi Bāsasu Zoro?",
+    "chapterNumber": 112,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "It's All Right!",
+    "chapterTitleJapanese": "大丈夫!!!, Daijōbu!!!?",
+    "chapterNumber": 113,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "The Course",
+    "chapterTitleJapanese": "進路, Shinro?",
+    "chapterNumber": 114,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "Little Garden of Adventure",
+    "chapterTitleJapanese": "冒険のリトルガーデン, Bōken no Ritoru Gāden?",
+    "chapterNumber": 115,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "Big",
+    "chapterTitleJapanese": "でっけェ, Dekkē?",
+    "chapterNumber": 116,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "Dorry and Brogy",
+    "chapterTitleJapanese": "ドリーとブロギー, Dorī to Burogī?",
+    "chapterNumber": 117,
+    "volumeNumber": 13
+  },
+  {
+    "chapterTitleEnglish": "Someone's Out There",
+    "chapterTitleJapanese": "誰かいる, Dareka Iru?",
+    "chapterNumber": 118,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "Makeshift",
+    "chapterTitleJapanese": "姑息, Kosoku?",
+    "chapterNumber": 119,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "The Red Ogre Weeps",
+    "chapterTitleJapanese": "赤鬼が泣いた, Akaoni ga Naita?",
+    "chapterNumber": 120,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "I Knew",
+    "chapterTitleJapanese": "わかっていた, Wakatteita?",
+    "chapterNumber": 121,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "A Dead Body is Useless",
+    "chapterTitleJapanese": "死人は役に立たぬ, Shinin wa Yaku ni Tatanu?",
+    "chapterNumber": 122,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Mr. 3",
+    "chapterTitleJapanese": "ルフィVS（バーサス）Mr.（ミスター）3（スリー）, Rufi Bāsasu Misutā Surī?",
+    "chapterNumber": 123,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "The Tea Is Good",
+    "chapterTitleJapanese": "お茶がうめェ, Ocha ga Umē?",
+    "chapterNumber": 124,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "Candle Champion",
+    "chapterTitleJapanese": "キャンドルチャンピオン, Kyandoru Chanpion?",
+    "chapterNumber": 125,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "Instinct",
+    "chapterTitleJapanese": "本能, Honnō?",
+    "chapterNumber": 126,
+    "volumeNumber": 14
+  },
+  {
+    "chapterTitleEnglish": "Den Den Mushi",
+    "chapterTitleJapanese": "電伝虫, Dendenmushi?",
+    "chapterNumber": 127,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Pride",
+    "chapterTitleJapanese": "Pirate Flag",
+    "chapterNumber": 128,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Straight Ahead!!!",
+    "chapterTitleJapanese": "まっすぐ!!!, Massugu!!!?",
+    "chapterNumber": 129,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Maximum Speed",
+    "chapterTitleJapanese": "最高速度, Saikō Sokudo?",
+    "chapterNumber": 130,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Tin Plate Wapol",
+    "chapterTitleJapanese": "ブリキのワポル, Buriki no Waporu?",
+    "chapterNumber": 131,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "See?",
+    "chapterTitleJapanese": "ね, Ne?",
+    "chapterNumber": 132,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Adventure in a Nameless Country",
+    "chapterTitleJapanese": "名もなき国の冒険, Na mo Naki Kuni no Bōken?",
+    "chapterNumber": 133,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Dr. Kureha",
+    "chapterTitleJapanese": "Dr.（ドクター）くれは, Dokutā Kureha?",
+    "chapterNumber": 134,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Lapahn",
+    "chapterTitleJapanese": "ラパーン, Rapān?",
+    "chapterNumber": 135,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "A Man Called Dalton",
+    "chapterTitleJapanese": "ドルトンという男, Doruton to Iu Otoko?",
+    "chapterNumber": 136,
+    "volumeNumber": 15
+  },
+  {
+    "chapterTitleEnglish": "Avalanche",
+    "chapterTitleJapanese": "雪崩, Nadare?",
+    "chapterNumber": 137,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "The Summit",
+    "chapterTitleJapanese": "頂上, Chōjō?",
+    "chapterNumber": 138,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Introducing Tony Tony Chopper",
+    "chapterTitleJapanese": "トニートニー・チョッパー登場, Tonī Tonī Choppā Tōjō?",
+    "chapterNumber": 139,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "The Castle of Snow",
+    "chapterTitleJapanese": "雪の住む城, Yuki no Sumu Shiro?",
+    "chapterNumber": 140,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Quack Doctor",
+    "chapterTitleJapanese": "ヤブ医者, Yabu Isha?",
+    "chapterNumber": 141,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Skull and Sakura",
+    "chapterTitleJapanese": "ドクロと桜, Dokuro to Sakura?",
+    "chapterNumber": 142,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Clumsy",
+    "chapterTitleJapanese": "不器用, Bukiyō?",
+    "chapterNumber": 143,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Snowy Tale",
+    "chapterTitleJapanese": "雪物語, Yuki Monogatari?",
+    "chapterNumber": 144,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Inherited Will",
+    "chapterTitleJapanese": "受け継がれる意志, Uke Tsugareru Ishi?",
+    "chapterNumber": 145,
+    "volumeNumber": 16
+  },
+  {
+    "chapterTitleEnglish": "Battle to Defend the Kingdom",
+    "chapterTitleJapanese": "国防戦, Kokubōsen?",
+    "chapterNumber": 146,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Downright Lie",
+    "chapterTitleJapanese": "ウソッパチ, Usoppachi?",
+    "chapterNumber": 147,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Unbreakable",
+    "chapterTitleJapanese": "折れない, Orenai?",
+    "chapterNumber": 148,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Rumble!!",
+    "chapterTitleJapanese": "RUMBLE!!, Ranburu?",
+    "chapterNumber": 149,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Royal Drum Crown 7-Shot Bliking Cannon",
+    "chapterTitleJapanese": "ロイヤルドラムクラウン７連散弾ブリキング大砲, Roiyaru Doramu Kuraun Nana-ren Shotto Burikingu Kyanon?",
+    "chapterNumber": 150,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "The Skies of Drum",
+    "chapterTitleJapanese": "ドラムの空, Doramu no Sora?",
+    "chapterNumber": 151,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Full Moon",
+    "chapterTitleJapanese": "満月, Mangetsu?",
+    "chapterNumber": 152,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Hiriluk's Sakura",
+    "chapterTitleJapanese": "ヒルルクの桜, Hiruruku no Sakura?",
+    "chapterNumber": 153,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "To Arabasta",
+    "chapterTitleJapanese": "アラバスタへ, Arabasuta e?",
+    "chapterNumber": 154,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "\"Pirate\" Sir Crocodile",
+    "chapterTitleJapanese": "海賊　サー・クロコダイル, \"Kaizoku\" Sā Kurokodairu?",
+    "chapterNumber": 155,
+    "volumeNumber": 17
+  },
+  {
+    "chapterTitleEnglish": "Okama Weather",
+    "chapterTitleJapanese": "オカマ日和, Okama Biyori?",
+    "chapterNumber": 156,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Introducing Ace",
+    "chapterTitleJapanese": "エース登場, Ēsu Tōjō?",
+    "chapterNumber": 157,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Landing in Arabasta",
+    "chapterTitleJapanese": "上陸のアラバスタ, Jōriku no Arabasuta?",
+    "chapterNumber": 158,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Come On",
+    "chapterTitleJapanese": "来いよ, Koi yo?",
+    "chapterNumber": 159,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Spiders Cafe at 8 O'Clock",
+    "chapterTitleJapanese": "スパイダーズカフェに８時, Supaidāzu Kafe ni Hachi-ji?",
+    "chapterNumber": 160,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "The Green City Erumalu",
+    "chapterTitleJapanese": "緑の町エルマル, Midori no Machi Erumaru?",
+    "chapterNumber": 161,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Kingdom of Sand",
+    "chapterTitleJapanese": "砂の国の冒険, Suna no Kuni no Bōken?",
+    "chapterNumber": 162,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Yuba, the Town of Rebels",
+    "chapterTitleJapanese": "反乱軍の町ユバ, Hanran-Gun no Machi Yuba?",
+    "chapterNumber": 163,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "I Love This Country",
+    "chapterTitleJapanese": "国が好き, Kuni ga Suki?",
+    "chapterNumber": 164,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Operation Utopia",
+    "chapterTitleJapanese": "作戦名ユートピア, Sakusenmei Yūtopia?",
+    "chapterNumber": 165,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Vivi",
+    "chapterTitleJapanese": "ルフィvs（バーサス）ビビ, Rufi Bāsasu Bibi?",
+    "chapterNumber": 166,
+    "volumeNumber": 18
+  },
+  {
+    "chapterTitleEnglish": "Battle Front",
+    "chapterTitleJapanese": "戦線, Sensen?",
+    "chapterNumber": 167,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Rainbase, the Town of Dreams",
+    "chapterTitleJapanese": "夢の町　レインベース, Yume no Machi Reinbēsu?",
+    "chapterNumber": 168,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "The Kingdom's Strongest Warrior",
+    "chapterTitleJapanese": "王国最強の戦士, Ōkoku Saikyō no Senshi?",
+    "chapterNumber": 169,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "It Begins",
+    "chapterTitleJapanese": "始まる, Hajimaru?",
+    "chapterNumber": 170,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Koza, Leader of the Rebels",
+    "chapterTitleJapanese": "反乱軍統率者コーザ, Hanran-Gun Rīdā Kōza?",
+    "chapterNumber": 171,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Rebellion",
+    "chapterTitleJapanese": "反乱, Uneri?",
+    "chapterNumber": 172,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Bananawani",
+    "chapterTitleJapanese": "バナナワニ, Bananawani?",
+    "chapterNumber": 173,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Mr. Prince",
+    "chapterTitleJapanese": "Mr.（ミスター） プリンス, Misutā Purinsu?",
+    "chapterNumber": 174,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Release",
+    "chapterTitleJapanese": "解放, Kaihō?",
+    "chapterNumber": 175,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "Rush!!",
+    "chapterTitleJapanese": "Rush（ラッシュ）!!, Rasshu?",
+    "chapterNumber": 176,
+    "volumeNumber": 19
+  },
+  {
+    "chapterTitleEnglish": "30 Million vs. 81 Million",
+    "chapterTitleJapanese": "3000万vs（バーサス）8100万, Sanzenman Bāsasu Hassenhyakuman?",
+    "chapterNumber": 177,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Level G.L.",
+    "chapterTitleJapanese": "LEVEL（レべル） G.L.（グランドライン）, Reberu Gurandorain?",
+    "chapterNumber": 178,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Showdown At Alubarna",
+    "chapterTitleJapanese": "決戦はアルバーナ, Kessen wa Arubāna?",
+    "chapterNumber": 179,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Arabasta Animal Land",
+    "chapterTitleJapanese": "アラバスタ動物ランド, Arabasuta Dōbutsu Rando?",
+    "chapterNumber": 180,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Super Spot-Billed Duck Quiz",
+    "chapterTitleJapanese": "超カルガモクイズ, Chōkarugamo Kuizu?",
+    "chapterNumber": 181,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Roar",
+    "chapterTitleJapanese": "怒号, Dogō?",
+    "chapterNumber": 182,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Commander Karoo",
+    "chapterTitleJapanese": "カルー隊長, Karū-Taichō?",
+    "chapterNumber": 183,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Molehill 4th St.",
+    "chapterTitleJapanese": "モグラ塚４番街, Mogurazuka Yonban-gai?",
+    "chapterNumber": 184,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Oh... Is That So?",
+    "chapterTitleJapanese": "へーそう, Hē Sō?",
+    "chapterNumber": 185,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "4",
+    "chapterTitleJapanese": "4（フォー）, Fō?",
+    "chapterNumber": 186,
+    "volumeNumber": 20
+  },
+  {
+    "chapterTitleEnglish": "Even Match",
+    "chapterTitleJapanese": "互角, Gokaku?",
+    "chapterNumber": 187,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "Okama Kenpo",
+    "chapterTitleJapanese": "オカマ拳法, Okama Kenpō?",
+    "chapterNumber": 188,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "2",
+    "chapterTitleJapanese": "2（ツー）, Tsū?",
+    "chapterNumber": 189,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "Clima-Tact",
+    "chapterTitleJapanese": "天候棒, Kurima Takuto?",
+    "chapterNumber": 190,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "The Woman Who Controls the Weather",
+    "chapterTitleJapanese": "天候を操る女, Tenkō o Ayatsuru Onna?",
+    "chapterNumber": 191,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "Whirlwind Warning",
+    "chapterTitleJapanese": "旋風注意報, Senpū Chūi Hō?",
+    "chapterNumber": 192,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "Utopia",
+    "chapterTitleJapanese": "理想郷, Risōkyō?",
+    "chapterNumber": 193,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "Cutting Steel",
+    "chapterTitleJapanese": "鉄を斬る, Tetsu o Kiru?",
+    "chapterNumber": 194,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "Mr. Bushido",
+    "chapterTitleJapanese": "Mr.（ミスター） 武士道, Misutā Bushidō?",
+    "chapterNumber": 195,
+    "volumeNumber": 21
+  },
+  {
+    "chapterTitleEnglish": "1",
+    "chapterTitleJapanese": "1（ワン）, Wan?",
+    "chapterNumber": 196,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "The Leaders",
+    "chapterTitleJapanese": "統率者達, Tōsotsushatachi?",
+    "chapterNumber": 197,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "4:15 PM",
+    "chapterTitleJapanese": "午後四時十五分, Gogo Yo-ji Jūgo-fun?",
+    "chapterNumber": 198,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "Hope!!",
+    "chapterTitleJapanese": "HOPE（ホープ）!!, Hōpu?",
+    "chapterNumber": 199,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "Water Luffy",
+    "chapterTitleJapanese": "水ルフィ, Mizu Rufi?",
+    "chapterNumber": 200,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "Nico Robin",
+    "chapterTitleJapanese": "ニコ・ロビン, Niko Robin?",
+    "chapterNumber": 201,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "The Royal Mausoleum",
+    "chapterTitleJapanese": "王家の墓, Ōke no Haka?",
+    "chapterNumber": 202,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "Crocodile-ish",
+    "chapterTitleJapanese": "ワニっぽい, Wanippoi?",
+    "chapterNumber": 203,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "Red",
+    "chapterTitleJapanese": "RED（レッド）, Reddo?",
+    "chapterNumber": 204,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "The Suna Suna Clan's Secret Base",
+    "chapterTitleJapanese": "砂砂団秘密基地, Suna-Suna-Dan Himitsu Kichi?",
+    "chapterNumber": 205,
+    "volumeNumber": 22
+  },
+  {
+    "chapterTitleEnglish": "Ignition",
+    "chapterTitleJapanese": "点火, Ignition?",
+    "chapterNumber": 206,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Nightmare",
+    "chapterTitleJapanese": "悪夢, Akumu?",
+    "chapterNumber": 207,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Guardian Spirit",
+    "chapterTitleJapanese": "守護神, Shugoshin?",
+    "chapterNumber": 208,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "I Will Surpass You",
+    "chapterTitleJapanese": "越えて行く, Koete Yuku?",
+    "chapterNumber": 209,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "0",
+    "chapterTitleJapanese": "0（ゼロ）, Zero?",
+    "chapterNumber": 210,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "King",
+    "chapterTitleJapanese": "王, Ou?",
+    "chapterNumber": 211,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Some Justice",
+    "chapterTitleJapanese": "いくつかの正義, Ikutsuka no Seigi?",
+    "chapterNumber": 212,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "VIP",
+    "chapterTitleJapanese": "VIP（ビップ）, Bippu?",
+    "chapterNumber": 213,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Strategy to Escape the Sand Kingdom",
+    "chapterTitleJapanese": "砂の国脱出作戦, Suna no Kuni Dasshutsu Sakusen?",
+    "chapterNumber": 214,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Last waltz",
+    "chapterTitleJapanese": "Last（ラスト） waltz（ワルツ）, Rasuto Warutsu?",
+    "chapterNumber": 215,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Vivi's Adventure",
+    "chapterTitleJapanese": "ビビの冒険, Bibi no Bōken?",
+    "chapterNumber": 216,
+    "volumeNumber": 23
+  },
+  {
+    "chapterTitleEnglish": "Stowaway",
+    "chapterTitleJapanese": "密航者, Mikkōsha?",
+    "chapterNumber": 217,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Why the Log Pose is Dome-Shaped",
+    "chapterTitleJapanese": "「記録指針」が丸い理由, Rogu Pōsu ga Marui Wake?",
+    "chapterNumber": 218,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Masira the Salvage King",
+    "chapterTitleJapanese": "サルベージ王マシラ, Sarubēji-Ō Mashira?",
+    "chapterNumber": 219,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "A Walk on the Seafloor",
+    "chapterTitleJapanese": "海底散歩, Kaitei Sanpo?",
+    "chapterNumber": 220,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Monsters",
+    "chapterTitleJapanese": "怪物, Kaibutsu?",
+    "chapterNumber": 221,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Big Time Rookies",
+    "chapterTitleJapanese": "大型ルーキー, Ōgata Rūkī?",
+    "chapterNumber": 222,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "I Promise Never to Fight in This Town",
+    "chapterTitleJapanese": "ワタクシはこの町では決してケンカしないと誓います, Watakushi wa Kono Machi de wa Kesshite Kenka Shinai to Chikaimasu?",
+    "chapterNumber": 223,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Do Not Dream",
+    "chapterTitleJapanese": "夢を見るな, Yume o Miruna?",
+    "chapterNumber": 224,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "People's Dreams",
+    "chapterTitleJapanese": "人の夢, Hito no Yume?",
+    "chapterNumber": 225,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Shoujou, the Salvage King of the Seafloor",
+    "chapterTitleJapanese": "海底探索王ショウジョウ, Kaitei Tansaku-Ō Shōjō?",
+    "chapterNumber": 226,
+    "volumeNumber": 24
+  },
+  {
+    "chapterTitleEnglish": "Noland the Liar",
+    "chapterTitleJapanese": "うそつきノーランド, Usotsuki Nōrando?",
+    "chapterNumber": 227,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "Mont Blanc Cricket, the Last Boss of the Saruyama Allied Force",
+    "chapterTitleJapanese": "「猿山連合軍最終園長」モンブラン・クリケット, 'Saruyama Rengō-gun Rasuto Bosu' Monburan Kuriketto?",
+    "chapterNumber": 228,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "Let's Eat",
+    "chapterTitleJapanese": "メシを食おう, Meshi o Kuō?",
+    "chapterNumber": 229,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "Pursue the South Bird!!",
+    "chapterTitleJapanese": "サウスバードを追え!!, Sausu Bādo o Oe!!?",
+    "chapterNumber": 230,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "Bellamy the Hyena",
+    "chapterTitleJapanese": "ハイエナのベラミー, Haiena no Beramī?",
+    "chapterNumber": 231,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "The Hundred Million Man",
+    "chapterTitleJapanese": "一億の男, Ichioku no Otoko?",
+    "chapterNumber": 232,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "The World's Greatest Power",
+    "chapterTitleJapanese": "世界最高権力, Sekai Saikō Kenryoku?",
+    "chapterNumber": 233,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "Please Remember",
+    "chapterTitleJapanese": "ご記憶下さいます様に, Gokioku Kudasaimasu Yō ni?",
+    "chapterNumber": 234,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "Knock Up Stream",
+    "chapterTitleJapanese": "突き上げる海流, Nokku Appu Sutorīmu?",
+    "chapterNumber": 235,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "The Ship Sails to the Sky",
+    "chapterTitleJapanese": "船は空をゆく, Fune wa Sora o Yuku?",
+    "chapterNumber": 236,
+    "volumeNumber": 25
+  },
+  {
+    "chapterTitleEnglish": "High in the Sky",
+    "chapterTitleJapanese": "上空にて, Jōkū nite?",
+    "chapterNumber": 237,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Heaven's Gate",
+    "chapterTitleJapanese": "天国の門, Tengoku no Mon?",
+    "chapterNumber": 238,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Angel Beach",
+    "chapterTitleJapanese": "エンジェルビーチ, Enjeru Bīchi?",
+    "chapterNumber": 239,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Dial Energy",
+    "chapterTitleJapanese": "ダイアル・エネルギー, Daiaru Enerugī?",
+    "chapterNumber": 240,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Heaven's Judgment",
+    "chapterTitleJapanese": "天の裁き, Ten no Sabaki?",
+    "chapterNumber": 241,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Class-2 Criminals",
+    "chapterTitleJapanese": "第2級犯罪者, Dai Ni-kyū Hanzaisha?",
+    "chapterNumber": 242,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Ordeals",
+    "chapterTitleJapanese": "試練, Shiren?",
+    "chapterNumber": 243,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "SOS",
+    "chapterTitleJapanese": "S（エス）O（オー）S（エス）, Esuōesu?",
+    "chapterNumber": 244,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Adventure on God's Island",
+    "chapterTitleJapanese": "神の島の冒険, Kami no Shima no Bōken?",
+    "chapterNumber": 245,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Satori, Priest of the Wandering Forest",
+    "chapterTitleJapanese": "迷いの森の神官サトリ, Mayoi no Mori no Shinkan Satori?",
+    "chapterNumber": 246,
+    "volumeNumber": 26
+  },
+  {
+    "chapterTitleEnglish": "Ordeal of Balls",
+    "chapterTitleJapanese": "玉の試練, Tama no Shiren?",
+    "chapterNumber": 247,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Former God vs. Priest",
+    "chapterTitleJapanese": "元神様vs（バーサス）神官, Moto Kami-sama Bāsasu Shinkan?",
+    "chapterNumber": 248,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "The Village Hidden in the Cloud",
+    "chapterTitleJapanese": "雲隠れの村, Kumogakure no Mura?",
+    "chapterNumber": 249,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Ball Dragon",
+    "chapterTitleJapanese": "玉ドラゴン, Dama Doragon?",
+    "chapterNumber": 250,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Overture",
+    "chapterTitleJapanese": "序曲（オーバーチュア）, Ōbāchua?",
+    "chapterNumber": 251,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Junction",
+    "chapterTitleJapanese": "JUNCTION（ジャンクション）, Jankushon?",
+    "chapterNumber": 252,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Vearth",
+    "chapterTitleJapanese": "ヴァース, Vāsu?",
+    "chapterNumber": 253,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Aubade",
+    "chapterTitleJapanese": "夜明曲（オーバード）, Ōbādo?",
+    "chapterNumber": 254,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "The Anaconda and the Search Team",
+    "chapterTitleJapanese": "うわばみと探索組, Uwabami to Tansaku Chīmu?",
+    "chapterNumber": 255,
+    "volumeNumber": 27
+  },
+  {
+    "chapterTitleEnglish": "Wyper the Berserker",
+    "chapterTitleJapanese": "「戦鬼」ワイパー, \"Senki\" Waipā?",
+    "chapterNumber": 256,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Dial Battle",
+    "chapterTitleJapanese": "貝（ダイアル）バトル, Daiaru Batoru?",
+    "chapterNumber": 257,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "The Many Souths",
+    "chapterTitleJapanese": "いろんな南, Ironna Minami?",
+    "chapterNumber": 258,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Pirate Zoro vs. Warrior Braham",
+    "chapterTitleJapanese": "海賊ゾロvs（バーサス）戦士ブラハム, Kaizoku Zoro Bāsasu Senshi Burahamu?",
+    "chapterNumber": 259,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Pirate Luffy vs. Berserker Wyper",
+    "chapterTitleJapanese": "海賊ルフィvs（バーサス）戦鬼ワイパー, Kaizoku Rufi Bāsasu Senki Waipā?",
+    "chapterNumber": 260,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Warrior Genbo vs. Divine Soldiers Commander Yama",
+    "chapterTitleJapanese": "戦士ゲンボウvs（バーサス）神兵長ヤマ, Senshi Genbō Bāsasu Shinpeichō Yama?",
+    "chapterNumber": 261,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Pirate Chopper vs. Priest Gedatsu",
+    "chapterTitleJapanese": "海賊チョッパーvs（バーサス）神官ゲダツ, Kaizoku Choppā Bāsasu Shinkan Gedatsu?",
+    "chapterNumber": 262,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Pirate Nami and the Weird Knight vs. Divine Soldiers Lieutenants Hotori and Kotori",
+    "chapterTitleJapanese": "海賊ナミと変な騎士vs（バーサス）副神兵長ホトリとコトリ, Kaizoku Nami to Henna Kishi Bāsasu Fuku Shinpeichō Hotori to Kotori?",
+    "chapterNumber": 263,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Warrior Kamakiri vs. God Enel",
+    "chapterTitleJapanese": "戦士カマキリvs（バーサス）神（ゴッド）・エネル, Senshi Kamakiri Bāsasu Goddo Eneru?",
+    "chapterNumber": 264,
+    "volumeNumber": 28
+  },
+  {
+    "chapterTitleEnglish": "Pirate Robin vs. Divine Soldiers Commander Yama",
+    "chapterTitleJapanese": "海賊ロビンvs（バーサス）神兵長ヤマ, Kaizoku Robin Bāsasu Shinpeichō Yama?",
+    "chapterNumber": 265,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Pirate Chopper vs. Priest Ohm",
+    "chapterTitleJapanese": "海賊チョッパーvs（バーサス）神官オーム, Kaizoku Choppā Bāsasu Shinkan Ōmu?",
+    "chapterNumber": 266,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "March",
+    "chapterTitleJapanese": "行進曲（マーチ）, Māchi?",
+    "chapterNumber": 267,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Suite",
+    "chapterTitleJapanese": "組曲（スウィート）, Suwīto?",
+    "chapterNumber": 268,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Concerto",
+    "chapterTitleJapanese": "協奏曲（コンチェルト）, Koncheruto?",
+    "chapterNumber": 269,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Serenade",
+    "chapterTitleJapanese": "小夜曲（セレナーデ）, Serenāde?",
+    "chapterNumber": 270,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Pirate Zoro vs. Priest Ohm",
+    "chapterTitleJapanese": "海賊ゾロvs（バーサス）神官オーム, Kaizoku Zoro Bāsasu Shinkan Ōmu?",
+    "chapterNumber": 271,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Play",
+    "chapterTitleJapanese": "戯曲（プレイ）, Purei?",
+    "chapterNumber": 272,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Quintet",
+    "chapterTitleJapanese": "五重奏（クインテット）, Kuintetto?",
+    "chapterNumber": 273,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Oratorio",
+    "chapterTitleJapanese": "聖譚曲（オラトリオ）, Oratorio?",
+    "chapterNumber": 274,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Divina Commedia",
+    "chapterTitleJapanese": "神曲（ディビーナコメイディア",
+    "chapterNumber": 275,
+    "volumeNumber": 29
+  },
+  {
+    "chapterTitleEnglish": "Shandia Rhythm",
+    "chapterTitleJapanese": "SHANDIA（シャンディア） RHYTHM（リズム）, Shandia Rizumu?",
+    "chapterNumber": 276,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Maxim",
+    "chapterTitleJapanese": "箴言（マクシム）, Makushimu?",
+    "chapterNumber": 277,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Conis",
+    "chapterTitleJapanese": "コニス, Konisu?",
+    "chapterNumber": 278,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Pirate Luffy vs. God Enel",
+    "chapterTitleJapanese": "海賊ルフィvs（バーサス）神（ゴッド）・エネル, Kaizoku Rufi Bāsasu Goddo Eneru?",
+    "chapterNumber": 279,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Surfacing",
+    "chapterTitleJapanese": "浮上, Fujō?",
+    "chapterNumber": 280,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Deathpiea",
+    "chapterTitleJapanese": "デスピア, Desupia?",
+    "chapterNumber": 281,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Desire",
+    "chapterTitleJapanese": "望み, Nozomi?",
+    "chapterNumber": 282,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "On the Front Line of Rescuing Love",
+    "chapterTitleJapanese": "恋の救出前線, Koi no Kyūshutsu Zensen?",
+    "chapterNumber": 283,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Sorry",
+    "chapterTitleJapanese": "悪ィな, Warīna?",
+    "chapterNumber": 284,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "Capriccio",
+    "chapterTitleJapanese": "狂想曲（カプリッチオ）, Kapuritchio?",
+    "chapterNumber": 285,
+    "volumeNumber": 30
+  },
+  {
+    "chapterTitleEnglish": "The Monster of Shandora",
+    "chapterTitleJapanese": "シャンドラの魔物, Shandora no Mamono?",
+    "chapterNumber": 286,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "God Killing",
+    "chapterTitleJapanese": "神殺し, Kamigoroshi?",
+    "chapterNumber": 287,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "Curse",
+    "chapterTitleJapanese": "祟り, Tatari?",
+    "chapterNumber": 288,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "Full Moon",
+    "chapterTitleJapanese": "望月, Bōgetsu?",
+    "chapterNumber": 289,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "The Light of Shandora",
+    "chapterTitleJapanese": "シャンドラの灯, Shandora no Hi?",
+    "chapterNumber": 290,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "I'm Right Here",
+    "chapterTitleJapanese": "ここにいる, Koko ni Iru?",
+    "chapterNumber": 291,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "To Meet, like the Half-Moon Hidden by Clouds",
+    "chapterTitleJapanese": "あふことは片われ月の雲隠れ, Afukoto wa Katawaredzuki no Kumogakure?",
+    "chapterNumber": 292,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "Bolero",
+    "chapterTitleJapanese": "舞曲, Borero?",
+    "chapterNumber": 293,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "Raigo",
+    "chapterTitleJapanese": "雷迎, Raigō?",
+    "chapterNumber": 294,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "Giant Jack",
+    "chapterTitleJapanese": "巨大豆蔓, Jaianto Jakku?",
+    "chapterNumber": 295,
+    "volumeNumber": 31
+  },
+  {
+    "chapterTitleEnglish": "High-Altitude Situation",
+    "chapterTitleJapanese": "最空局面, Saikū Kyokumen?",
+    "chapterNumber": 296,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Praises of the Earth",
+    "chapterTitleJapanese": "大地讃称, Daichi Sanshō?",
+    "chapterNumber": 297,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Love Song",
+    "chapterTitleJapanese": "島の歌声, Rabu Songu?",
+    "chapterNumber": 298,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Fantasia",
+    "chapterTitleJapanese": "幻想曲, Fantajia?",
+    "chapterNumber": 299,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Symphony",
+    "chapterTitleJapanese": "交響曲, Shinfonī?",
+    "chapterNumber": 300,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "I Was Here",
+    "chapterTitleJapanese": "我ここに至る, Ware Koko ni Itaru?",
+    "chapterNumber": 301,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Finale",
+    "chapterTitleJapanese": "最終楽章, Fināre?",
+    "chapterNumber": 302,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Rich Pirates",
+    "chapterTitleJapanese": "金持ち海賊団, Kanemochi Kaizoku-dan?",
+    "chapterNumber": 303,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Long Island Adventure",
+    "chapterTitleJapanese": "長い島の冒険, Nagai Shima no Bōken?",
+    "chapterNumber": 304,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Foxy the Silver Fox",
+    "chapterTitleJapanese": "銀ギツネのフォクシー, Gin Gitsune no Fokushī?",
+    "chapterNumber": 305,
+    "volumeNumber": 32
+  },
+  {
+    "chapterTitleEnglish": "Donut Race!!",
+    "chapterTitleJapanese": "ドーナツレース!!, Dōnatsu Rēsu!!?",
+    "chapterNumber": 306,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Ready, Donuts!!",
+    "chapterTitleJapanese": "レディ~イ　ドーナツ!!, Redīi Dōnatsu!!?",
+    "chapterNumber": 307,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "The Grand Interference Plan",
+    "chapterTitleJapanese": "妨害大作戦, Bōdai Daisakusen?",
+    "chapterNumber": 308,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Groggy Monsters",
+    "chapterTitleJapanese": "グロッキーモンスターズ, Gurokkī Monsutāzu?",
+    "chapterNumber": 309,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Groggy Ring!!",
+    "chapterTitleJapanese": "グロッキーリング!!, Gurokkī Ringu!!?",
+    "chapterNumber": 310,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Rough Game",
+    "chapterTitleJapanese": "ラフゲーム, Rafu Gēmu?",
+    "chapterNumber": 311,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Goal!!",
+    "chapterTitleJapanese": "GOAL（ゴール）!!, Gōru!!?",
+    "chapterNumber": 312,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Main Event",
+    "chapterTitleJapanese": "MAIN（メイン） EVENT（イベント）, Mein Ibento?",
+    "chapterNumber": 313,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Combat!!!",
+    "chapterTitleJapanese": "コンバット!!!, Konbatto!!!?",
+    "chapterNumber": 314,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Secret Room",
+    "chapterTitleJapanese": "秘密の部屋, Himitsu no Heya?",
+    "chapterNumber": 315,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "Brother Soul",
+    "chapterTitleJapanese": "ブラザー魂, Burazā Souru?",
+    "chapterNumber": 316,
+    "volumeNumber": 33
+  },
+  {
+    "chapterTitleEnglish": "K.O.",
+    "chapterTitleJapanese": "K（ノック）.O（アウト）., Nokku Auto?",
+    "chapterNumber": 317,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Closure",
+    "chapterTitleJapanese": "閉会, Heikai?",
+    "chapterNumber": 318,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Admiral Aokiji of the Marine Headquarters",
+    "chapterTitleJapanese": "海軍本部「大将」青キジ, Kaigun Honbu \"Taishō\" Aokiji?",
+    "chapterNumber": 319,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Ultimate Military Force",
+    "chapterTitleJapanese": "最高戦力, Saikō Senryoku?",
+    "chapterNumber": 320,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "One-on-One",
+    "chapterTitleJapanese": "一騎打ち, Ikkiuchi?",
+    "chapterNumber": 321,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Puffing Tom",
+    "chapterTitleJapanese": "パッフィング・トム, Paffingu Tomu?",
+    "chapterNumber": 322,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "The City of Water, Water 7",
+    "chapterTitleJapanese": "「水の都」ウォーターセブン, \"Mizu no Miyako\" Wōtā Sebun?",
+    "chapterNumber": 323,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the City of Water",
+    "chapterTitleJapanese": "水上都市の冒険, Suijō Toshi no Bōken?",
+    "chapterNumber": 324,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "The Franky Family",
+    "chapterTitleJapanese": "フランキー一家, Furankī Ikka?",
+    "chapterNumber": 325,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Iceburg-san",
+    "chapterTitleJapanese": "アイスバーグさん, Aisubāgu-san?",
+    "chapterNumber": 326,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "Shipyard Island, Construction Dock No. 1",
+    "chapterTitleJapanese": "造船島造船工場1番ドック, Zōsenjima Zōsen Kōjō Ichi-ban Dokku?",
+    "chapterNumber": 327,
+    "volumeNumber": 34
+  },
+  {
+    "chapterTitleEnglish": "The Pirate Abduction Incident",
+    "chapterTitleJapanese": "海賊誘拐事件, Kaizoku Yūkai Jiken?",
+    "chapterNumber": 328,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "My Name is \"Franky\"",
+    "chapterTitleJapanese": "おれの名は「フランキー」, Ore no Na wa \"Furankī\"?",
+    "chapterNumber": 329,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "It's Decided",
+    "chapterTitleJapanese": "決めた, Kimeta?",
+    "chapterNumber": 330,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "The Big Argument",
+    "chapterTitleJapanese": "大喧嘩, Ōgenka?",
+    "chapterNumber": 331,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Usopp",
+    "chapterTitleJapanese": "ルフィ vs（バーサス） ウソップ, Rufi Bāsasu Usoppu?",
+    "chapterNumber": 332,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "Captain",
+    "chapterTitleJapanese": "船長, Kyaputen?",
+    "chapterNumber": 333,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "Big Trouble in the Secret Room",
+    "chapterTitleJapanese": "密室の大事件, Misshitsu no Daijiken?",
+    "chapterNumber": 334,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "Warning",
+    "chapterTitleJapanese": "WARNING（ウォーニング）, Wōningu?",
+    "chapterNumber": 335,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Franky",
+    "chapterTitleJapanese": "ルフィ vs（バーサス） フランキー, Rufi Bāsasu Furankī?",
+    "chapterNumber": 336,
+    "volumeNumber": 35
+  },
+  {
+    "chapterTitleEnglish": "Protectors of the City of Water",
+    "chapterTitleJapanese": "「水の都」の用心棒, \"Mizu no Miyako\" no Yōjinbō?",
+    "chapterNumber": 337,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "Coup de Vent",
+    "chapterTitleJapanese": "風来砲, Kū do Van?",
+    "chapterNumber": 338,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "Rumors",
+    "chapterTitleJapanese": "うわさ, Uwasa?",
+    "chapterNumber": 339,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "The Woman Who Brings Darkness",
+    "chapterTitleJapanese": "闇を引く女, Yami o Hiku Onna?",
+    "chapterNumber": 340,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "Devil",
+    "chapterTitleJapanese": "悪魔, Akuma?",
+    "chapterNumber": 341,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "The Messengers of Darkness",
+    "chapterTitleJapanese": "闇の使者, Yami no Shisha?",
+    "chapterNumber": 342,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "Cipher Pol No. 9",
+    "chapterTitleJapanese": "CIPHER（サイファー） POL（ポール） No（ナンバー）.9（ナイン）, Saifā Pōru Nanbā Nain?",
+    "chapterNumber": 343,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "Opposing Force",
+    "chapterTitleJapanese": "抵抗勢力, Teikō Seiryoku?",
+    "chapterNumber": 344,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "The Concealed",
+    "chapterTitleJapanese": "潜伏者, Senpukusha?",
+    "chapterNumber": 345,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "The 9th Justice",
+    "chapterTitleJapanese": "9番目の正義, Kyū-banme no Seigi?",
+    "chapterNumber": 346,
+    "volumeNumber": 36
+  },
+  {
+    "chapterTitleEnglish": "Rokushiki",
+    "chapterTitleJapanese": "六式, Rokushiki?",
+    "chapterNumber": 347,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Fighting Power",
+    "chapterTitleJapanese": "戦闘力, Sentōryoku?",
+    "chapterNumber": 348,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "One Citizen",
+    "chapterTitleJapanese": "一市民, Ichi Shimin?",
+    "chapterNumber": 349,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Warehouse Under the Bridge",
+    "chapterTitleJapanese": "橋の下倉庫, Hashi no Shita Sōko?",
+    "chapterNumber": 350,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Klabautermann",
+    "chapterTitleJapanese": "クラバウターマン, Kurabautāman?",
+    "chapterNumber": 351,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Tom's Workers",
+    "chapterTitleJapanese": "トムズ　ワーカーズ, Tomuzu Wākāzu?",
+    "chapterNumber": 352,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "The Legendary Shipwright",
+    "chapterTitleJapanese": "伝説の船大工, Densetsu no Funadaiku?",
+    "chapterNumber": 353,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Sea Train",
+    "chapterTitleJapanese": "海列車, Umi Ressha?",
+    "chapterNumber": 354,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Spandam",
+    "chapterTitleJapanese": "スパンダム, Supandamu?",
+    "chapterNumber": 355,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Tom-san",
+    "chapterTitleJapanese": "トムさん, Tomu-san?",
+    "chapterNumber": 356,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Cutty Flam",
+    "chapterTitleJapanese": "カティ・フラム, Kati Furamu?",
+    "chapterNumber": 357,
+    "volumeNumber": 37
+  },
+  {
+    "chapterTitleEnglish": "Revival",
+    "chapterTitleJapanese": "復活, Fukkatsu?",
+    "chapterNumber": 358,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Bingo",
+    "chapterTitleJapanese": "ビンゴ, Bingo?",
+    "chapterNumber": 359,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Departing Soon",
+    "chapterTitleJapanese": "まもなく出航, Mamonaku Shukkō?",
+    "chapterNumber": 360,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "P.S.",
+    "chapterTitleJapanese": "追伸, Tsuishin?",
+    "chapterNumber": 361,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Ebb Tide",
+    "chapterTitleJapanese": "引き潮, Hiki Shio?",
+    "chapterNumber": 362,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Aqua Laguna",
+    "chapterTitleJapanese": "アクア・ラグナ, Akua Raguna?",
+    "chapterNumber": 363,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Kokoro",
+    "chapterTitleJapanese": "ココロ, Kokoro?",
+    "chapterNumber": 364,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Rocketman!!",
+    "chapterTitleJapanese": "ロケットマン!!, Rokettoman!!?",
+    "chapterNumber": 365,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Sortie!!",
+    "chapterTitleJapanese": "出撃!!, Shutsugeki!!?",
+    "chapterNumber": 366,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Sogeking",
+    "chapterTitleJapanese": "そげキング, Sogekingu?",
+    "chapterNumber": 367,
+    "volumeNumber": 38
+  },
+  {
+    "chapterTitleEnglish": "Sea Train Battle Game",
+    "chapterTitleJapanese": "海列車バトルゲーム, Umi Ressha Batoru Gēmu?",
+    "chapterNumber": 368,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "Ramen Kenpo",
+    "chapterTitleJapanese": "ラーメン拳法, Rāmen Kenpō?",
+    "chapterNumber": 369,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "You're Not Alone",
+    "chapterTitleJapanese": "一人じゃない, Hitori janai?",
+    "chapterNumber": 370,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "The Admirable Captain T Bone",
+    "chapterTitleJapanese": "天晴Tボーン大佐, Appare Tī-Bōn Taisa?",
+    "chapterNumber": 371,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "Parage",
+    "chapterTitleJapanese": "パラージュ, Parāju?",
+    "chapterNumber": 372,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "Necessary Evil",
+    "chapterTitleJapanese": "必要悪, Hitsuyō Aku?",
+    "chapterNumber": 373,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "Scramble",
+    "chapterTitleJapanese": "争奪戦, Sōdatsusen?",
+    "chapterNumber": 374,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "The Superhumans of Enies Lobby",
+    "chapterTitleJapanese": "エニエス・ロビーの超人達, Eniesu Robī no Chōjin-tachi?",
+    "chapterNumber": 375,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "I Got It!!!",
+    "chapterTitleJapanese": "わかった!!!, Wakatta!!!?",
+    "chapterNumber": 376,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "Great Battle on the Judiciary Island!!",
+    "chapterTitleJapanese": "司法の島の大決戦, Shihō no Shima no Daikessen!!?",
+    "chapterNumber": 377,
+    "volumeNumber": 39
+  },
+  {
+    "chapterTitleEnglish": "Damage Report",
+    "chapterTitleJapanese": "被害状況, Higai Jōkyō?",
+    "chapterNumber": 378,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Doriki",
+    "chapterTitleJapanese": "道力, Dōriki?",
+    "chapterNumber": 379,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Enies Lobby Main Island Express",
+    "chapterTitleJapanese": "エニエス・ロビー本島行き急行便, Eniesu Robī Hontōyuki Ekusupuresu?",
+    "chapterNumber": 380,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Fired",
+    "chapterTitleJapanese": "クビ, Kubi?",
+    "chapterNumber": 381,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Demon Lair",
+    "chapterTitleJapanese": "鬼の隠れ家, Oni no Kakure-ga?",
+    "chapterNumber": 382,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Blueno",
+    "chapterTitleJapanese": "ルフィ vs（バーサス） ブルーノ, Rufi Bāsasu Burūno?",
+    "chapterNumber": 383,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Signal the Counterattack",
+    "chapterTitleJapanese": "反撃ののろしを上げろ, Hangeki no Noroshi o Agero?",
+    "chapterNumber": 384,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "There Is a Way",
+    "chapterTitleJapanese": "道はある, Michi wa Aru?",
+    "chapterNumber": 385,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Unprecedented",
+    "chapterTitleJapanese": "前代未聞, Zendai Mimon?",
+    "chapterNumber": 386,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Gear",
+    "chapterTitleJapanese": "ギア, Gia?",
+    "chapterNumber": 387,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Gear Second",
+    "chapterTitleJapanese": "ギア2（セカンド）, Gia Sekando?",
+    "chapterNumber": 388,
+    "volumeNumber": 40
+  },
+  {
+    "chapterTitleEnglish": "Response",
+    "chapterTitleJapanese": "応答, Ōtō?",
+    "chapterNumber": 389,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Accepting the Challenge",
+    "chapterTitleJapanese": "応戦, Ōsen?",
+    "chapterNumber": 390,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "The Girl Called \"Devil\"",
+    "chapterTitleJapanese": "悪魔と呼ばれた少女, Akuma to Yobareta Shōjo?",
+    "chapterNumber": 391,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Dereshi",
+    "chapterTitleJapanese": "デレシ, Dereshi?",
+    "chapterNumber": 392,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Olvia",
+    "chapterTitleJapanese": "オルビア, Orubia?",
+    "chapterNumber": 393,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Demons of Ohara",
+    "chapterTitleJapanese": "オハラの悪魔達, Ohara no Akuma-tachi?",
+    "chapterNumber": 394,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Ohara vs. the World Government",
+    "chapterTitleJapanese": "オハラvs（バーサス）世界政府, Ohara Bāsasu Sekai Seifu?",
+    "chapterNumber": 395,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Saul",
+    "chapterTitleJapanese": "サウロ, Sauro?",
+    "chapterNumber": 396,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "In Hopes of Reaching the Future",
+    "chapterTitleJapanese": "未来へ届くように, Mirai-e Todoku youni?",
+    "chapterNumber": 397,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Declaration of War",
+    "chapterTitleJapanese": "宣戦布告, Sensen Fukoku?",
+    "chapterNumber": 398,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "Jump Toward the Waterfall!!",
+    "chapterTitleJapanese": "滝に向かって飛べ!!, Taki ni Mukatte Tobe!!?",
+    "chapterNumber": 399,
+    "volumeNumber": 41
+  },
+  {
+    "chapterTitleEnglish": "The Key to Freedom",
+    "chapterTitleJapanese": "解放の鍵, Kaihō no Kagi?",
+    "chapterNumber": 400,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Pirates vs. CP9",
+    "chapterTitleJapanese": "海賊vs（バーサス）C（シー）P（ピー）9（ナイン）, Kaizoku Bāsasu Shī Pī Nain?",
+    "chapterNumber": 401,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Handcuffs No. 2",
+    "chapterTitleJapanese": "2番の手錠, Ni-ban no Tejō?",
+    "chapterNumber": 402,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Mr. Chivalry",
+    "chapterTitleJapanese": "Mr.（ミスター）騎士道, Misutā Kishidō?",
+    "chapterNumber": 403,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Franky vs. Fukurou",
+    "chapterTitleJapanese": "フランキー vs（バーサス） フクロウ, Furankī Bāsasu Fukurou?",
+    "chapterNumber": 404,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Power",
+    "chapterTitleJapanese": "パワー, Pawā?",
+    "chapterNumber": 405,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Seimei Kikan",
+    "chapterTitleJapanese": "生命帰還, Seimei Kikan?",
+    "chapterNumber": 406,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Monster",
+    "chapterTitleJapanese": "モンスター, Monsutā?",
+    "chapterNumber": 407,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Monster vs. Kumadori",
+    "chapterTitleJapanese": "怪物（モンスター）vs（バーサス）クマドリ, Monsutā Bāsasu Kumadori?",
+    "chapterNumber": 408,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Emergency Bad News Broadcast",
+    "chapterTitleJapanese": "凶報緊急大放送, Kyōhō Kinkyū Daihōsō?",
+    "chapterNumber": 409,
+    "volumeNumber": 42
+  },
+  {
+    "chapterTitleEnglish": "Super-Size Nami",
+    "chapterTitleJapanese": "ナミ巨大化, Nami Kyodaika?",
+    "chapterNumber": 410,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Nami vs. Kalifa",
+    "chapterTitleJapanese": "ナミvs（バーサス）カリファ, Nami Bāsasu Karifa?",
+    "chapterNumber": 411,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "You Missed Your Chance",
+    "chapterTitleJapanese": "好機は終わった, Chansu wa Owatta?",
+    "chapterNumber": 412,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Hunter",
+    "chapterTitleJapanese": "狩人, Kariudo?",
+    "chapterNumber": 413,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Sanji vs. Jabra",
+    "chapterTitleJapanese": "サンジvs（バーサス）ジャブラ, Sanji Bāsasu Jabura?",
+    "chapterNumber": 414,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Heat Up",
+    "chapterTitleJapanese": "ヒートアップ, Hīto Appu?",
+    "chapterNumber": 415,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Zoro vs. Kaku",
+    "chapterTitleJapanese": "ゾロvs（バーサス）カク, Zoro Bāsasu Kaku?",
+    "chapterNumber": 416,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Asura",
+    "chapterTitleJapanese": "阿修羅, Ashura?",
+    "chapterNumber": 417,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Rob Lucci",
+    "chapterTitleJapanese": "ルフィvs（バーサス）ロブ・ルッチ, Rufi Bāsasu Robu Rucchi?",
+    "chapterNumber": 418,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Legend of a Hero",
+    "chapterTitleJapanese": "英雄伝説, Eiyū Densetsu?",
+    "chapterNumber": 419,
+    "volumeNumber": 43
+  },
+  {
+    "chapterTitleEnglish": "Buster Call",
+    "chapterTitleJapanese": "バスターコール, Basutā Kōru?",
+    "chapterNumber": 420,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Gear Third",
+    "chapterTitleJapanese": "ギア3（サード）, Gia Sādo?",
+    "chapterNumber": 421,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Rob Lucci",
+    "chapterTitleJapanese": "ロブ・ルッチ, Robu Rucchi?",
+    "chapterNumber": 422,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Mermaid Legend",
+    "chapterTitleJapanese": "人魚伝説, Ningyo Densetsu?",
+    "chapterNumber": 423,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Escape Ship",
+    "chapterTitleJapanese": "脱出船, Dasshutsu-sen?",
+    "chapterNumber": 424,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Bridge of Mortal Combat",
+    "chapterTitleJapanese": "死闘の橋, Shitō no Hashi?",
+    "chapterNumber": 425,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "A Ship Waiting for Wind",
+    "chapterTitleJapanese": "風待ちの船, Kazamachi no Fune?",
+    "chapterNumber": 426,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "It's Not Like It's Hell Here",
+    "chapterTitleJapanese": "ここが地獄じゃあるめェし, Koko ga Jigoku ja Arumēshi?",
+    "chapterNumber": 427,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Let's Go Back",
+    "chapterTitleJapanese": "帰ろう, Kaerō?",
+    "chapterNumber": 428,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Utter Defeat",
+    "chapterTitleJapanese": "完敗, Kanpai?",
+    "chapterNumber": 429,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "A Light Snow of Reminiscence Falls",
+    "chapterTitleJapanese": "降りそそぐ追想の淡雪, Furisosogu Tsuisō no Awayuki?",
+    "chapterNumber": 430,
+    "volumeNumber": 44
+  },
+  {
+    "chapterTitleEnglish": "Fist of Love",
+    "chapterTitleJapanese": "愛の拳, Ai no Kobushi?",
+    "chapterNumber": 431,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Jack-in-the-Box",
+    "chapterTitleJapanese": "びっくり箱, Bikkuri Bako?",
+    "chapterNumber": 432,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "The Name of that Sea Is",
+    "chapterTitleJapanese": "その海の名は, Sono Umi no Na wa?",
+    "chapterNumber": 433,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Whitebeard and Red Hair",
+    "chapterTitleJapanese": "白髭と赤髪, Shirohige to Akagami?",
+    "chapterNumber": 434,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "You Have My Sympathies",
+    "chapterTitleJapanese": "心中お察しする, Shinchū Osasshisuru?",
+    "chapterNumber": 435,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Pants from Franky House",
+    "chapterTitleJapanese": "Pants from Frankyhouse, Pantsu Furomu Furankīhausu?",
+    "chapterNumber": 436,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Naked But Great",
+    "chapterTitleJapanese": "裸百貫, Hadaka Hyakkan?",
+    "chapterNumber": 437,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Pride",
+    "chapterTitleJapanese": "プライド, Puraido?",
+    "chapterNumber": 438,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "The Third and the Seventh",
+    "chapterTitleJapanese": "３人目と７人目, Sanninme to Nananinme?",
+    "chapterNumber": 439,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Fire Fist vs. Blackbeard",
+    "chapterTitleJapanese": "火拳vs（バーサス）黒ひげ, Hiken Bāsasu Kurohige?",
+    "chapterNumber": 440,
+    "volumeNumber": 45
+  },
+  {
+    "chapterTitleEnglish": "Duel on Banaro Island",
+    "chapterTitleJapanese": "バナロ島の決闘, Banaro-tō no Kettō?",
+    "chapterNumber": 441,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Demonic Sea",
+    "chapterTitleJapanese": "魔の海の冒険, Ma no Umi no Bōken?",
+    "chapterNumber": 442,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "Thriller Bark",
+    "chapterTitleJapanese": "スリラーバーク, Surirā Bāku?",
+    "chapterNumber": 443,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "Adventure on Ghost Island",
+    "chapterTitleJapanese": "ゴースト島の冒険, Gōsuto Airando no Bōken?",
+    "chapterNumber": 444,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "The Zombie",
+    "chapterTitleJapanese": "THE（ザ）･ZOMBIE（ゾンビ）, Za Zonbi?",
+    "chapterNumber": 445,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "Doctor Hogback",
+    "chapterTitleJapanese": "ドクトル・ホグバック, Dokutoru Hogubakku?",
+    "chapterNumber": 446,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "Surprise Zombie",
+    "chapterTitleJapanese": "びっくりゾンビ, Bikkuri Zonbi?",
+    "chapterNumber": 447,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "Moria",
+    "chapterTitleJapanese": "モリア, Moria?",
+    "chapterNumber": 448,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "The Mysterious Four of Thriller Bark",
+    "chapterTitleJapanese": "スリラーバークの四怪人, Surirā Bāku no Yonkaijin?",
+    "chapterNumber": 449,
+    "volumeNumber": 46
+  },
+  {
+    "chapterTitleEnglish": "General Zombie Night",
+    "chapterTitleJapanese": "将軍ゾンビnight, Jeneraru Zonbi Naito?",
+    "chapterNumber": 450,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Perona's Wonder Garden",
+    "chapterTitleJapanese": "ペローナの不思議の庭, Perōna no Wandā Gāden?",
+    "chapterNumber": 451,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Jigoro of the Wind",
+    "chapterTitleJapanese": "風のジゴロウ, Kaze no Jigorō?",
+    "chapterNumber": 452,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Cloudy, Partly Bony",
+    "chapterTitleJapanese": "くもり時々ホネ, Kumori Tokidoki Hone?",
+    "chapterNumber": 453,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Humming",
+    "chapterTitleJapanese": "ハナウタ, Hanauta?",
+    "chapterNumber": 454,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Gecko Moria of the Seven Warlords of the Sea",
+    "chapterTitleJapanese": "王下七武海ゲッコー・モリア, Ōka Shichibukai Gekkō Moria?",
+    "chapterNumber": 455,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Demon from the Land of Ice",
+    "chapterTitleJapanese": "氷の国から来た魔人, Kōri no Kuni kara Kita Majin?",
+    "chapterNumber": 456,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Meeeeat!!!",
+    "chapterTitleJapanese": "肉~~!!!, Niku~~!!!?",
+    "chapterNumber": 457,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Anything but My Afro",
+    "chapterTitleJapanese": "アフロだけは, Afuro dake wa?",
+    "chapterNumber": 458,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Being Dead Isn't an Apology",
+    "chapterTitleJapanese": "死んでごめんじゃないでしょうに, Shin de Gomen ja nai Deshō ni?",
+    "chapterNumber": 459,
+    "volumeNumber": 47
+  },
+  {
+    "chapterTitleEnglish": "Get Back Before Dawn!!",
+    "chapterTitleJapanese": "夜明け前に取り返せ!!, Yoake Mae ni Torikaese!!?",
+    "chapterNumber": 460,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Ghost Buster",
+    "chapterTitleJapanese": "ゴーストバスター, Gōsuto Basutā?",
+    "chapterNumber": 461,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Adventures of Oars",
+    "chapterTitleJapanese": "オーズの冒険, Ōzu no Bōken?",
+    "chapterNumber": 462,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Pirate Sanji vs. Mysterious Absalom",
+    "chapterTitleJapanese": "海賊サンジvs怪人アブサロム, Kaizoku Sanji vs Kaijin Abusaromu?",
+    "chapterNumber": 463,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Sanji's Dream",
+    "chapterTitleJapanese": "サンジの夢, Sanji no Yume?",
+    "chapterNumber": 464,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Pirate Usopp vs. Princess Perona",
+    "chapterTitleJapanese": "海賊ウソップvs（バーサス）怪人ペローナ, Kaizoku Usoppu Bāsasu Purinsesu Perōna?",
+    "chapterNumber": 465,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Conclusion",
+    "chapterTitleJapanese": "決着, Kecchaku?",
+    "chapterNumber": 466,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Pirate Zoro vs. Samurai Ryuma",
+    "chapterTitleJapanese": "海賊ゾロvs（バーサス）侍リューマ, Kaizoku Zoro Bāsasu Samurai Ryūma?",
+    "chapterNumber": 467,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Pirate Chopper vs. Mysterious Hogback",
+    "chapterTitleJapanese": "海賊チョッパーvs（バーサス）怪人ホグバック, Kaizoku Choppā Bāsasu Kaijin Hogubakku?",
+    "chapterNumber": 468,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Come Out Here, Straw Hat Pirates!!!",
+    "chapterTitleJapanese": "出て来い麦わらの一味!!!, Dete Koi Mugiwara no Ichimi!!!?",
+    "chapterNumber": 469,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "Oars vs. Straw Hat Pirates",
+    "chapterTitleJapanese": "オーズvs（バーサス）麦わらの一味, Ōzu Bāsasu Mugiwara no Ichimi?",
+    "chapterNumber": 470,
+    "volumeNumber": 48
+  },
+  {
+    "chapterTitleEnglish": "My Friend",
+    "chapterTitleJapanese": "MY（マイ） FRIEND（フレンド）, Mai Furendo?",
+    "chapterNumber": 471,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Down",
+    "chapterTitleJapanese": "ダウン, Daun?",
+    "chapterNumber": 472,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Warlord Bartholomew Kuma Appears",
+    "chapterTitleJapanese": "王下七武海　バーソロミュー・くま現る, Ōka Shichibukai Bāsoromyū Kuma Arawaru?",
+    "chapterNumber": 473,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "We Have To Do It!",
+    "chapterTitleJapanese": "やるしかねェ!!!, Yarushikanē!!!?",
+    "chapterNumber": 474,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Pirates of the Forest",
+    "chapterTitleJapanese": "森の海賊団, Mori no Kaizoku-Dan?",
+    "chapterNumber": 475,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Nightmare Luffy",
+    "chapterTitleJapanese": "ナイトメア・ルフィ, Naitomea Rufi?",
+    "chapterNumber": 476,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "⅜",
+    "chapterTitleJapanese": "⅜, ⅜?",
+    "chapterNumber": 477,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Luffy",
+    "chapterTitleJapanese": "ルフィvs（バーサス）ルフィ, Rufi Bāsasu Rufi?",
+    "chapterNumber": 478,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Warrior of Hope",
+    "chapterTitleJapanese": "希望の戦士, Kibō no Senshi?",
+    "chapterNumber": 479,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Ambush Attack",
+    "chapterTitleJapanese": "迎撃, Geigeki?",
+    "chapterNumber": 480,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Shadow's Asgard",
+    "chapterTitleJapanese": "影の集合地, Shadōzu Asugarudo?",
+    "chapterNumber": 481,
+    "volumeNumber": 49
+  },
+  {
+    "chapterTitleEnglish": "Morning Is Coming",
+    "chapterTitleJapanese": "朝が来る, Asa ga Kuru?",
+    "chapterNumber": 482,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "The End of the Dream",
+    "chapterTitleJapanese": "夢の終わり, Yume no Owari?",
+    "chapterNumber": 483,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Squish",
+    "chapterTitleJapanese": "ぷに, Puni?",
+    "chapterNumber": 484,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Straw Hat Pirates - Pirate Hunter Zoro",
+    "chapterTitleJapanese": "麦わらの一味・海賊狩りのゾロ, Mugiwara no Ichimi - Kaizoku-Gari no Zoro?",
+    "chapterNumber": 485,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Piano",
+    "chapterTitleJapanese": "ピアノ, Piano?",
+    "chapterNumber": 486,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "That Song",
+    "chapterTitleJapanese": "あの唄, Ano Uta?",
+    "chapterNumber": 487,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Song of Life",
+    "chapterTitleJapanese": "命の唄, Inochi no Uta?",
+    "chapterNumber": 488,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "The Eighth",
+    "chapterTitleJapanese": "８人目, Hachininme?",
+    "chapterNumber": 489,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Arriving Again",
+    "chapterTitleJapanese": "再び辿りつく, Futatabi Tadoritsuku?",
+    "chapterNumber": 490,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Flying Fish Riders",
+    "chapterTitleJapanese": "トビウオライダーズ, Tobiuo Raidāzu?",
+    "chapterNumber": 491,
+    "volumeNumber": 50
+  },
+  {
+    "chapterTitleEnglish": "Iron Mask Duval",
+    "chapterTitleJapanese": "鉄仮面のデュバル, Tetsu Kamen no Dyubaru?",
+    "chapterNumber": 492,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "You Know Me",
+    "chapterTitleJapanese": "知ってる, Shitteru?",
+    "chapterNumber": 493,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "Duval's Tragedy",
+    "chapterTitleJapanese": "デュバルの悲劇, Dyubaru no Higeki?",
+    "chapterNumber": 494,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "Gaon Cannon",
+    "chapterTitleJapanese": "ガオン砲, Gaon Hō?",
+    "chapterNumber": 495,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "Yarukiman Mangrove",
+    "chapterTitleJapanese": "ヤルキマン・マングローブ, Yarukiman Mangurōbu?",
+    "chapterNumber": 496,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "Adventure on the Archipelago of Dancing Soap Bubbles",
+    "chapterTitleJapanese": "シャボン舞う諸島の冒険, Shabon Mau Shotō no Bōken?",
+    "chapterNumber": 497,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "The Eleven Supernovas",
+    "chapterTitleJapanese": "11人の超新星, Jūichinin no Chōchinsei?",
+    "chapterNumber": 498,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "Sabaody Park",
+    "chapterTitleJapanese": "シャボンディパーク, Shabondi Pāku?",
+    "chapterNumber": 499,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "The Embers of History",
+    "chapterTitleJapanese": "歴史の残り火, Rekishi no Nokoribi?",
+    "chapterNumber": 500,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "The World Begins to Swell",
+    "chapterTitleJapanese": "うねり始める世界, Uneri Hajimeru Sekai?",
+    "chapterNumber": 501,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "The Incident of the Celestial Dragons",
+    "chapterTitleJapanese": "天竜人の一件, Tenryuubito no Ikken?",
+    "chapterNumber": 502,
+    "volumeNumber": 51
+  },
+  {
+    "chapterTitleEnglish": "Aggravated Island",
+    "chapterTitleJapanese": "荒立つ島, Aradatsu Shima?",
+    "chapterNumber": 503,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Pirate Front Line on the Move!!",
+    "chapterTitleJapanese": "海賊前線移動中!!, Kaizoku Zensen Idōchū!!?",
+    "chapterNumber": 504,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Kuma",
+    "chapterTitleJapanese": "クマ, Kuma?",
+    "chapterNumber": 505,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Roger and Rayleigh",
+    "chapterTitleJapanese": "ロジャーとレイリー, Rojā to Reirii?",
+    "chapterNumber": 506,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Kizaru Arrives",
+    "chapterTitleJapanese": "黄猿上陸, Kizaru Jōriku?",
+    "chapterNumber": 507,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Island of Carnage",
+    "chapterTitleJapanese": "修羅の島, Shura no Shima?",
+    "chapterNumber": 508,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Kizaru vs. Four Captains",
+    "chapterTitleJapanese": "黄猿vs.（バーサス）4人の船長, Kizaru Bāsasu Yonin no Senchō?",
+    "chapterNumber": 509,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Straw Hat Crew vs. Combat Weapon",
+    "chapterTitleJapanese": "麦わらの一味vs.（バーサス）戦闘兵器, Mugiwara no Ichimi Bāsasu Sentō Heiki?",
+    "chapterNumber": 510,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Axe-Carrying Sentomaru",
+    "chapterTitleJapanese": "鉞かついだ戦桃丸, Masakari katsuida Sentōmaru?",
+    "chapterNumber": 511,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Zoro, Gone",
+    "chapterTitleJapanese": "ゾロ、音沙汰なし, Zoro, Otosata nashi?",
+    "chapterNumber": 512,
+    "volumeNumber": 52
+  },
+  {
+    "chapterTitleEnglish": "Beyond Rescue!!!",
+    "chapterTitleJapanese": "救えないっ!!!, Sukuenai!!!?",
+    "chapterNumber": 513,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Mushrooms-Grow-From-the-Body Mushroom",
+    "chapterTitleJapanese": "カラダカラキノコガハエルダケ, Karada-kara-Kinoko-ga-Haeru Dake?",
+    "chapterNumber": 514,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Adventure on the Island of Women",
+    "chapterTitleJapanese": "女ヶ島の冒険, Nyōgashima no Bōken?",
+    "chapterNumber": 515,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Pirate Empress Boa Hancock",
+    "chapterTitleJapanese": "海賊女帝ボア・ハンコック, Kaizoku Jotei Boa Hankokku?",
+    "chapterNumber": 516,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Bathing",
+    "chapterTitleJapanese": "湯浴み, Yuami?",
+    "chapterNumber": 517,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "The Arena",
+    "chapterTitleJapanese": "闘技台, Tōgidai?",
+    "chapterNumber": 518,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "A King's Disposition",
+    "chapterTitleJapanese": "王の資質, Ō no Shishitsu?",
+    "chapterNumber": 519,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Eye of the Gorgon",
+    "chapterTitleJapanese": "ゴルゴンの目, Gorugon no Me?",
+    "chapterNumber": 520,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Hoof of the Celestial Dragon",
+    "chapterTitleJapanese": "天駆ける竜の蹄, Amakakeru Ryū no Hizume?",
+    "chapterNumber": 521,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Fatal Illness",
+    "chapterTitleJapanese": "死に至る病, Shi ni Itaru Yamai?",
+    "chapterNumber": 522,
+    "volumeNumber": 53
+  },
+  {
+    "chapterTitleEnglish": "Hell",
+    "chapterTitleJapanese": "地獄, Jigoku?",
+    "chapterNumber": 523,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "No One Can Stop This Now",
+    "chapterTitleJapanese": "もう誰にも止められない, Mō Dare ni Mo Tomerarenai?",
+    "chapterNumber": 524,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "The Underwater Prison Impel Down",
+    "chapterTitleJapanese": "海底監獄インペルダウン, Kaitei Kangoku Inperu Daun?",
+    "chapterNumber": 525,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Great Prison",
+    "chapterTitleJapanese": "大監獄の冒険, Daikangoku no Bōken?",
+    "chapterNumber": 526,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Level 1 Crimson Hell",
+    "chapterTitleJapanese": "LV（レべル）1（ワン） 紅蓮地獄, Reberu Wan Guren Jigoku?",
+    "chapterNumber": 527,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Jinbe, Knight of the Sea",
+    "chapterTitleJapanese": "海侠のジンベエ, Kaikyō no Jinbe'e?",
+    "chapterNumber": 528,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Level 2 Wild Beast Hell",
+    "chapterTitleJapanese": "LV（レべル）2（ツー） 猛獣地獄, Reberu Tsū Mōjū Jigoku?",
+    "chapterNumber": 529,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "From One Hell to Another",
+    "chapterTitleJapanese": "地獄へ地獄へ, Jigoku e Jigoku e?",
+    "chapterNumber": 530,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Level 3 Starvation Hell",
+    "chapterTitleJapanese": "LV（レべル）3（スリー） 飢餓地獄, Reberu Surī Kiga Jigoku?",
+    "chapterNumber": 531,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Jailer Beast Minotaurus",
+    "chapterTitleJapanese": "獄卒獣ミノタウロス, Goku Sotsu Jū Minotaurosu?",
+    "chapterNumber": 532,
+    "volumeNumber": 54
+  },
+  {
+    "chapterTitleEnglish": "Level 4 Inferno Hell",
+    "chapterTitleJapanese": "LV（レべル）4（フォー） 焦熱地獄, Reberu Fō Shōnetsu Jigoku?",
+    "chapterNumber": 533,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Chief Warden Magellan vs. Pirate Luffy",
+    "chapterTitleJapanese": "監獄署長マゼランvs.（バーサス）海賊ルフィ, Kangoku Shochō Mazeran Bāsasu Kaizoku Rufi?",
+    "chapterNumber": 534,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Friend",
+    "chapterTitleJapanese": "ダチ, Dachi?",
+    "chapterNumber": 535,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Level 5 Frozen Hell",
+    "chapterTitleJapanese": "LV（レべル）5（ファイブ） 極寒地獄, Reberu Faibu Gokkan Jigoku?",
+    "chapterNumber": 536,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Okama in Hell",
+    "chapterTitleJapanese": "地獄に仏, Jigoku ni Okama?",
+    "chapterNumber": 537,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Level 5.5 New Kama Land",
+    "chapterTitleJapanese": "LV（レべル）5.5番地ニューカマーランド, Reberu Faibu Ten Faibu Banchi Nyūkamā Rando?",
+    "chapterNumber": 538,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Emporio Tension Hormone",
+    "chapterTitleJapanese": "エンポリオ・テンションホルモン, Enporio Tenshon Horumon?",
+    "chapterNumber": 539,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Level 6 Eternal Hell",
+    "chapterTitleJapanese": "LV（レべル）6（シックス） 無限地獄, Reberu Shikkusu Mugen Jigoku?",
+    "chapterNumber": 540,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "The Likes of Which It Has Never Seen",
+    "chapterTitleJapanese": "未だかつてナッシブル, Imadakatsute Nasshiburu?",
+    "chapterNumber": 541,
+    "volumeNumber": 55
+  },
+  {
+    "chapterTitleEnglish": "Another Incident to Be Told",
+    "chapterTitleJapanese": "やがて語られるもう一つの事件, Yagate Katarareru Mou Hitotsu no Jiken?",
+    "chapterNumber": 542,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Straw Hat and Blackbeard",
+    "chapterTitleJapanese": "麦わらと黒ひげ, Mugiwara to Kurohige?",
+    "chapterNumber": 543,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "The Lid to the Cauldron of Hell Opens",
+    "chapterTitleJapanese": "地獄の釜の蓋もあく, Jigoku no Kama no Futa Mo Aku?",
+    "chapterNumber": 544,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "To the Sunshine in Outside World",
+    "chapterTitleJapanese": "陽のあたるシャバへ, Hi no Ataru Shaba e?",
+    "chapterNumber": 545,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Fish-Man Pirate Captain Jinbe, Warlord of the Sea",
+    "chapterTitleJapanese": "魚人海賊団船長“七武海”ジンベエ, Gyojin Kaizoku Dan Senchō \"Shichibukai\" Jinbe'e?",
+    "chapterNumber": 546,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Escaping the Island",
+    "chapterTitleJapanese": "島破り, Shimayaburi?",
+    "chapterNumber": 547,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Thank You",
+    "chapterTitleJapanese": "ありがとう, Arigatō?",
+    "chapterNumber": 548,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Ship Sailing Forth",
+    "chapterTitleJapanese": "出撃の艦, Shutsugeki no fune?",
+    "chapterNumber": 549,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Marine Headquarters",
+    "chapterTitleJapanese": "海軍本部, Kaigun honbu?",
+    "chapterNumber": 550,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Whitebeard of the Four Emperors",
+    "chapterTitleJapanese": "四皇\"白ひげ\", Yonkō \"Shirohige\"?",
+    "chapterNumber": 551,
+    "volumeNumber": 56
+  },
+  {
+    "chapterTitleEnglish": "Ace and Whitebeard",
+    "chapterTitleJapanese": "エースと白ひげ, Ēsu to Shirohige?",
+    "chapterNumber": 552,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Summit Battle",
+    "chapterTitleJapanese": "頂上決戦, Chōjō Kessen?",
+    "chapterNumber": 553,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Admiral Akainu",
+    "chapterTitleJapanese": "大将赤犬, Taishō Akainu?",
+    "chapterNumber": 554,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Oars and the Kasa",
+    "chapterTitleJapanese": "オーズと笠, Ōzu to Kasa?",
+    "chapterNumber": 555,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Justice Will Prevail!!",
+    "chapterTitleJapanese": "正義は勝つ!!, Seigi wa Katsu!!?",
+    "chapterNumber": 556,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Luffy and Whitebeard",
+    "chapterTitleJapanese": "ルフィと白ひげ, Rufi to Shirohige?",
+    "chapterNumber": 557,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Little Brother",
+    "chapterTitleJapanese": "弟, Otōto?",
+    "chapterNumber": 558,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Destiny",
+    "chapterTitleJapanese": "天命, Tenmei?",
+    "chapterNumber": 559,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Prisoners of Impel Down",
+    "chapterTitleJapanese": "インペルダウンの囚人達, Inperu Daun no Shūjin-tachi?",
+    "chapterNumber": 560,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Mihawk",
+    "chapterTitleJapanese": "ルフィvs.（バーサス）ミホーク, Rufi Bāsasu Mihōku?",
+    "chapterNumber": 561,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "Pirate Maelstrom Spider Squard",
+    "chapterTitleJapanese": "海賊大渦蜘蛛スクアード, Kaizoku Ō Uzu Gumo Sukuādo?",
+    "chapterNumber": 562,
+    "volumeNumber": 57
+  },
+  {
+    "chapterTitleEnglish": "One Heart, One Man",
+    "chapterTitleJapanese": "心臓一つ 人間一人, Shinzō Hitotsu Ningen Hitori?",
+    "chapterNumber": 563,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "The Man Who Shook The World",
+    "chapterTitleJapanese": "世界を揺らす男, Sekai O Yurasu Otoko?",
+    "chapterNumber": 564,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "Oars' Path",
+    "chapterTitleJapanese": "オーズの道, Ōzu no Michi?",
+    "chapterNumber": 565,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "Raid",
+    "chapterTitleJapanese": "猛攻, Mōkō?",
+    "chapterNumber": 566,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "Marineford Marine Headquarters - Oris Plaza",
+    "chapterTitleJapanese": "マリンフォード海軍本部オリス広場, Marinfōdo Kaigun Honbu Orisu Hiroba?",
+    "chapterNumber": 567,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "Have It Your Way!",
+    "chapterTitleJapanese": "勝手にしやがれ, Katteni Shiyagare?",
+    "chapterNumber": 568,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "White Monster",
+    "chapterTitleJapanese": "白い怪物, Shiroi Kaibutsu?",
+    "chapterNumber": 569,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "The Bridge of Life",
+    "chapterTitleJapanese": "命の懸橋, Inochi no Kakehashi?",
+    "chapterNumber": 570,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "The Execution Platform",
+    "chapterTitleJapanese": "処刑台, Shokeidai?",
+    "chapterNumber": 571,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "The Times They Are A-Changin'",
+    "chapterTitleJapanese": "The（ザ） Times（タイムズ） They（ゼイ） Are（アー） A（エー）-Changin'（チェンジン―） ―時代は変わる―, Za Taimuzu Zei Ā Ē-Chenjin ―Jidai wa Kawaru―?",
+    "chapterNumber": 572,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "The Name Of This Era Is \"Whitebeard\"",
+    "chapterTitleJapanese": "この時代の名を\"白ひげ\"と呼ぶ, Kono Jidai no Na o \"Shirohige\" to Yobu?",
+    "chapterNumber": 573,
+    "volumeNumber": 58
+  },
+  {
+    "chapterTitleEnglish": "Portgas D. Ace Dies",
+    "chapterTitleJapanese": "ポートガス・D（ディー）・エース死す, Pōtogasu Dī Ēsu Shisu?",
+    "chapterNumber": 574,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Voiceless Rage",
+    "chapterTitleJapanese": "言葉なき怒り, Kotoba Naki Ikari?",
+    "chapterNumber": 575,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "The Great Pirate Edward Newgate",
+    "chapterTitleJapanese": "大海賊エドワード・二ューゲート, Daikaizoku Edowādo Nyūgēto?",
+    "chapterNumber": 576,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Outrageous Events One After Another",
+    "chapterTitleJapanese": "畳み掛ける大事件, Tatamikakeru Daijiken?",
+    "chapterNumber": 577,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "A Gift for the New Era",
+    "chapterTitleJapanese": "新時代へ贈るもの, Shinjidai e Okuru Mono?",
+    "chapterNumber": 578,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Seconds of Courage",
+    "chapterTitleJapanese": "勇気ある数秒, Yūki Aru Sūbyō?",
+    "chapterNumber": 579,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "The War's Conclusion",
+    "chapterTitleJapanese": "終戦, Shūsen?",
+    "chapterNumber": 580,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Creeping Future",
+    "chapterTitleJapanese": "忍びよる未来, Shinobiyoru Mirai?",
+    "chapterNumber": 581,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Luffy and Ace",
+    "chapterTitleJapanese": "ルフィとエース, Rufi to Ēsu?",
+    "chapterNumber": 582,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Gray Terminal - The Final Destination of the Uncertainty",
+    "chapterTitleJapanese": "不確かな物の終着駅 (グレイ・ターミナル",
+    "chapterNumber": 583,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Incident with Porchemy",
+    "chapterTitleJapanese": "ポルシェーミの一件, Porushēmi no Ikken?",
+    "chapterNumber": 584,
+    "volumeNumber": 59
+  },
+  {
+    "chapterTitleEnglish": "Brothers' Sake Cups",
+    "chapterTitleJapanese": "兄弟盃, Kyōdai Sakazuki?",
+    "chapterNumber": 585,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "City of Stench",
+    "chapterTitleJapanese": "悪臭のする町, Akushū no Suru Machi?",
+    "chapterNumber": 586,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "I Will Not Run Away",
+    "chapterTitleJapanese": "おれは、逃げない, Ore wa Nigenai?",
+    "chapterNumber": 587,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "Sabo's Ocean",
+    "chapterTitleJapanese": "サボの海, Sabo no Umi?",
+    "chapterNumber": 588,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "Will of the Winds",
+    "chapterTitleJapanese": "風雲の志 , Fūun no Kokorozashi?",
+    "chapterNumber": 589,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "My Little Brother",
+    "chapterTitleJapanese": "弟よ, Otōto yo?",
+    "chapterNumber": 590,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "Are You Sure About That?",
+    "chapterTitleJapanese": "それでいいのか, Sore de Iinoka?",
+    "chapterNumber": 591,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "Yell",
+    "chapterTitleJapanese": "エール, Ēru?",
+    "chapterNumber": 592,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "News",
+    "chapterTitleJapanese": "NEWS（ニュース）, Nyūsu?",
+    "chapterNumber": 593,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "Message",
+    "chapterTitleJapanese": "メッセージ, Messēji?",
+    "chapterNumber": 594,
+    "volumeNumber": 60
+  },
+  {
+    "chapterTitleEnglish": "The Pledge",
+    "chapterTitleJapanese": "宣誓, Sensei?",
+    "chapterNumber": 595,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Spectrum",
+    "chapterTitleJapanese": "SPECTRUM（スペクトル）, Supekutoru?",
+    "chapterNumber": 596,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "3D2Y",
+    "chapterTitleJapanese": "3D（ディー）2Y（ワイ）, Surī-Dī Tsū-Wai?",
+    "chapterNumber": 597,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "2 Years Later",
+    "chapterTitleJapanese": "2年後, Ninen-go?",
+    "chapterNumber": 598,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Nine Pirates",
+    "chapterTitleJapanese": "九人の海賊, Kyuunin no Kaizoku?",
+    "chapterNumber": 599,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Island of New Beginnings",
+    "chapterTitleJapanese": "再出発の島, Saishuppatsu no Shima?",
+    "chapterNumber": 600,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Romance Dawn for the new world - The Dawn of an Adventure into the New World",
+    "chapterTitleJapanese": "ROMANCE DAWN（ロマンスドーン） for（フォー） the（ザ） new（ニュー） world（ワールド―） ―新しい世界への冒険の夜明け―, Romansu Dōn fō za nyū wārudo: Atarashii Sekai e no Bōken no Yoake?",
+    "chapterNumber": 601,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Downward Ho!!",
+    "chapterTitleJapanese": "下舵いっぱい!!, Shimokaji Ippai!!?",
+    "chapterNumber": 602,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Keep It in Your Heart",
+    "chapterTitleJapanese": "心に留めておけ, Kokoro ni Tometeoke?",
+    "chapterNumber": 603,
+    "volumeNumber": 61
+  },
+  {
+    "chapterTitleEnglish": "Into the Depths",
+    "chapterTitleJapanese": "深層へ, Shinsō e?",
+    "chapterNumber": 604,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "The Kraken and the Pirates",
+    "chapterTitleJapanese": "クラーケンと海賊, Kurāken to Kaizoku?",
+    "chapterNumber": 605,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Deep Sea Adventure",
+    "chapterTitleJapanese": "深海の冒険, Shinkai no Bōken?",
+    "chapterNumber": 606,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "10,000 Meters Under the Sea",
+    "chapterTitleJapanese": "海底1万m, Kaitei Ichiman Mētoru?",
+    "chapterNumber": 607,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Underwater Paradise",
+    "chapterTitleJapanese": "海底の楽園, Kaitei no Rakuen?",
+    "chapterNumber": 608,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Adventure on Fish-Man Island",
+    "chapterTitleJapanese": "魚人島の冒険, Gyojintō no Bōken?",
+    "chapterNumber": 609,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Madam Shyarly, Fortune-Teller",
+    "chapterTitleJapanese": "占い師マダムシャーリー, Uranaishi Madamu Shārī?",
+    "chapterNumber": 610,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Hody Jones",
+    "chapterTitleJapanese": "ホーディ・ジョーンズ, Hōdi Jōnzu?",
+    "chapterNumber": 611,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Taken by the Shark They Saved",
+    "chapterTitleJapanese": "助けたサメに連れられて, Tasuketa Same ni Tsurerarete?",
+    "chapterNumber": 612,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "The Mermaid Princess in Hard-Shell Tower",
+    "chapterTitleJapanese": "硬殻塔の人魚姫, Kōkakutō no Ningyo Hime?",
+    "chapterNumber": 613,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "What's Done Is Done",
+    "chapterTitleJapanese": "やっちまったモンはしょうがねェ, Yatchimatta Mon wa Shōganē?",
+    "chapterNumber": 614,
+    "volumeNumber": 62
+  },
+  {
+    "chapterTitleEnglish": "Mato Mato Curse",
+    "chapterTitleJapanese": "マトマトの呪い, Mato Mato no Noroi?",
+    "chapterNumber": 615,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Anniversary for Revenge",
+    "chapterTitleJapanese": "復讐の記念日, Fukushū no Kinenbi?",
+    "chapterNumber": 616,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Major Incident on Coral Hill",
+    "chapterTitleJapanese": "サンゴヶ丘で大事件, Sangogaoka de Daijiken?",
+    "chapterNumber": 617,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Proposal",
+    "chapterTitleJapanese": "プロポーズ, Puropōzu?",
+    "chapterNumber": 618,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "At the Sea Forest",
+    "chapterTitleJapanese": "海の森にて, Umi no Mori nite?",
+    "chapterNumber": 619,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "The Longed-For Amusement Park",
+    "chapterTitleJapanese": "憧れの遊園地, Akogare no Yūenchi?",
+    "chapterNumber": 620,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Otohime and Tiger",
+    "chapterTitleJapanese": "オトヒメとタイガー, Otohime to Taigā?",
+    "chapterNumber": 621,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "The Sun Pirates",
+    "chapterTitleJapanese": "タイヨウの海賊団, Taiyō no Kaizoku-dan?",
+    "chapterNumber": 622,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Fisher Tiger the Pirate",
+    "chapterTitleJapanese": "海賊フィッシャー・タイガー, Kaizoku Fisshā Taigā?",
+    "chapterNumber": 623,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Queen Otohime",
+    "chapterTitleJapanese": "オトヒメ王妃, Otohime Ōhi?",
+    "chapterNumber": 624,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "Uninherited Will",
+    "chapterTitleJapanese": "受け継がない意志, Uketsuganai Ishi?",
+    "chapterNumber": 625,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "The Three Neptune Brothers",
+    "chapterTitleJapanese": "ネプチューン3兄弟, Nepuchūn San Kyōdai?",
+    "chapterNumber": 626,
+    "volumeNumber": 63
+  },
+  {
+    "chapterTitleEnglish": "You Have My Gratitude",
+    "chapterTitleJapanese": "かたじけない, Katajikenai?",
+    "chapterNumber": 627,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "Spring Cleaning",
+    "chapterTitleJapanese": "大掃除, Ōsōji?",
+    "chapterNumber": 628,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "Former Warlord in the Way",
+    "chapterTitleJapanese": "立ち塞がる元七武海, Tachifusagaru Moto Shichibukai?",
+    "chapterNumber": 629,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "Getting Violent",
+    "chapterTitleJapanese": "暴れ出す, Abaredasu?",
+    "chapterNumber": 630,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "Gyoncorde Plaza",
+    "chapterTitleJapanese": "ギョンコルド広場, Gyonkorudo Hiroba?",
+    "chapterNumber": 631,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "I Knew",
+    "chapterTitleJapanese": "知ってた, Shitteta?",
+    "chapterNumber": 632,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "Friend or Foe",
+    "chapterTitleJapanese": "敵か味方か, Teki ka Mikata ka?",
+    "chapterNumber": 633,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "100,000 vs. 10",
+    "chapterTitleJapanese": "10万vs.（バーサス）10, Jūman Bāsasu Jū?",
+    "chapterNumber": 634,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "So Scared I Ran Up to the Sky",
+    "chapterTitleJapanese": "空を飛ぶ程悍ましい, Sora O Tobu Hodo Ozamashī?",
+    "chapterNumber": 635,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "General from Futureland",
+    "chapterTitleJapanese": "未来国から来た将軍, Mirai-koku kara Kita Shōgun?",
+    "chapterNumber": 636,
+    "volumeNumber": 64
+  },
+  {
+    "chapterTitleEnglish": "The Ancient Ark",
+    "chapterTitleJapanese": "古の方舟, Inishie no Hakobune?",
+    "chapterNumber": 637,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Escape-Hoshi",
+    "chapterTitleJapanese": "にげほし, Nigehoshi?",
+    "chapterNumber": 638,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Protect Everything",
+    "chapterTitleJapanese": "全部守る, Zenbu Mamoru?",
+    "chapterNumber": 639,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Above Fish-Man Island",
+    "chapterTitleJapanese": "魚人島直上, Gyojintō Chokujō?",
+    "chapterNumber": 640,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "What Are You?",
+    "chapterTitleJapanese": "お前は何だ, Omae wa Nanda?",
+    "chapterNumber": 641,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Lost All Face",
+    "chapterTitleJapanese": "面目など丸潰れ, Menboku nado Marutsubure?",
+    "chapterNumber": 642,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Phantom",
+    "chapterTitleJapanese": "ファントム, Fantomu?",
+    "chapterNumber": 643,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "To Zero",
+    "chapterTitleJapanese": "ゼロに, Zero ni?",
+    "chapterNumber": 644,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Death Is Another Form of Revenge",
+    "chapterTitleJapanese": "死もまた復讐, Shi mo Mata Fukushū?",
+    "chapterNumber": 645,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Frog",
+    "chapterTitleJapanese": "カエル, Kaeru?",
+    "chapterNumber": 646,
+    "volumeNumber": 65
+  },
+  {
+    "chapterTitleEnglish": "Stop, Noah",
+    "chapterTitleJapanese": "止まれノア, Tomare Noa?",
+    "chapterNumber": 647,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "The Road Toward the Sun",
+    "chapterTitleJapanese": "タイヨウへと続く道, Taiyō e to Tsuzuku Michi?",
+    "chapterNumber": 648,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "The Dance of Sea Breams and Flounders",
+    "chapterTitleJapanese": "タイやヒラメの舞い踊り, Tai ya Hirame no Maiodori?",
+    "chapterNumber": 649,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "Two Changes to Be Aware Of",
+    "chapterTitleJapanese": "知っておくべき2つの変化, Shitteokubeki Futatsu no Henka?",
+    "chapterNumber": 650,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "a Voice From the New World",
+    "chapterTitleJapanese": "新世界からの声, Shin Sekai kara no Koe?",
+    "chapterNumber": 651,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "Grim Premonitions",
+    "chapterTitleJapanese": "前途多難の予感, Zento Tanan no Yokan?",
+    "chapterNumber": 652,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "The Hero Hat",
+    "chapterTitleJapanese": "ヒーローの帽子, Hīrō no Bōshi?",
+    "chapterNumber": 653,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "Gam",
+    "chapterTitleJapanese": "GAM（ガム） (小群",
+    "chapterNumber": 654,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "Punk Hazard",
+    "chapterTitleJapanese": "パンクハザード, Panku Hazādo?",
+    "chapterNumber": 655,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "Adventure on the Burning Island",
+    "chapterTitleJapanese": "燃える島の冒険, Moeru Shima no Bōken?",
+    "chapterNumber": 656,
+    "volumeNumber": 66
+  },
+  {
+    "chapterTitleEnglish": "Severed Head",
+    "chapterTitleJapanese": "生首, Namakubi?",
+    "chapterNumber": 657,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Biscuits Room",
+    "chapterTitleJapanese": "ビスケットルーム, Bisuketto Rūmu?",
+    "chapterNumber": 658,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "About My Torso",
+    "chapterTitleJapanese": "胴体の話, Dōtai no Hanashi?",
+    "chapterNumber": 659,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Trafalgar Law, Warlord of the Sea",
+    "chapterTitleJapanese": "\"王下七武海\"トラファルガー・ロー, \"Ōka Shichibukai\" Torafarugā Rō?",
+    "chapterNumber": 660,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "The Lake of Bandits",
+    "chapterTitleJapanese": "追剥の出る湖, Oihagi no Deru Mizuumi?",
+    "chapterNumber": 661,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Warlord Law Vs. Vice Admiral Smoker",
+    "chapterTitleJapanese": "七武海ローvs.（バーサス）スモーカー中将, Shichibukai Rō Bāsasu Sumōkā Chūjō?",
+    "chapterNumber": 662,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "CC",
+    "chapterTitleJapanese": "C（シー）C（シー）, Shī-Shī?",
+    "chapterNumber": 663,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Master Caesar Clown",
+    "chapterTitleJapanese": "M（マスター）・シーザー・クラウン, Masutā Shīzā Kuraun?",
+    "chapterNumber": 664,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Candy",
+    "chapterTitleJapanese": "CANDY（キヤンディ）, Kyandi?",
+    "chapterNumber": 665,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Yeti Cool Brothers",
+    "chapterTitleJapanese": "イエティ COOL（クール） BROTHERS（ブラザーズ）, Ieti Kūru Burazāzu?",
+    "chapterNumber": 666,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Cool Fight",
+    "chapterTitleJapanese": "COOL（クール） FIGHT（ファイト）, Kūru Faito?",
+    "chapterNumber": 667,
+    "volumeNumber": 67
+  },
+  {
+    "chapterTitleEnglish": "Pirate Alliance",
+    "chapterTitleJapanese": "海賊同盟, Kaizoku Dōmei?",
+    "chapterNumber": 668,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "Commence Operation",
+    "chapterTitleJapanese": "作戦開始, Sakusen Kaishi?",
+    "chapterNumber": 669,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "Blizzard With a Chance of Slime",
+    "chapterTitleJapanese": "吹雪ときどき, Slime Fubuki Tokidoki Suraimu?",
+    "chapterNumber": 670,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "Gasu Gasu no Mi",
+    "chapterTitleJapanese": "ガスガスの実, Gasu Gasu no Mi?",
+    "chapterNumber": 671,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "My Name Is Kin'emon!!",
+    "chapterTitleJapanese": "拙者!! 名を錦えもんと申す!!, Sessha!! Na o Kin'emon to Mōsu!!?",
+    "chapterNumber": 672,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "Vergo and Joker",
+    "chapterTitleJapanese": "ヴェルゴとジョーカー, Verugo to Jōkā?",
+    "chapterNumber": 673,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "The Observers",
+    "chapterTitleJapanese": "傍観者達, Bōkansha-tachi?",
+    "chapterNumber": 674,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "I Call It \"Shinokuni\"",
+    "chapterTitleJapanese": "その名も「シノクニ」, Sono Na mo 'Shinokuni'?",
+    "chapterNumber": 675,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "The Perfect Weapon of Mass Murder",
+    "chapterTitleJapanese": "完全なる殺戮兵器, Kanzen naru Satsuriku Heiki?",
+    "chapterNumber": 676,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "Counter Hazard!!",
+    "chapterTitleJapanese": "COUNTER（カウンター） HAZARD（ハザード）!!, Kauntā Hazādo!!?",
+    "chapterNumber": 677,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "Lobby of Laboratory Section A",
+    "chapterTitleJapanese": "研究所内A（エー）棟ロビー, Kenkyūjō-nai Ē-Tō Robī?",
+    "chapterNumber": 678,
+    "volumeNumber": 68
+  },
+  {
+    "chapterTitleEnglish": "The G-5 Spirit",
+    "chapterTitleJapanese": "心意気G（ジー）-5（ファイブ）, Kokoroiki Jī-Faibu?",
+    "chapterNumber": 679,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "Marine G-5 Base Commander Vergo the Demon Bamboo",
+    "chapterTitleJapanese": "海軍G（ジー）-5（ファイブ）基地長 鬼竹のヴェルゴ, Kaigun Jī-Faibu Kichichō: Kichiku no Verugo?",
+    "chapterNumber": 680,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Master",
+    "chapterTitleJapanese": "ルフィvs.（バーサス）M（マスター）, Rufi Bāsasu Masutā?",
+    "chapterNumber": 681,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "Puppet Master",
+    "chapterTitleJapanese": "黒幕, Kuromaku?",
+    "chapterNumber": 682,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "An Icy Woman",
+    "chapterTitleJapanese": "氷の様な女, Kōri no yō na On'na?",
+    "chapterNumber": 683,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "Don't Do It, Vegapunk",
+    "chapterTitleJapanese": "やめるんだベガパンク, Yamerunda Begapanku?",
+    "chapterNumber": 684,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "My Name is Momonosuke!!",
+    "chapterTitleJapanese": "モモの助、せっしゃの名にござる!!, Momonosuke, Sessha no Na ni Gozaru!!?",
+    "chapterNumber": 685,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "The Snow Woman in the Biscuits Room",
+    "chapterTitleJapanese": "ビスケットルームの雪女, Bisuketto Rūmu no Yuki-Onna?",
+    "chapterNumber": 686,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "Wild Beast",
+    "chapterTitleJapanese": "猛獣, Mōjū?",
+    "chapterNumber": 687,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "Mocha",
+    "chapterTitleJapanese": "モチャ, Mocha?",
+    "chapterNumber": 688,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "A Seemingly Non-Existent Island",
+    "chapterTitleJapanese": "ない様である島, Nai Yō de Aru Shima?",
+    "chapterNumber": 689,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "SAD",
+    "chapterTitleJapanese": "S（エス）A（エー）D（ディー）, Esu-Ē-Dī?",
+    "chapterNumber": 690,
+    "volumeNumber": 69
+  },
+  {
+    "chapterTitleEnglish": "King of Shinokuni",
+    "chapterTitleJapanese": "死の国の王, Shi no Kuni no Ō?",
+    "chapterNumber": 691,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Assassins from Dressrosa",
+    "chapterTitleJapanese": "ドレスローザから来た刺客, Doresurōza kara Kita Shikaku?",
+    "chapterNumber": 692,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Die for Me",
+    "chapterTitleJapanese": "死んでくれ, Shinde kure?",
+    "chapterNumber": 693,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "The Most Dangerous Man",
+    "chapterTitleJapanese": "最も危険な男, Mottomo Kiken na Otoko?",
+    "chapterNumber": 694,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Leave It to Us!!!",
+    "chapterTitleJapanese": "任せろ!!!, Makasero!!!?",
+    "chapterNumber": 695,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Alignment of Interests",
+    "chapterTitleJapanese": "利害の一致, Rigai no Itchi?",
+    "chapterNumber": 696,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "A Deal",
+    "chapterTitleJapanese": "取り引き, Torihiki?",
+    "chapterNumber": 697,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Doflamingo Appears",
+    "chapterTitleJapanese": "ドフラミンゴ現る, Dofuramingo Arawaru?",
+    "chapterNumber": 698,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Morning Edition",
+    "chapterTitleJapanese": "朝刊, Chōkan?",
+    "chapterNumber": 699,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "His Own Pace",
+    "chapterTitleJapanese": "奴のペース, Yatsu no Pēsu?",
+    "chapterNumber": 700,
+    "volumeNumber": 70
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Country of Love, Passion, and Toys",
+    "chapterTitleJapanese": "愛と情熱とオモチャの国の冒険, Ai to Jōnetsu to Omocha no Kuni no Bōken?",
+    "chapterNumber": 701,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Corrida Colosseum",
+    "chapterTitleJapanese": "コリーダコロシアム, Korīda Koroshiamu?",
+    "chapterNumber": 702,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Waiting Room",
+    "chapterTitleJapanese": "控室, Hikaeshitsu?",
+    "chapterNumber": 703,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Lucy and the Statue of Kyros",
+    "chapterTitleJapanese": "ルーシーとキュロスの像, Rūshī to Kyurosu no Zō?",
+    "chapterNumber": 704,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Maynard the Pursuer",
+    "chapterTitleJapanese": "追撃のメイナード, Tsuigeki no Meinādo?",
+    "chapterNumber": 705,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "I Won't Laugh at You",
+    "chapterTitleJapanese": "お前を笑わない, Omae o Warawanai?",
+    "chapterNumber": 706,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "B Block",
+    "chapterTitleJapanese": "B（ビー）ブロック, Bī Burokku?",
+    "chapterNumber": 707,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Colosseum of Scoundrels",
+    "chapterTitleJapanese": "曲者達のコロシアム, Kusemono-tachi no Koroshiamu?",
+    "chapterNumber": 708,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "King Punch!!",
+    "chapterTitleJapanese": "キング・パンチ!!, Kingu Panchi!!?",
+    "chapterNumber": 709,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "To Green Bit",
+    "chapterTitleJapanese": "グリーンビットへ, Gurīn Bitto e?",
+    "chapterNumber": 710,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Land of Dwarves",
+    "chapterTitleJapanese": "小人の国の冒険, Kobito no Kuni no Bōken?",
+    "chapterNumber": 711,
+    "volumeNumber": 71
+  },
+  {
+    "chapterTitleEnglish": "Violet",
+    "chapterTitleJapanese": "ヴァイオレット, Vaioretto?",
+    "chapterNumber": 712,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Usoland",
+    "chapterTitleJapanese": "ウソランド, Usorando?",
+    "chapterNumber": 713,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Lucy and Ucy",
+    "chapterTitleJapanese": "ルーシーとウーシー, Rūshī to Ūshī?",
+    "chapterNumber": 714,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Closely Contested C Block",
+    "chapterTitleJapanese": "激戦区C（シー）ブロック, Gekisen-ku Shī Burokku?",
+    "chapterNumber": 715,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Don Chinjao",
+    "chapterTitleJapanese": "首領（ドン）・チンジャオ, Don Chinjao?",
+    "chapterNumber": 716,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Dressrosa's Forgotten",
+    "chapterTitleJapanese": "ドレスローザの忘れ物, Doresurōza no Wasuremono?",
+    "chapterNumber": 717,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Riku Royal Army on the Flower Hill",
+    "chapterTitleJapanese": "お花畑のリク王軍, Ohanabatake no Riku Ō Gun?",
+    "chapterNumber": 718,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Open, Chinjao",
+    "chapterTitleJapanese": "開けチンジャオ, Hirake Chinjao?",
+    "chapterNumber": 719,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Prison-Gladiators",
+    "chapterTitleJapanese": "囚人剣闘士, Shūjin Kentōshi?",
+    "chapterNumber": 720,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Rebecca and Soldier-san",
+    "chapterTitleJapanese": "レベッカと兵隊さん, Rebekka to Heitai-san?",
+    "chapterNumber": 721,
+    "volumeNumber": 72
+  },
+  {
+    "chapterTitleEnglish": "Royal Bloodlines",
+    "chapterTitleJapanese": "王族の血統, Ōzoku no Kettō?",
+    "chapterNumber": 722,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "Change of Plans",
+    "chapterTitleJapanese": "変更作戦, Henkō Sakusen?",
+    "chapterNumber": 723,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "Law's Plan",
+    "chapterTitleJapanese": "ローの作戦, Rō no Sakusen?",
+    "chapterNumber": 724,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "The Undefeated Woman",
+    "chapterTitleJapanese": "無敗の女, Muhai no Onna?",
+    "chapterNumber": 725,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "The Riku Family",
+    "chapterTitleJapanese": "リク一族, Riku Ichizoku?",
+    "chapterNumber": 726,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "The Lurking Hero",
+    "chapterTitleJapanese": "待ち伏せるヒーロー, Machibuseru Hīrō?",
+    "chapterNumber": 727,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "The Number of Tragedies",
+    "chapterTitleJapanese": "悲劇の数, Higeki no Kazu?",
+    "chapterNumber": 728,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "Warlord Doflamingo vs. Warlord Law",
+    "chapterTitleJapanese": "七武海ドフラミンゴvs.（バーサス）七武海ロー, Shichibukai Dofuramingo Bāsasu Shichibukai Rō?",
+    "chapterNumber": 729,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "3 Cards",
+    "chapterTitleJapanese": "3枚のカード, San-mai no Kādo?",
+    "chapterNumber": 730,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "Operation Dressrosa SOP",
+    "chapterTitleJapanese": "ドレスローザS（エス）O（オー）P（ピー）作戦, Doresurōza Esu-Ō-Pī Sakusen?",
+    "chapterNumber": 731,
+    "volumeNumber": 73
+  },
+  {
+    "chapterTitleEnglish": "The Underground World",
+    "chapterTitleJapanese": "地下の世界, Chika no Sekai?",
+    "chapterNumber": 732,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "What Soldier-san Wants",
+    "chapterTitleJapanese": "兵隊さんの欲しいもの, Heitai-san no Hoshii Mono?",
+    "chapterNumber": 733,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "The Kamaitachi of Rommel",
+    "chapterTitleJapanese": "ロンメルのカマイタチ, Ronmeru no Kamaitachi?",
+    "chapterNumber": 734,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Fujitora's Intention",
+    "chapterTitleJapanese": "藤虎の思惑, Fujitora no Omowaku?",
+    "chapterNumber": 735,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Executive Officer Diamante",
+    "chapterTitleJapanese": "最高幹部ディアマンテ, Saikō Kanbu Diamante?",
+    "chapterNumber": 736,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Officer Tower",
+    "chapterTitleJapanese": "幹部塔, Kanbu-tō?",
+    "chapterNumber": 737,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Trebol Army Special Officer Sugar",
+    "chapterTitleJapanese": "トレーボル軍 特別幹部シュガー, Torēboru-gun Tokubetsu Kanbu Shugā?",
+    "chapterNumber": 738,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Commander",
+    "chapterTitleJapanese": "隊長, Taichō?",
+    "chapterNumber": 739,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "It's Up to You!!!",
+    "chapterTitleJapanese": "頼む!!!, Tanomu!!!?",
+    "chapterNumber": 740,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Liar Usoland",
+    "chapterTitleJapanese": "うそつきウソランド, Usotsuki Usorando?",
+    "chapterNumber": 741,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "I'll Always Be By Your Side",
+    "chapterTitleJapanese": "いつでもキミのそばにいる, Itsudemo Kimi no Soba ni Iru?",
+    "chapterNumber": 742,
+    "volumeNumber": 74
+  },
+  {
+    "chapterTitleEnglish": "Dressrosa in Turmoil",
+    "chapterTitleJapanese": "激震のドレスローザ, Gekishin no Doresurōza?",
+    "chapterNumber": 743,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "The Revolutionary Army Chief of Staff",
+    "chapterTitleJapanese": "革命軍参謀総長, Kakumei-gun Sanbō Sōchō?",
+    "chapterNumber": 744,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "Birdcage",
+    "chapterTitleJapanese": "鳥カゴ, Torikago?",
+    "chapterNumber": 745,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "Stars",
+    "chapterTitleJapanese": "星, Hoshi?",
+    "chapterNumber": 746,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "Executive Officer Pica",
+    "chapterTitleJapanese": "最高幹部ピーカ, Saikō Kanbu Pīka?",
+    "chapterNumber": 747,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "My Repayment",
+    "chapterTitleJapanese": "おれの恩返し, Ore no Ongaeshi?",
+    "chapterNumber": 748,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "March Forward!! Army of Rascals",
+    "chapterTitleJapanese": "すすめ!! 曲者軍団, Susume!! Kusemono Gundan?",
+    "chapterNumber": 749,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "The State of the War",
+    "chapterTitleJapanese": "戦局, Senkyoku?",
+    "chapterNumber": 750,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "Sabo vs. Admiral Fujitora",
+    "chapterTitleJapanese": "サボvs.（バーサス）大将藤虎, Sabo Bāsasu Taishō Fujitora?",
+    "chapterNumber": 751,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "Palm",
+    "chapterTitleJapanese": "掌, Tenohira?",
+    "chapterNumber": 752,
+    "volumeNumber": 75
+  },
+  {
+    "chapterTitleEnglish": "War",
+    "chapterTitleJapanese": "戦, Ikusa?",
+    "chapterNumber": 753,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "Pleased to Make Your Acquaintance",
+    "chapterTitleJapanese": "お見知り置きを, Omishirioki o?",
+    "chapterNumber": 754,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "World of Men",
+    "chapterTitleJapanese": "男の世界, Otoko no Sekai?",
+    "chapterNumber": 755,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "The Fourth Level",
+    "chapterTitleJapanese": "4段目, Yondanme?",
+    "chapterNumber": 756,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "Trump Card",
+    "chapterTitleJapanese": "切り札, Kirifuda?",
+    "chapterNumber": 757,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "Leave It and Go Ahead",
+    "chapterTitleJapanese": "構わず進め, Kamawazu Susume?",
+    "chapterNumber": 758,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "Secret Plan",
+    "chapterTitleJapanese": "秘策, Hisaku?",
+    "chapterNumber": 759,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "The Same Bet",
+    "chapterTitleJapanese": "同じ賭け, Onaji Kake?",
+    "chapterNumber": 760,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "Ope Ope no Mi",
+    "chapterTitleJapanese": "オペオペの実, Ope Ope no Mi?",
+    "chapterNumber": 761,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "The White City",
+    "chapterTitleJapanese": "白い町, Shiroi Machi?",
+    "chapterNumber": 762,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "Humanity Declaration",
+    "chapterTitleJapanese": "人間宣言, Ningen Sengen?",
+    "chapterNumber": 763,
+    "volumeNumber": 76
+  },
+  {
+    "chapterTitleEnglish": "White Monster",
+    "chapterTitleJapanese": "ホワイトモンスター, Howaito Monsutā?",
+    "chapterNumber": 764,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "The Island of Fate: Minion",
+    "chapterTitleJapanese": "運命の島ミニオン, Unmei no Shima Minion?",
+    "chapterNumber": 765,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Smile",
+    "chapterTitleJapanese": "スマイル, Sumairu?",
+    "chapterNumber": 766,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Cora-san",
+    "chapterTitleJapanese": "コラさん, Kora-san?",
+    "chapterNumber": 767,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "The Trigger on That Day",
+    "chapterTitleJapanese": "あの日の引鉄, Ano Hi no Hikigane?",
+    "chapterNumber": 768,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Pirate Bellamy",
+    "chapterTitleJapanese": "海賊ベラミー, Kaizoku Beramī?",
+    "chapterNumber": 769,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "The Spear of Elbaph",
+    "chapterTitleJapanese": "エルバフの槍, Erubafu no Yari?",
+    "chapterNumber": 770,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Happo Navy Don Sai",
+    "chapterTitleJapanese": "八宝水軍首領（ドン）・サイ, Happō Suigun Don Sai?",
+    "chapterNumber": 771,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Cabbage & Lomeo",
+    "chapterTitleJapanese": "キャベツ&（アンド）ロメオ, Kyabetsu ando Romeo?",
+    "chapterNumber": 772,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Half & Half",
+    "chapterTitleJapanese": "ハーフ&（アンド）ハーフ, Hāfu ando Hāfu?",
+    "chapterNumber": 773,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "Leo, the Tontatta Troop Leader",
+    "chapterTitleJapanese": "トンタッタ族戦士長 レオ, Tontatta-zoku Senshi-chō Reo?",
+    "chapterNumber": 774,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "To Russian, With Love",
+    "chapterTitleJapanese": "ルシアンに愛を込めて, Rushian ni Ai o Komete?",
+    "chapterNumber": 775,
+    "volumeNumber": 77
+  },
+  {
+    "chapterTitleEnglish": "The Hero of the Colosseum",
+    "chapterTitleJapanese": "コロシアムの英雄, Koroshiamu no Eiyū?",
+    "chapterNumber": 776,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "Zoro vs. Pica",
+    "chapterTitleJapanese": "ゾロvs.（バーサス）ピーカ, Zoro Bāsasu Pīka?",
+    "chapterNumber": 777,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "Tactics No. 5",
+    "chapterTitleJapanese": "TACTICS（タクティクス） No.5, Takutikusu Nanbā Faibu?",
+    "chapterNumber": 778,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "The Last Fight",
+    "chapterTitleJapanese": "最期のケンカ, Saigo no Kenka?",
+    "chapterNumber": 779,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "The Curse of Heart",
+    "chapterTitleJapanese": "ハートの呪縛, Hāto no Jubaku?",
+    "chapterNumber": 780,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "Long-Cherished Desire",
+    "chapterTitleJapanese": "本懐, Honkai?",
+    "chapterNumber": 781,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "The Charisma of Evil",
+    "chapterTitleJapanese": "悪のカリスマ, Aku no Karisuma?",
+    "chapterNumber": 782,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "In My Way",
+    "chapterTitleJapanese": "邪魔だ, Jama da?",
+    "chapterNumber": 783,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "Gear Fourth",
+    "chapterTitleJapanese": "ギア4（フォース）, Gia Fōsu?",
+    "chapterNumber": 784,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "Even If Your Legs Break",
+    "chapterTitleJapanese": "足が折れても, Ashi ga Oretemo?",
+    "chapterNumber": 785,
+    "volumeNumber": 78
+  },
+  {
+    "chapterTitleEnglish": "Gatz",
+    "chapterTitleJapanese": "ギャッツ, Gyattsu?",
+    "chapterNumber": 786,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "4 Minutes Before",
+    "chapterTitleJapanese": "4分前, Yon-pun Mae?",
+    "chapterNumber": 787,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "My Fight",
+    "chapterTitleJapanese": "私の戦い, Watashi no Tatakai?",
+    "chapterNumber": 788,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Lucy!!",
+    "chapterTitleJapanese": "LUCY（ルーシー）!!, Rūshī!!?",
+    "chapterNumber": 789,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Heaven and Earth",
+    "chapterTitleJapanese": "天と地, Ten to Chi?",
+    "chapterNumber": 790,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Rubble",
+    "chapterTitleJapanese": "ガレキ, Gareki?",
+    "chapterNumber": 791,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Prostration",
+    "chapterTitleJapanese": "土下座, Dogeza?",
+    "chapterNumber": 792,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Tiger and Dog",
+    "chapterTitleJapanese": "虎と犬, Tora to Inu?",
+    "chapterNumber": 793,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Sabo's Adventure",
+    "chapterTitleJapanese": "サボの冒険, Sabo no Bōken?",
+    "chapterNumber": 794,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Suicide",
+    "chapterTitleJapanese": "自殺, Jisatsu?",
+    "chapterNumber": 795,
+    "volumeNumber": 79
+  },
+  {
+    "chapterTitleEnglish": "Soldier-san's Determination",
+    "chapterTitleJapanese": "兵隊さんの決意, Heitai-san no Ketsui?",
+    "chapterNumber": 796,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Rebecca",
+    "chapterTitleJapanese": "レベッカ, Rebekka?",
+    "chapterNumber": 797,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Heart",
+    "chapterTitleJapanese": "ハート, Hāto?",
+    "chapterNumber": 798,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Parent and Child",
+    "chapterTitleJapanese": "親と子, Oya to Ko?",
+    "chapterNumber": 799,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Followers' Sake Cups",
+    "chapterTitleJapanese": "子分盃, Kobun Sakazuki?",
+    "chapterNumber": 800,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Opening Declaration",
+    "chapterTitleJapanese": "開幕宣言, Kaimaku Sengen?",
+    "chapterNumber": 801,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Zou",
+    "chapterTitleJapanese": "ゾウ, Zō?",
+    "chapterNumber": 802,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Elephant Climbing",
+    "chapterTitleJapanese": "登象, Tozō?",
+    "chapterNumber": 803,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Country on the Back of an Elephant",
+    "chapterTitleJapanese": "象の背の国の冒険, Zō no Se no Kuni no Bōken?",
+    "chapterNumber": 804,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "The Mink Tribe",
+    "chapterTitleJapanese": "ミンク族, Minku-zoku?",
+    "chapterNumber": 805,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "At the Fortress of Right Belly",
+    "chapterTitleJapanese": "右腹の砦にて, Ubara no Toride nite?",
+    "chapterNumber": 806,
+    "volumeNumber": 80
+  },
+  {
+    "chapterTitleEnglish": "10 Days Ago",
+    "chapterTitleJapanese": "10日前, Tōka Mae?",
+    "chapterNumber": 807,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Duke Inuarashi",
+    "chapterTitleJapanese": "イヌアラシ公爵, Inuarashi Kōshaku?",
+    "chapterNumber": 808,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Master Nekomamushi",
+    "chapterTitleJapanese": "ネコマムシの旦那, Nekomamushi no Dan'na?",
+    "chapterNumber": 809,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "The Curly Hat Pirates Arrive",
+    "chapterTitleJapanese": "ぐるわらの一味、上陸, Guruwara no Ichimi, Jōriku?",
+    "chapterNumber": 810,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Roko",
+    "chapterTitleJapanese": "ROKO（ロコ）, Roko?",
+    "chapterNumber": 811,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Capone \"Gang\" Bege",
+    "chapterTitleJapanese": "カポネ・“ギャング”ベッジ, Kapone \"Gyangu\" Bejji?",
+    "chapterNumber": 812,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Tea Party Invitation",
+    "chapterTitleJapanese": "お茶会の招待状, Ochakai no Shōtaijō?",
+    "chapterNumber": 813,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Let's Go See Master Nekomamushi",
+    "chapterTitleJapanese": "ネコマムシの旦那に会いに行こう, Nekomamushi no Dan'na ni Ai ni Yukō?",
+    "chapterNumber": 814,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Take Me with You!!",
+    "chapterTitleJapanese": "おれも連れてけ!!, Ore mo Tsureteke!!?",
+    "chapterNumber": 815,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Dog vs. Cat",
+    "chapterTitleJapanese": "イヌvs.（バーサス）ネコ, Inu Bāsasu Neko?",
+    "chapterNumber": 816,
+    "volumeNumber": 81
+  },
+  {
+    "chapterTitleEnglish": "Raizo of the Mist",
+    "chapterTitleJapanese": "霧の雷ぞう, Kiri no Raizō?",
+    "chapterNumber": 817,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Inside the Whale",
+    "chapterTitleJapanese": "くじらの中で, Kujira no Naka de?",
+    "chapterNumber": 818,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Momonosuke, Heir of the Kouzuki Family",
+    "chapterTitleJapanese": "光月家跡取り・モモの助, Kōzuki-ke Atotori Momonosuke?",
+    "chapterNumber": 819,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Dog and Cat Have a History",
+    "chapterTitleJapanese": "犬と猫に歴史あり, Inu to Neko ni Rekishi Ari?",
+    "chapterNumber": 820,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Understood",
+    "chapterTitleJapanese": "承知した, Shōchi shita?",
+    "chapterNumber": 821,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Descending the Elephant",
+    "chapterTitleJapanese": "下象, Gezō?",
+    "chapterNumber": 822,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "A World Abuzz",
+    "chapterTitleJapanese": "ざわつく世界, Zawatsuku Sekai?",
+    "chapterNumber": 823,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Whim",
+    "chapterTitleJapanese": "気まぐれ, Kimagure?",
+    "chapterNumber": 824,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "The WEJ's Comic Strip",
+    "chapterTitleJapanese": "世経の絵物語, Sekei no Emonogatari?",
+    "chapterNumber": 825,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "0 and 4",
+    "chapterTitleJapanese": "0と4, Rei to Yon?",
+    "chapterNumber": 826,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "Totto Land",
+    "chapterTitleJapanese": "トットランド, Tottorando?",
+    "chapterNumber": 827,
+    "volumeNumber": 82
+  },
+  {
+    "chapterTitleEnglish": "1 and 2",
+    "chapterTitleJapanese": "1と2, Ichi to Ni?",
+    "chapterNumber": 828,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "Emperor of the Sea, Charlotte Linlin",
+    "chapterTitleJapanese": "海賊「四皇」シャーロット・リンリン, Kaizoku \"Yonkō\" Shārotto Rinrin?",
+    "chapterNumber": 829,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "A Man You Can Bet On",
+    "chapterTitleJapanese": "賭けられる男, Kakerareru Otoko?",
+    "chapterNumber": 830,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Mysterious Forest",
+    "chapterTitleJapanese": "不思議な森の冒険, Fushigi na Mori no Bōken?",
+    "chapterNumber": 831,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "Germa Kingdom",
+    "chapterTitleJapanese": "ジェルマ王国, Jeruma Ōkoku?",
+    "chapterNumber": 832,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "Vinsmoke Judge",
+    "chapterTitleJapanese": "ヴィンスモーク・ジャッジ, Vinsumōku Jajji?",
+    "chapterNumber": 833,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "My Dream",
+    "chapterTitleJapanese": "おれの夢, Ore no Yume?",
+    "chapterNumber": 834,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "The Nation of Souls",
+    "chapterTitleJapanese": "魂の国, Tamashii no Kuni?",
+    "chapterNumber": 835,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "The Vivre Card Lola Gave",
+    "chapterTitleJapanese": "ローラがくれた命の紙（ビブルカード）, Rōra ga Kureta Biburu Kādo?",
+    "chapterNumber": 836,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Commander Cracker",
+    "chapterTitleJapanese": "ルフィvs.（バーサス）将星クラッカー, Rufi Bāsasu Shōsei Kurakkā?",
+    "chapterNumber": 837,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "Choniki",
+    "chapterTitleJapanese": "チョニキ, Choniki?",
+    "chapterNumber": 838,
+    "volumeNumber": 83
+  },
+  {
+    "chapterTitleEnglish": "I Owe You My Life",
+    "chapterTitleJapanese": "くそお世話になりました, Kuso Osewa ni Narimashita?",
+    "chapterNumber": 839,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Iron Mask",
+    "chapterTitleJapanese": "鉄仮面, Tekkamen?",
+    "chapterNumber": 840,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "To the East Blue",
+    "chapterTitleJapanese": "“東の海（イーストブルー）”へ, Īsuto Burū e?",
+    "chapterNumber": 841,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "The Power of a Full Stomach",
+    "chapterTitleJapanese": "満腹の力, Manpuku no Chikara?",
+    "chapterNumber": 842,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Vinsmoke Sanji",
+    "chapterTitleJapanese": "ヴィンスモーク・サンジ, Vinsumōku Sanji?",
+    "chapterNumber": 843,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Sanji",
+    "chapterTitleJapanese": "ルフィvs.（バーサス）サンジ, Rufi Bāsasu Sanji?",
+    "chapterNumber": 844,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Forces of Rage",
+    "chapterTitleJapanese": "怒りの軍団, Ikari no Gundan?",
+    "chapterNumber": 845,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Tamago's Security",
+    "chapterTitleJapanese": "タマゴの警備, Tamago no Keibi?",
+    "chapterNumber": 846,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Luffy and Big Mom",
+    "chapterTitleJapanese": "ルフィとビッグ・マム, Rufi to Biggu Mamu?",
+    "chapterNumber": 847,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Goodbye",
+    "chapterTitleJapanese": "さよなら, Sayonara?",
+    "chapterNumber": 848,
+    "volumeNumber": 84
+  },
+  {
+    "chapterTitleEnglish": "Choniki in Mirrorland",
+    "chapterTitleJapanese": "鏡の国のチョニキ, Kagami no Kuni no Choniki?",
+    "chapterNumber": 849,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "A Ray of Light",
+    "chapterTitleJapanese": "一筋の光, Hitosuji no Hikari?",
+    "chapterNumber": 850,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Moist Cigarette",
+    "chapterTitleJapanese": "シケモク, Shikemoku?",
+    "chapterNumber": 851,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Germa's Failure",
+    "chapterTitleJapanese": "ジェルマの失敗作, Jeruma no Shippaisaku?",
+    "chapterNumber": 852,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Not Here",
+    "chapterTitleJapanese": "ここじゃねェ, Koko ja nē?",
+    "chapterNumber": 853,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "What Are You Doing?",
+    "chapterTitleJapanese": "何やってんだ, Nani Yattenda?",
+    "chapterNumber": 854,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Gugyurururu!!!",
+    "chapterTitleJapanese": "ぐぎゅるるる!!!, Gugyurururu!!!?",
+    "chapterNumber": 855,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Liar",
+    "chapterTitleJapanese": "ウソつき, Usotsuki?",
+    "chapterNumber": 856,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Rook",
+    "chapterTitleJapanese": "ルーク, Rūku?",
+    "chapterNumber": 857,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Meeting",
+    "chapterTitleJapanese": "会議, Kaigi?",
+    "chapterNumber": 858,
+    "volumeNumber": 85
+  },
+  {
+    "chapterTitleEnglish": "Emperor Assassination Plan",
+    "chapterTitleJapanese": "四皇暗殺作戦, Yonkō Ansatsu Sakusen?",
+    "chapterNumber": 859,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "10:00 Opening of the Banquet",
+    "chapterTitleJapanese": "10:00 開宴, Jū-ji Kaien?",
+    "chapterNumber": 860,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "Good Actor",
+    "chapterTitleJapanese": "演技派, Engi-ha?",
+    "chapterNumber": 861,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "The Intelligent Ones",
+    "chapterTitleJapanese": "頭脳派, Zunō-ha?",
+    "chapterNumber": 862,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "The Honorable",
+    "chapterTitleJapanese": "義侠派, Gikyō-ha?",
+    "chapterNumber": 863,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "The Vinsmoke Family Massacre Plan",
+    "chapterTitleJapanese": "ヴィンスモーク家皆殺し計画, Vinsumōku-ke Minagoroshi Keikaku?",
+    "chapterNumber": 864,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "Hey, Mother",
+    "chapterTitleJapanese": "ねぇマザー, Nē Mazā?",
+    "chapterNumber": 865,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "Natural Born Destroyer",
+    "chapterTitleJapanese": "NATURAL（ナチュラル） BORN（ボーン） DESTROYER（デストロイヤー）, Nachuraru Bōn Desutoroiyā?",
+    "chapterNumber": 866,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "Happy Birthday",
+    "chapterTitleJapanese": "HAPPY（ハッピー） BIRTHDAY（バースデー）, Happī Bāsudē?",
+    "chapterNumber": 867,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "KX Launcher",
+    "chapterTitleJapanese": "K（ケー）X（エックス）ランチャー, Kē-Ekkusu Ranchā?",
+    "chapterNumber": 868,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "Under Siege",
+    "chapterTitleJapanese": "籠城, Rōjō?",
+    "chapterNumber": 869,
+    "volumeNumber": 86
+  },
+  {
+    "chapterTitleEnglish": "Parting",
+    "chapterTitleJapanese": "訣別, Ketsubetsu?",
+    "chapterNumber": 870,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "You Can Do It, Caesar!!",
+    "chapterTitleJapanese": "がんばれシーザー!!, Ganbare Shīzā!!?",
+    "chapterNumber": 871,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Thick and Fluffy",
+    "chapterTitleJapanese": "とろふわ, Torofuwa?",
+    "chapterNumber": 872,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Trapped Like Sweets in a Cage",
+    "chapterTitleJapanese": "八方塞菓子, Happō Fusa-gashi?",
+    "chapterNumber": 873,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Become My Servant",
+    "chapterTitleJapanese": "私のしもべになりなさい, Watashi no Shimobe ni Narinasai?",
+    "chapterNumber": 874,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "A Woman's Honor",
+    "chapterTitleJapanese": "女の仁義, Onna no Jingi?",
+    "chapterNumber": 875,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Pudding Coincidentally Appears!!",
+    "chapterTitleJapanese": "プリン、偶然現る!!, Purin, Gūzen Arawaru!!?",
+    "chapterNumber": 876,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Not Sweet",
+    "chapterTitleJapanese": "甘くない, Amakunai?",
+    "chapterNumber": 877,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Mink Tribe, Guardians Captain Pedro",
+    "chapterTitleJapanese": "ミンク族 侠客団（ガーディアンズ） 団長ペドロ, Minku-zoku Gādianzu Danchō Pedoro?",
+    "chapterNumber": 878,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "One of Big Mom's \"3 Sweet Commanders\", Katakuri",
+    "chapterTitleJapanese": "ビッグ・マム「スイート3将星」カタクリ, Biggu Mamu \"Suīto San Shōsei\" Katakuri?",
+    "chapterNumber": 879,
+    "volumeNumber": 87
+  },
+  {
+    "chapterTitleEnglish": "Zero Escape",
+    "chapterTitleJapanese": "退路0（ゼロ）, Tairo Zero?",
+    "chapterNumber": 880,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Wave Room",
+    "chapterTitleJapanese": "波の部屋, Nami no Heya?",
+    "chapterNumber": 881,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Beyond the Emperor's Expectations",
+    "chapterTitleJapanese": "四皇の想定外, Yonkō no Sōtei-gai?",
+    "chapterNumber": 882,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Merienda",
+    "chapterTitleJapanese": "おやつの時間（メリエンダ）, Merienda?",
+    "chapterNumber": 883,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Who",
+    "chapterTitleJapanese": "誰だ, Dare da?",
+    "chapterNumber": 884,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "It's Brûlée!!!",
+    "chapterTitleJapanese": "ブリュレだよっ!!!, Buryure dayo!!!?",
+    "chapterNumber": 885,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Way of Life",
+    "chapterTitleJapanese": "生き様でちゅよ, Ikizama dechu yo?",
+    "chapterNumber": 886,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Somewhere, Someone is Wishing for Your Happiness",
+    "chapterTitleJapanese": "どこかで誰かが君の幸せを願ってる, Dokoka de Dareka ga Kimi no Shiawase o Negatteru?",
+    "chapterNumber": 887,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Lion",
+    "chapterTitleJapanese": "獅子, Shishi?",
+    "chapterNumber": 888,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "An Unknown Mama",
+    "chapterTitleJapanese": "未知のママ, Michi no Mama?",
+    "chapterNumber": 889,
+    "volumeNumber": 88
+  },
+  {
+    "chapterTitleEnglish": "Big Mom on the Ship",
+    "chapterTitleJapanese": "船の上のビッグ・マム, Fune no Ue no Biggu Mamu?",
+    "chapterNumber": 890,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "Believing in Me",
+    "chapterTitleJapanese": "信じられてる, Shinjirareteru?",
+    "chapterNumber": 891,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "Recognized as Strong Opponents",
+    "chapterTitleJapanese": "強敵認定, Kyōteki Nintei?",
+    "chapterNumber": 892,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "36th Daughter of the Charlotte Family - Flampe",
+    "chapterTitleJapanese": "C（シャーロット）家36女フランペ, Shārotto-ke Sanjūroku-jo Furanpe?",
+    "chapterNumber": 893,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "12:05",
+    "chapterTitleJapanese": "0時5分, Rei-ji Go-fun?",
+    "chapterNumber": 894,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "Pirate Luffy vs. Commander Katakuri",
+    "chapterTitleJapanese": "海賊ルフィvs.（バーサス）将星カタクリ, Kaizoku Rufi Bāsasu Shōsei Katakuri?",
+    "chapterNumber": 895,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "The Last Request",
+    "chapterTitleJapanese": "最後のお願い, Saigo no Onegai?",
+    "chapterNumber": 896,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "Pekoms's Cacao Island Escape Plan",
+    "chapterTitleJapanese": "ペコムズのカカオ島脱出作戦, Pekomuzu no Kakao-tō Dasshutsu Sakusen?",
+    "chapterNumber": 897,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "We'll Definitely Return",
+    "chapterTitleJapanese": "必ず戻る, Kanarazu Modoru?",
+    "chapterNumber": 898,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "The Last Stand",
+    "chapterTitleJapanese": "最後の砦, Saigo no Toride?",
+    "chapterNumber": 899,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "Bad End Musical",
+    "chapterTitleJapanese": "BADEND（バッドエンド） MUSICAL（ミュージカル）, Baddoendo Myūjikaru?",
+    "chapterNumber": 900,
+    "volumeNumber": 89
+  },
+  {
+    "chapterTitleEnglish": "Even If You Die, Don't Die!!!",
+    "chapterTitleJapanese": "死んでも死ぬなよ!!!, Shindemo Shinunayo!!!?",
+    "chapterNumber": 901,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "End Roll",
+    "chapterTitleJapanese": "END（エンド） ROLL（ロール）, Endo Rōru?",
+    "chapterNumber": 902,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "The Fifth Emperor",
+    "chapterTitleJapanese": "5番目の皇帝, Go-banme no Kōtei?",
+    "chapterNumber": 903,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "Introducing the Revolutionary Army Commanders",
+    "chapterTitleJapanese": "革命軍全軍隊長登場, Kakumei-gun Zengun Taichō Tōjō?",
+    "chapterNumber": 904,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "A Beautiful World",
+    "chapterTitleJapanese": "美しい世界, Utsukushii Sekai?",
+    "chapterNumber": 905,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "The Holy Land Mary Geoise",
+    "chapterTitleJapanese": "聖地マリージョア, Seichi Marījoa?",
+    "chapterNumber": 906,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "The Empty Throne",
+    "chapterTitleJapanese": "虚の玉座, Kara no Gyokuza?",
+    "chapterNumber": 907,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "The Levely Begins",
+    "chapterTitleJapanese": "世界会議（レヴェリー）開幕, Reverī Kaimaku?",
+    "chapterNumber": 908,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "Seppuku",
+    "chapterTitleJapanese": "切腹, Seppuku?",
+    "chapterNumber": 909,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "Onward to Wano Country",
+    "chapterTitleJapanese": "いざワノ国へ, Iza Wano Kuni e?",
+    "chapterNumber": 910,
+    "volumeNumber": 90
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Land of Samurai",
+    "chapterTitleJapanese": "侍の国の冒険, Samurai no Kuni no Bōken?",
+    "chapterNumber": 911,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Amigasa Village",
+    "chapterTitleJapanese": "編笠村, Amigasa-mura?",
+    "chapterNumber": 912,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Tsuru Returns the Favor",
+    "chapterTitleJapanese": "鶴の恩返し, Tsuru no Ongaeshi?",
+    "chapterNumber": 913,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Okobore Town",
+    "chapterTitleJapanese": "おこぼれ町, Okobore-chō?",
+    "chapterNumber": 914,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Bakura Town",
+    "chapterTitleJapanese": "博羅町, Bakura-chō?",
+    "chapterNumber": 915,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Wano Country Grand Sumo Tournament",
+    "chapterTitleJapanese": "ワノ国大相撲, Wano Kuni Ōzumō?",
+    "chapterNumber": 916,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "The Treasure Ship of Provisions",
+    "chapterTitleJapanese": "食糧宝船, Shokuryō Takarabune?",
+    "chapterNumber": 917,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Luffy-tarou Returns the Favor",
+    "chapterTitleJapanese": "ルフィ太郎の恩返し, Rufitarō no Ongaeshi?",
+    "chapterNumber": 918,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "The Ruins of Oden Castle",
+    "chapterTitleJapanese": "おでん城跡, Oden-jō Ato?",
+    "chapterNumber": 919,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "I Love Oden",
+    "chapterTitleJapanese": "おでんが好き, Oden ga Suki?",
+    "chapterNumber": 920,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Shutenmaru",
+    "chapterTitleJapanese": "酒天丸, Shutenmaru?",
+    "chapterNumber": 921,
+    "volumeNumber": 91
+  },
+  {
+    "chapterTitleEnglish": "Beasts Pirates General: Kaidou",
+    "chapterTitleJapanese": "百獣海賊団総督 カイドウ, Hyakujū Kaizokudan Sōtoku Kaidō?",
+    "chapterNumber": 922,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Emperor of the Sea Kaidou vs. Luffy",
+    "chapterTitleJapanese": "四皇カイドウvs.（バーサス）ルフィ, Yonkō Kaidō Bāsasu Rufi?",
+    "chapterNumber": 923,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Ha",
+    "chapterTitleJapanese": "は, Ha?",
+    "chapterNumber": 924,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Blank",
+    "chapterTitleJapanese": "ブランク, Buranku?",
+    "chapterNumber": 925,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "The Prisoner Mine",
+    "chapterTitleJapanese": "囚人採掘場, Shūjin Saikutsujō?",
+    "chapterNumber": 926,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "O-Toko the Kamuro",
+    "chapterTitleJapanese": "禿のおトコ, Kamuro no O-Toko?",
+    "chapterNumber": 927,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Introducing Komurasaki the Oiran",
+    "chapterTitleJapanese": "花魁小紫登場, Oiran Komurasaki Tōjō?",
+    "chapterNumber": 928,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Shogun of Wano Country, Kurozumi Orochi",
+    "chapterTitleJapanese": "ワノ国将軍 黒炭オロチ, Wano Kuni Shōgun - Kurozumi Orochi?",
+    "chapterNumber": 929,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Ebisu Town",
+    "chapterTitleJapanese": "えびす町, Ebisu-chō?",
+    "chapterNumber": 930,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "O-Soba Mask",
+    "chapterTitleJapanese": "おそばマスク, O-Soba Masuku?",
+    "chapterNumber": 931,
+    "volumeNumber": 92
+  },
+  {
+    "chapterTitleEnglish": "Shogun and Oiran",
+    "chapterTitleJapanese": "将軍と花魁, Shōgun to Oiran?",
+    "chapterNumber": 932,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "A Warrior's Mercy",
+    "chapterTitleJapanese": "武士の情け, Bushi no Nasake?",
+    "chapterNumber": 933,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "Hyougoro of the Flower",
+    "chapterTitleJapanese": "花のヒョウ五郎, Hana no Hyōgorō?",
+    "chapterNumber": 934,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "Queen",
+    "chapterTitleJapanese": "QUEEN（クイーン）, Kuīn?",
+    "chapterNumber": 935,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "The Grand Sumo Inferno",
+    "chapterTitleJapanese": "大相撲インフェルノ, Ōzumō Inferuno?",
+    "chapterNumber": 936,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "Gyukimaru on Oihagi Bridge",
+    "chapterTitleJapanese": "おいはぎ橋の牛鬼丸, Oihagi-bashi no Gyūkimaru?",
+    "chapterNumber": 937,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "A Woman's Secret",
+    "chapterTitleJapanese": "女の秘密, On'na no Himitsu?",
+    "chapterNumber": 938,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "The Old Leopard Never Forgets the Way",
+    "chapterTitleJapanese": "老いたる豹は路を忘れず, Oitaru Hyō wa Michi o Wasurezu?",
+    "chapterNumber": 939,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "Sparks of Rebellion",
+    "chapterTitleJapanese": "反逆の火種, Hangyaku no Hidane?",
+    "chapterNumber": 940,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "The Star of Ebisu Town",
+    "chapterTitleJapanese": "えびす町の人気者, Ebisu-chō no Ninkimono?",
+    "chapterNumber": 941,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "Daimyo of Hakumai, Shimotsuki Yasuie",
+    "chapterTitleJapanese": "“白舞大名”霜月康イエ, \"Hakumai Daimyō\" Shimotsuki Yasuie?",
+    "chapterNumber": 942,
+    "volumeNumber": 93
+  },
+  {
+    "chapterTitleEnglish": "SMILE",
+    "chapterTitleJapanese": "SMILE（スマイル）, Sumairu?",
+    "chapterNumber": 943,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Partner",
+    "chapterTitleJapanese": "相棒, Aibō?",
+    "chapterNumber": 944,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "O-Lin",
+    "chapterTitleJapanese": "おリン, O-Rin?",
+    "chapterNumber": 945,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Queen vs. O-Lin",
+    "chapterTitleJapanese": "クイーンvs.（バーサス）おリン, Kuīn Bāsasu O-Rin?",
+    "chapterNumber": 946,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Queen's Gamble",
+    "chapterTitleJapanese": "クイーンの賭け, Kuīn no Kake?",
+    "chapterNumber": 947,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Introducing Kawamatsu the Kappa",
+    "chapterTitleJapanese": "“河童の河松”登場, \"Kappa no Kawamatsu\" Tōjō?",
+    "chapterNumber": 948,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Mummy",
+    "chapterTitleJapanese": "ミイラ, Miira?",
+    "chapterNumber": 949,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "The Warriors' Dreams",
+    "chapterTitleJapanese": "兵どもが夢, Tsuwamono-domo ga Yume?",
+    "chapterNumber": 950,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Rampage",
+    "chapterTitleJapanese": "RAMPAGE（ランペイジ）, Ranpeiji?",
+    "chapterNumber": 951,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Hiyori and Kawamatsu",
+    "chapterTitleJapanese": "日和と河松, Hiyori to Kawamatsu?",
+    "chapterNumber": 952,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Once a Fox",
+    "chapterTitleJapanese": "一度狐, Ichido Gitsune?",
+    "chapterNumber": 953,
+    "volumeNumber": 94
+  },
+  {
+    "chapterTitleEnglish": "Like Giving Wings to a Dragon",
+    "chapterTitleJapanese": "龍に翼を得たる如し, Ryū ni Tsubasa o Etaru Gotoshi?",
+    "chapterNumber": 954,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Enma",
+    "chapterTitleJapanese": "閻魔, Enma?",
+    "chapterNumber": 955,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Big News",
+    "chapterTitleJapanese": "ビッグニュース, Biggu Nyūsu?",
+    "chapterNumber": 956,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Ultimate",
+    "chapterTitleJapanese": "ULTIMATE（アルティメット）, Arutimetto?",
+    "chapterNumber": 957,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "The Promised Port",
+    "chapterTitleJapanese": "約束の港, Yakusoku no Minato?",
+    "chapterNumber": 958,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Samurai",
+    "chapterTitleJapanese": "侍, Samurai?",
+    "chapterNumber": 959,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Introducing Kouzuki Oden",
+    "chapterTitleJapanese": "光月おでん登場, Kōzuki Oden Tōjō?",
+    "chapterNumber": 960,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "The Mountain God Incident",
+    "chapterTitleJapanese": "山の神事件, Yama no Kami Jiken?",
+    "chapterNumber": 961,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Daimyo and Retainers",
+    "chapterTitleJapanese": "大名と家臣, Daimyō to Kashin?",
+    "chapterNumber": 962,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Becoming Samurai",
+    "chapterTitleJapanese": "侍になる, Samurai ni Naru?",
+    "chapterNumber": 963,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "Oden's Adventure",
+    "chapterTitleJapanese": "おでんの冒険, Oden no Bōken?",
+    "chapterNumber": 964,
+    "volumeNumber": 95
+  },
+  {
+    "chapterTitleEnglish": "The Kurozumi Family's Plot",
+    "chapterTitleJapanese": "黒炭家の陰謀, Kurozumi-ke no Inbō?",
+    "chapterNumber": 965,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Roger and Whitebeard",
+    "chapterTitleJapanese": "ロジャーと白ひげ, Rojā to Shirohige?",
+    "chapterNumber": 966,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Roger's Adventure",
+    "chapterTitleJapanese": "ロジャーの冒険, Rojā no Bōken?",
+    "chapterNumber": 967,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Oden's Return",
+    "chapterTitleJapanese": "おでんの帰還, Oden no Kikan?",
+    "chapterNumber": 968,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Fool of a Lord",
+    "chapterTitleJapanese": "バカ殿, Baka-tono?",
+    "chapterNumber": 969,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Oden vs. Kaidou",
+    "chapterTitleJapanese": "おでんvs.（バーサス）カイドウ, Oden Bāsasu Kaidō?",
+    "chapterNumber": 970,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Sentenced to Boil",
+    "chapterTitleJapanese": "釜茹での刑, Kamayude no Kei?",
+    "chapterNumber": 971,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "I am Oden, And I Was Born to Boil",
+    "chapterTitleJapanese": "煮えてなんぼのおでんに候, Niete Nanbo no Oden ni Sōrō?",
+    "chapterNumber": 972,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "The Kouzuki Clan",
+    "chapterTitleJapanese": "光月の一族, Kōzuki no Ichizoku?",
+    "chapterNumber": 973,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Onward to Onigashima!!",
+    "chapterTitleJapanese": "いざ、鬼ヶ島!!, Iza, Onigashima!!?",
+    "chapterNumber": 974,
+    "volumeNumber": 96
+  },
+  {
+    "chapterTitleEnglish": "Kin'emon's Clever Trick",
+    "chapterTitleJapanese": "錦えもんの一計, Kin'emon no Ikkei?",
+    "chapterNumber": 975,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Begging Your Pardon!!!",
+    "chapterTitleJapanese": "お控えなすって!!!, Ohikēnasutte!!!?",
+    "chapterNumber": 976,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "The Party's Off!!!",
+    "chapterTitleJapanese": "宴はやめだ!!!, Utage wa Yame da!!!?",
+    "chapterNumber": 977,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Introducing the Tobiroppo",
+    "chapterTitleJapanese": "飛び六胞登場, Tobi Roppō Tōjō?",
+    "chapterNumber": 978,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Family Problem",
+    "chapterTitleJapanese": "家族問題, Kazoku Mondai?",
+    "chapterNumber": 979,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Fighting Music",
+    "chapterTitleJapanese": "戦う音楽（ミュージック）, Tatakau Myūjikku?",
+    "chapterNumber": 980,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Joining the Fight",
+    "chapterTitleJapanese": "参戦, Sansen?",
+    "chapterNumber": 981,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Scoundrel Meets Scoundrel",
+    "chapterTitleJapanese": "無礼者 meets（ミーツ） 無礼者, Bureimono Mītsu Bureimono?",
+    "chapterNumber": 982,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "Thunder",
+    "chapterTitleJapanese": "雷鳴, Raimei?",
+    "chapterNumber": 983,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "My Bible",
+    "chapterTitleJapanese": "僕の聖書（バイブル）, Boku no Baiburu?",
+    "chapterNumber": 984,
+    "volumeNumber": 97
+  },
+  {
+    "chapterTitleEnglish": "New Onigashima Project",
+    "chapterTitleJapanese": "新鬼ヶ島計画, Shin Onigashima Keikaku?",
+    "chapterNumber": 985,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "My Name",
+    "chapterTitleJapanese": "拙者の名前, Sessha no Namae?",
+    "chapterNumber": 986,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "The Brocade of Loyal Retainers",
+    "chapterTitleJapanese": "忠臣錦, Chūshin-nishiki?",
+    "chapterNumber": 987,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "Sorry for the Wait",
+    "chapterTitleJapanese": "待たせたな, Matasetana?",
+    "chapterNumber": 988,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "I Can't Imagine Losing",
+    "chapterTitleJapanese": "負ける気がしねえ, Makeru Ki ga Shinē?",
+    "chapterNumber": 989,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "Army of One",
+    "chapterTitleJapanese": "孤軍, Kogun?",
+    "chapterNumber": 990,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "Let Us Die!!!",
+    "chapterTitleJapanese": "死なせてくれ!!!, Shinasetekure!!!?",
+    "chapterNumber": 991,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "Remnants",
+    "chapterTitleJapanese": "残党, Zantō?",
+    "chapterNumber": 992,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "The Dream of Wano Country",
+    "chapterTitleJapanese": "ワノ国の夢, Wano Kuni no Yume?",
+    "chapterNumber": 993,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "My Other Name is Yamato",
+    "chapterTitleJapanese": "またの名はヤマト, Mata no Na wa Yamato?",
+    "chapterNumber": 994,
+    "volumeNumber": 98
+  },
+  {
+    "chapterTitleEnglish": "A Kunoichi's Oath",
+    "chapterTitleJapanese": "くの一の誓い, Kunoichi no Chikai?",
+    "chapterNumber": 995,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Island of the Strongest",
+    "chapterTitleJapanese": "最強がいる島, Saikyō ga Iru Shima?",
+    "chapterNumber": 996,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Flame Clouds",
+    "chapterTitleJapanese": "焔雲, Homura-gumo?",
+    "chapterNumber": 997,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Ancient Types",
+    "chapterTitleJapanese": "古代種, Kodai-shu?",
+    "chapterNumber": 998,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "The Sake I Brewed to Drink With You",
+    "chapterTitleJapanese": "君がため醸みし待酒, Kimi ga Tame Kamishi Machizake?",
+    "chapterNumber": 999,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Straw Hat Luffy",
+    "chapterTitleJapanese": "麦わらのルフィ, Mugiwara no Rufi?",
+    "chapterNumber": 1000,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Battle of Monsters on Onigashima",
+    "chapterTitleJapanese": "鬼ヶ島怪物決戦, Onigashima Kaibutsu Kessen?",
+    "chapterNumber": 1001,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Four Emperors vs. New Generation",
+    "chapterTitleJapanese": "四皇vs.（バーサス）新世代, Yonkō Bāsasu Shin Sedai?",
+    "chapterNumber": 1002,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Night on the Board",
+    "chapterTitleJapanese": "盤上の夜, Banjō no Yoru?",
+    "chapterNumber": 1003,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Kibi Dango",
+    "chapterTitleJapanese": "きびだんご, Kibi Dango?",
+    "chapterNumber": 1004,
+    "volumeNumber": 99
+  },
+  {
+    "chapterTitleEnglish": "Devil Child",
+    "chapterTitleJapanese": "悪魔の子, Akuma no Ko?",
+    "chapterNumber": 1005,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "The Honorable Hyougoro of the Flower",
+    "chapterTitleJapanese": "侠客“花のヒョウ五郎”, Kyōkaku \"Hana no Hyōgorō\"?",
+    "chapterNumber": 1006,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Tanuki-san",
+    "chapterTitleJapanese": "たぬきさん, Tanuki-san?",
+    "chapterNumber": 1007,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Leader of the Mt. Atama Thieves, Ashura Doji",
+    "chapterTitleJapanese": "頭山盗賊団棟梁アシュラ童子, Atama-yama Tōzoku-dan Tōryō Ashura Dōji?",
+    "chapterNumber": 1008,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Naraku",
+    "chapterTitleJapanese": "奈落, Naraku?",
+    "chapterNumber": 1009,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Color of the Supreme King",
+    "chapterTitleJapanese": "覇王色, Haō-shoku?",
+    "chapterNumber": 1010,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "The Code of Anko",
+    "chapterTitleJapanese": "あんこの仁義, Anko no Jingi?",
+    "chapterNumber": 1011,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Itch",
+    "chapterTitleJapanese": "うず, Uzu?",
+    "chapterNumber": 1012,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Anarchy In The B.M.",
+    "chapterTitleJapanese": "Anarchy（アナーキー） In（イン） The（ザ） BM（ビッグ・マム）, Anākī In Za Biggu Mamu?",
+    "chapterNumber": 1013,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Life's Lousy Actor",
+    "chapterTitleJapanese": "人生の大根役者, Jinsei no Daikon Yakusha?",
+    "chapterNumber": 1014,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "Chains",
+    "chapterTitleJapanese": "縁（くさり）, Kusari?",
+    "chapterNumber": 1015,
+    "volumeNumber": 100
+  },
+  {
+    "chapterTitleEnglish": "This is O-Tama!!",
+    "chapterTitleJapanese": "お玉でやんす!!, Otama de-yansu!!?",
+    "chapterNumber": 1016,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "The Order",
+    "chapterTitleJapanese": "号令, Gōrei?",
+    "chapterNumber": 1017,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "Jinbe vs. Who's-Who",
+    "chapterTitleJapanese": "ジンベエvs.（バーサス）フーズ・フー, Jinbē Bāsasu Fūzu Fū?",
+    "chapterNumber": 1018,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "Heliceratops",
+    "chapterTitleJapanese": "ヘリケラトプス, Herikeratopusu?",
+    "chapterNumber": 1019,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "Robin vs. Black Maria",
+    "chapterTitleJapanese": "ロビンvs.（バーサス）ブラックマリア, Robin Bāsasu Burakkumaria?",
+    "chapterNumber": 1020,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "Demonio",
+    "chapterTitleJapanese": "デモニオ, Demonio?",
+    "chapterNumber": 1021,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "The Stars Take the Stage",
+    "chapterTitleJapanese": "花形登場, Hanagata Tōjō?",
+    "chapterNumber": 1022,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "Two Peas in a Pod",
+    "chapterTitleJapanese": "瓜（ウリ）二つ, Uri Futatsu?",
+    "chapterNumber": 1023,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "So-and-So",
+    "chapterTitleJapanese": "某（なにがし）, Nanigashi?",
+    "chapterNumber": 1024,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "Twin Dragons Painting",
+    "chapterTitleJapanese": "双龍図, Sōryū-zu?",
+    "chapterNumber": 1025,
+    "volumeNumber": 101
+  },
+  {
+    "chapterTitleEnglish": "The Pivotal Clash",
+    "chapterTitleJapanese": "天王山, Tennōzan?",
+    "chapterNumber": 1026,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Danger Beyond Imagining",
+    "chapterTitleJapanese": "想像を超える危機, Sōzō o Koeru Kiki?",
+    "chapterNumber": 1027,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Brachiojaurus",
+    "chapterTitleJapanese": "ブラキオ蛇（ジャ）ウルス, Burakiojaurusu?",
+    "chapterNumber": 1028,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "The Tower",
+    "chapterTitleJapanese": "塔（タワー）, Tawā?",
+    "chapterNumber": 1029,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Echoing the Impermanence of All Things",
+    "chapterTitleJapanese": "諸行無常の響きあり, Shogyōmujō no Hibiki Ari?",
+    "chapterNumber": 1030,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Warrior of Science",
+    "chapterTitleJapanese": "科学の戦士, Kagaku no Senshi?",
+    "chapterNumber": 1031,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Oden's Beloved Blade",
+    "chapterTitleJapanese": "おでんの愛刀, Oden no Aitō?",
+    "chapterNumber": 1032,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Shimotsuki Kouzaburou",
+    "chapterTitleJapanese": "霜月コウ三郎, Shimotsuki Kōzaburō?",
+    "chapterNumber": 1033,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Sanji vs. Queen",
+    "chapterTitleJapanese": "サンジvs.（バーサス）クイーン, Sanji Bāsasu Kuīn?",
+    "chapterNumber": 1034,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Zoro vs. King",
+    "chapterTitleJapanese": "ゾロvs.（バーサス）キング, Zoro Bāsasu Kingu?",
+    "chapterNumber": 1035,
+    "volumeNumber": 102
+  },
+  {
+    "chapterTitleEnglish": "Bushido is the Way of Death",
+    "chapterTitleJapanese": "武士道と云うは死ぬことと見つけたり, Bushidō to Iu wa Shinu Koto to Mitsuketari?",
+    "chapterNumber": 1036,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Shuron Hakke",
+    "chapterTitleJapanese": "酒龍八卦, Shuron Hakke?",
+    "chapterNumber": 1037,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Kid & Law vs. Big Mom",
+    "chapterTitleJapanese": "キッド&（アンド）ローvs.（バーサス）ビッグ・マム, Kiddo Ando Ro Bāsasu Biggu Mamu?",
+    "chapterNumber": 1038,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Top Billing",
+    "chapterTitleJapanese": "大トリ, Ōtori?",
+    "chapterNumber": 1039,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Wasted Words on Young Ears",
+    "chapterTitleJapanese": "新世代（ガキ）の耳に念仏, Gaki no Mimi ni Nenbutsu?",
+    "chapterNumber": 1040,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Komurasaki",
+    "chapterTitleJapanese": "小紫, Komurasaki?",
+    "chapterNumber": 1041,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "The Victor Needs No Epithet",
+    "chapterTitleJapanese": "枕詞は“勝者”にゃつかねェ, Makurakotoba wa \"Shōsha\" nya Tsukanē?",
+    "chapterNumber": 1042,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Let's Face Death Together!!!",
+    "chapterTitleJapanese": "一緒に死のうよ!!!, Issho ni Shinō yo!!!?",
+    "chapterNumber": 1043,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Warrior of Liberation",
+    "chapterTitleJapanese": "解放の戦士, Kaihō no Senshi?",
+    "chapterNumber": 1044,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Next Level",
+    "chapterTitleJapanese": "NEXT（ネクスト） LEVEL（レべル）, Nekusuto Reberu?",
+    "chapterNumber": 1045,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "Raizo",
+    "chapterTitleJapanese": "雷ぞう, Raizō?",
+    "chapterNumber": 1046,
+    "volumeNumber": 103
+  },
+  {
+    "chapterTitleEnglish": "The Sky Over the Capital",
+    "chapterTitleJapanese": "都の空, Miyako no Sora?",
+    "chapterNumber": 1047,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "Twenty Years",
+    "chapterTitleJapanese": "二十年, Nijū-nen?",
+    "chapterNumber": 1048,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "The World That Should Be",
+    "chapterTitleJapanese": "目指すべき世界, Mezasubeki Sekai?",
+    "chapterNumber": 1049,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "Honor",
+    "chapterTitleJapanese": "誉れ, Homare?",
+    "chapterNumber": 1050,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "Shogun of Wano Country, Kouzuki Momonosuke",
+    "chapterTitleJapanese": "ワノ国将軍 光月モモの助, Wano Kuni Shōgun Kōzuki Momonosuke?",
+    "chapterNumber": 1051,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "A New Morning",
+    "chapterTitleJapanese": "新しい朝, Atarashii Asa?",
+    "chapterNumber": 1052,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "New Emperors",
+    "chapterTitleJapanese": "新しい皇帝達, Atarashii Kōtei-tachi?",
+    "chapterNumber": 1053,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "Flame Emperor",
+    "chapterTitleJapanese": "炎帝, Entei?",
+    "chapterNumber": 1054,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "The New Era",
+    "chapterTitleJapanese": "新時代, Shin Jidai?",
+    "chapterNumber": 1055,
+    "volumeNumber": 104
+  },
+  {
+    "chapterTitleEnglish": "Cross Guild",
+    "chapterTitleJapanese": "CROSS GUILD（クロス ギルド）, Kurosu Girudo?",
+    "chapterNumber": 1056,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "The End",
+    "chapterTitleJapanese": "終幕, Shūmaku?",
+    "chapterNumber": 1057,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "New Emperor",
+    "chapterTitleJapanese": "新皇帝, Shin Kōtei?",
+    "chapterNumber": 1058,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "The Matter Involving Captain Koby",
+    "chapterTitleJapanese": "コビー大佐の一件, Kobī Taisa no Ikken?",
+    "chapterNumber": 1059,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "Luffy's Dream",
+    "chapterTitleJapanese": "ルフィの夢, Rufi no Yume?",
+    "chapterNumber": 1060,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "Future Island Egghead",
+    "chapterTitleJapanese": "未来島エッグへッド, Mirai-jima Egguheddo?",
+    "chapterNumber": 1061,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Land of Science",
+    "chapterTitleJapanese": "科学の国の冒険, Kagaku no Kuni no Bōken?",
+    "chapterNumber": 1062,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "My Only Family",
+    "chapterTitleJapanese": "たった1人の家族, Tatta Hitori no Kazoku?",
+    "chapterNumber": 1063,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "Egghead Labophase",
+    "chapterTitleJapanese": "エッグヘッド研究層（ラボフェーズ）, Egguheddo Rabofēzu?",
+    "chapterNumber": 1064,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "Six Vegapunks",
+    "chapterTitleJapanese": "6人のベガパンク, Roku-nin no Begapanku?",
+    "chapterNumber": 1065,
+    "volumeNumber": 105
+  },
+  {
+    "chapterTitleEnglish": "The Will of Ohara",
+    "chapterTitleJapanese": "オハラの意志, Ohara no Ishi?",
+    "chapterNumber": 1066,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "Punk Records",
+    "chapterTitleJapanese": "PUNK RECORDS（パンク レコーズ）, Panku Rekōzu?",
+    "chapterNumber": 1067,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "A Genius' Dream",
+    "chapterTitleJapanese": "天才の夢, Tensai no Yume?",
+    "chapterNumber": 1068,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "All Things Are Brought Into This World With Hope",
+    "chapterTitleJapanese": "万物は望まれて、この世に生まれる, Banbutsu wa Nozomarete, Kono Yo ni Umareru?",
+    "chapterNumber": 1069,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "The Strongest Form of Humanity",
+    "chapterTitleJapanese": "最強の人類, Saikyō no Jinrui?",
+    "chapterNumber": 1070,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "The Hero Deploys",
+    "chapterTitleJapanese": "英雄出撃, Eiyū Shutsugeki?",
+    "chapterNumber": 1071,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "The Weight of Memory",
+    "chapterTitleJapanese": "記憶の重さ, Kioku no Omosa?",
+    "chapterNumber": 1072,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "Miss Buckingham Stussy",
+    "chapterTitleJapanese": "ミス・バッキンガム・ステューシー, Misu Bakkingamu Sutyūshī?",
+    "chapterNumber": 1073,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "Mark III",
+    "chapterTitleJapanese": "マークⅢ（スリー）, Māku Surī?",
+    "chapterNumber": 1074,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "Labophase Death Game",
+    "chapterTitleJapanese": "研究層（ラボフェーズ） DEATH GAME（デスゲーム）, Rabofēzu Desu Gēmu?",
+    "chapterNumber": 1075,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "Old Friends",
+    "chapterTitleJapanese": "旧友, Kyūyū?",
+    "chapterNumber": 1076,
+    "volumeNumber": 106
+  },
+  {
+    "chapterTitleEnglish": "Should Have Noticed Sooner",
+    "chapterTitleJapanese": "早く気づくべきだった, Hayaku Kizukubekidatta?",
+    "chapterNumber": 1077,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "Escape Limit",
+    "chapterTitleJapanese": "脱出リミット, Dasshutsu Rimitto?",
+    "chapterNumber": 1078,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "The Emperor's Crew, The Red Hair Pirates",
+    "chapterTitleJapanese": "「四皇」赤髪海賊団, 'Yonkō' Akagami Kaizoku-dan?",
+    "chapterNumber": 1079,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "The Hero of Legend",
+    "chapterTitleJapanese": "伝説の英雄, Densetsu no Eiyū?",
+    "chapterNumber": 1080,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "Tenth Ship Captain of the Blackbeard Pirates, Kuzan",
+    "chapterTitleJapanese": "黒ひげ海賊団10番船船長クザン, Kurohige Kaizoku-dan Jūban-sen Senchō Kuzan?",
+    "chapterNumber": 1081,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "Let's Go and Take It!!",
+    "chapterTitleJapanese": "取りに行こうぜ!!, Tori ni Ikō ze!!?",
+    "chapterNumber": 1082,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "The Truth of That Day",
+    "chapterTitleJapanese": "あの日の真実, Ano Hi no Shinjitsu?",
+    "chapterNumber": 1083,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "The Attempted Murder of a Celestial Dragon",
+    "chapterTitleJapanese": "天竜人殺人未遂事件, Tenryūbito Satsujin Misui Jiken?",
+    "chapterNumber": 1084,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "The Death of Nefertari Cobra",
+    "chapterTitleJapanese": "ネフェルタリ・コブラ死す, Neferutari Kobura Shisu?",
+    "chapterNumber": 1085,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "The Five Elders",
+    "chapterTitleJapanese": "五老星, Gorōsei?",
+    "chapterNumber": 1086,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "Battleship Bags",
+    "chapterTitleJapanese": "軍艦バッグ, Gunkan Baggu?",
+    "chapterNumber": 1087,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "Final Lesson",
+    "chapterTitleJapanese": "最後の授業, Saigo no Jugyō?",
+    "chapterNumber": 1088,
+    "volumeNumber": 107
+  },
+  {
+    "chapterTitleEnglish": "Hostage Situation",
+    "chapterTitleJapanese": "立てこもり事件, Tatekomori Jiken?",
+    "chapterNumber": 1089,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Kizaru",
+    "chapterTitleJapanese": "黄猿, Kizaru?",
+    "chapterNumber": 1090,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Sentomaru",
+    "chapterTitleJapanese": "戦桃丸, Sentōmaru?",
+    "chapterNumber": 1091,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Kuma the Tyrant's Holy Land Rampage",
+    "chapterTitleJapanese": "暴君くま聖地暴走事件, Bōkun Kuma Seichi Bōsō Jiken?",
+    "chapterNumber": 1092,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Luffy vs. Kizaru",
+    "chapterTitleJapanese": "ルフィVS（バーサス）黄猿, Rufi Bāsasu Kizaru?",
+    "chapterNumber": 1093,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Five Elders, Warrior God of Science and Defense, Saint Jaygarcia Saturn",
+    "chapterTitleJapanese": "「五老星」科学防衛武神ジェイガルシア・サターン聖, \"Gorōsei\" Kagaku Bōei Bushin Jeigarushia Satān Sei?",
+    "chapterNumber": 1094,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Better Off Dead in This World",
+    "chapterTitleJapanese": "死んだ方がいい世界, Shinda Hō ga Ii Sekai?",
+    "chapterNumber": 1095,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Kumachi",
+    "chapterTitleJapanese": "くまちー, Kumachī?",
+    "chapterNumber": 1096,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Ginny",
+    "chapterTitleJapanese": "ジニー, Jinī?",
+    "chapterNumber": 1097,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Bonney's Birth",
+    "chapterTitleJapanese": "ボニー誕生, Bonī Tanjō?",
+    "chapterNumber": 1098,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Pacifist",
+    "chapterTitleJapanese": "平和主義者, Heiwa Shugi-sha?",
+    "chapterNumber": 1099,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "Thank You, Bonney",
+    "chapterTitleJapanese": "ありがとうボニー, Arigatō Bonī?",
+    "chapterNumber": 1100,
+    "volumeNumber": 108
+  },
+  {
+    "chapterTitleEnglish": "To Bonney",
+    "chapterTitleJapanese": "ボニーへ, Bonī e?",
+    "chapterNumber": 1101,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "Kuma's Life",
+    "chapterTitleJapanese": "くまの人生, Kuma no Jinsei?",
+    "chapterNumber": 1102,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "I'm Sorry, Daddy",
+    "chapterTitleJapanese": "ごめんね、お父さん, Gomen ne, Otō-san?",
+    "chapterNumber": 1103,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "Thank You, Daddy",
+    "chapterTitleJapanese": "ありがとう、お父さん, Arigatō, Otō-san?",
+    "chapterNumber": 1104,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "The Height Of Folly",
+    "chapterTitleJapanese": "愚の骨頂, Gu no Kotchō?",
+    "chapterNumber": 1105,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "On Your Side",
+    "chapterTitleJapanese": "きみの味方, Kimi no Mikata?",
+    "chapterNumber": 1106,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "I've Been Looking For You!!",
+    "chapterTitleJapanese": "あんたを捜してたんだ!!, Anta o Sagashitetanda!!?",
+    "chapterNumber": 1107,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "Come In, World",
+    "chapterTitleJapanese": "応答せよ、世界, Ōtō seyo, Sekai?",
+    "chapterNumber": 1108,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "Interception",
+    "chapterTitleJapanese": "阻止, Soshi?",
+    "chapterNumber": 1109,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "Starfall",
+    "chapterTitleJapanese": "降星, Kōsei?",
+    "chapterNumber": 1110,
+    "volumeNumber": 109
+  },
+  {
+    "chapterTitleEnglish": "Sun-Shield",
+    "chapterTitleJapanese": "太陽の盾, Taiyō no Tate?",
+    "chapterNumber": 1111,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Hard Aspects",
+    "chapterTitleJapanese": "ハードアスペクト, Hādo Asupekuto?",
+    "chapterNumber": 1112,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Stalemate",
+    "chapterTitleJapanese": "STALEMATE（ステイルメイト）, Suteirumeito?",
+    "chapterNumber": 1113,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "The Wings of Icarus",
+    "chapterTitleJapanese": "イカロスの翼, Ikarosu no Tsubasa?",
+    "chapterNumber": 1114,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Pieces of a Continent",
+    "chapterTitleJapanese": "大陸の断片, Tairiku no Danpen?",
+    "chapterNumber": 1115,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Inner Conflict",
+    "chapterTitleJapanese": "葛藤, Kattō?",
+    "chapterNumber": 1116,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "A",
+    "chapterTitleJapanese": "も, Mo?",
+    "chapterNumber": 1117,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "The Most Free",
+    "chapterTitleJapanese": "自由になる, Jiyū ni Naru?",
+    "chapterNumber": 1118,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Emet",
+    "chapterTitleJapanese": "エメト, Emeto?",
+    "chapterNumber": 1119,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Atlas",
+    "chapterTitleJapanese": "暴（アトラス）, Atorasu?",
+    "chapterNumber": 1120,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "The Ebb and Flow of the Ages",
+    "chapterTitleJapanese": "時代のうねり, Jidai no Uneri?",
+    "chapterNumber": 1121,
+    "volumeNumber": 110
+  },
+  {
+    "chapterTitleEnglish": "Time is Right",
+    "chapterTitleJapanese": "イザッテトキ, Izatte Toki?",
+    "chapterNumber": 1122,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "The Void Fortnight",
+    "chapterTitleJapanese": "空白の２週間, Kūhaku no Ni-shūkan?",
+    "chapterNumber": 1123,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "Close Friend",
+    "chapterTitleJapanese": "親友, Shin'yū?",
+    "chapterNumber": 1124,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "What Death Means",
+    "chapterTitleJapanese": "何をもって死とするか, Nani o Motte Shi to Suru ka?",
+    "chapterNumber": 1125,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "Settling the Score",
+    "chapterTitleJapanese": "落とし前, Otoshimae?",
+    "chapterNumber": 1126,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "Adventure in the Land of Mystery",
+    "chapterTitleJapanese": "謎の国の冒険, Nazo no Kuni no Bōken?",
+    "chapterNumber": 1127,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "RPG",
+    "chapterTitleJapanese": "RPG（アールピージー）, Āru Pī Jī?",
+    "chapterNumber": 1128,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "Livedolls",
+    "chapterTitleJapanese": "生人形（リヴドール）, Rivudōru?",
+    "chapterNumber": 1129,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "The Accursed Prince",
+    "chapterTitleJapanese": "呪いの王子, Noroi no Ōji?",
+    "chapterNumber": 1130,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "Loki in the Underworld",
+    "chapterTitleJapanese": "冥界のロキ, Meikai no Roki?",
+    "chapterNumber": 1131,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "Adventure in Elbaph",
+    "chapterTitleJapanese": "エルバフの冒険, Erubafu no Bōken?",
+    "chapterNumber": 1132,
+    "volumeNumber": 111
+  },
+  {
+    "chapterTitleEnglish": "I Want You to Praise Me",
+    "chapterTitleJapanese": "褒めてほしい, Homete Hoshii?",
+    "chapterNumber": 1133,
+    "volumeNumber": 111
+  }
+]

@@ -1,3 +1,4 @@
+import { syncManga } from "@/server/api/services/manga-sync"
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
 import { createMangaUseCase } from "@/server/api/use-cases/manga/create-manga"
 import { deleteMangaUseCase } from "@/server/api/use-cases/manga/delete-manga"
@@ -74,4 +75,8 @@ export const mangaRouter = createTRPCRouter({
     .mutation(async ({ input }) => {
       return await deleteMangaUseCase(input)
     }),
+
+  sync: publicProcedure.query(async () => {
+    return await syncManga()
+  }),
 })

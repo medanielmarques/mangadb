@@ -1,3 +1,4 @@
+import { syncVolumes } from "@/server/api/services/volumes-sync"
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
 import { createVolumeUseCase } from "@/server/api/use-cases/volume/create-volume"
 import { deleteVolumeUseCase } from "@/server/api/use-cases/volume/delete-volume"
@@ -45,5 +46,9 @@ export const volumeRouter = createTRPCRouter({
 
   delete: publicProcedure.input(z.string()).mutation(async ({ input }) => {
     return await deleteVolumeUseCase(input)
+  }),
+
+  sync: publicProcedure.query(async () => {
+    return await syncVolumes()
   }),
 })
