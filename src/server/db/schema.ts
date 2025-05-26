@@ -100,7 +100,8 @@ export const volumes = pgTable(
   (table) => {
     return [
       unique("manga_id_number_unique").on(table.mangaId, table.number),
-      index("volumes_is_latest_complete_volume_idx").on(
+      index("volumes_manga_id_is_latest_complete_volume_idx").on(
+        table.mangaId,
         table.isLatestCompleteVolume,
       ),
     ]
