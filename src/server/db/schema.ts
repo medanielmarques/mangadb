@@ -86,6 +86,10 @@ export const volumes = pgTable(
     firstChapter: integer("first_chapter"),
     lastChapter: integer("last_chapter"),
     completedAt: timestamp("completed_at"),
+    isComplete: boolean("is_complete").notNull().default(false),
+    isLatestCompleteVolume: boolean("is_latest_complete_volume")
+      .notNull()
+      .default(false),
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt: timestamp("updated_at")
       .defaultNow()
