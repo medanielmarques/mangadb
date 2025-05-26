@@ -1,9 +1,9 @@
 import * as cheerio from "cheerio"
 import fs from "fs"
 
-const INPUT_FILE = "src/one-piece-volumes.html"
-const OUTPUT_VOLUMES_FILE = "@/data/one-piece-volumes.json"
-const OUTPUT_CHAPTERS_FILE = "@/data/one-piece-chapters.json"
+const INPUT_FILE = "src/data/one-piece-volumes.html"
+const OUTPUT_VOLUMES_FILE = "src/data/one-piece-volumes.json"
+const OUTPUT_CHAPTERS_FILE = "src/data/one-piece-chapters.json"
 
 type Volume = {
   volumeTitle: string
