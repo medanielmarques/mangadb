@@ -21,7 +21,12 @@ export default function MangaPage({
 }) {
   const { id: mangaId } = use(params)
 
-  const { data: manga } = api.manga.getById.useQuery({ id: mangaId })
+  const { data: manga } = api.manga.getById.useQuery(
+    { id: mangaId },
+    {
+      refetchOnWindowFocus: false,
+    },
+  )
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -78,14 +83,19 @@ export default function MangaPage({
             <div className="mb-4 grid grid-cols-2 gap-y-2 text-sm">
               <div className="text-muted-foreground">Author</div>
               <div>{manga?.authors}</div>
+
               <div className="text-muted-foreground">Artist</div>
               <div>{manga?.artists}</div>
+
               <div className="text-muted-foreground">Status</div>
               <div>{manga?.status}</div>
+
               <div className="text-muted-foreground">Start Date</div>
               <div>{manga?.releaseDate?.toLocaleDateString()}</div>
+
               <div className="text-muted-foreground">Volumes</div>
               <div>{manga?.totalVolumes}</div>
+
               <div className="text-muted-foreground">Chapters</div>
               <div>{manga?.totalChapters}</div>
             </div>

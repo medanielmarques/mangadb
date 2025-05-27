@@ -119,11 +119,12 @@ export const volumes = pgTable(
   },
 )
 
-export const volumesRelations = relations(volumes, ({ one }) => ({
+export const volumesRelations = relations(volumes, ({ one, many }) => ({
   manga: one(mangas, {
     fields: [volumes.mangaId],
     references: [mangas.id],
   }),
+  chapters: many(chapters),
 }))
 
 export const storyArcs = pgTable("story_arcs", {
