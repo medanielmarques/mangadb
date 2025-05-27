@@ -2,6 +2,7 @@ import { syncManga } from "@/server/api/services/manga-sync"
 import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
 import { createMangaUseCase } from "@/server/api/use-cases/manga/create-manga"
 import { deleteMangaUseCase } from "@/server/api/use-cases/manga/delete-manga"
+import { favoriteMangaUseCase } from "@/server/api/use-cases/manga/favorite-manga"
 import { getMangaByIdUseCase } from "@/server/api/use-cases/manga/get-manga-by-id"
 import { getMangasUseCase } from "@/server/api/use-cases/manga/get-mangas"
 import { updateMangaUseCase } from "@/server/api/use-cases/manga/update-manga"
@@ -79,4 +80,10 @@ export const mangaRouter = createTRPCRouter({
   sync: publicProcedure.query(async () => {
     return await syncManga()
   }),
+
+  favorite: publicProcedure
+    .input(z.object({ mangaId: z.string(), userId: z.string() }))
+    .mutation(async ({ input }) => {
+      return await favoriteMangaUseCase(input)
+    }),
 })
