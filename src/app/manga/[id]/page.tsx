@@ -1,10 +1,8 @@
 "use client"
 
-import { ArcList } from "@/components/arc-list"
 import { FavoriteManga } from "@/components/favorite-manga"
 import { ReviewManga } from "@/components/review-manga"
 import { StarRating } from "@/components/star-rating"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { TooltipContent } from "@/components/ui/tooltip"
@@ -14,25 +12,7 @@ import { VolumeList } from "@/components/volume-list"
 import { api } from "@/trpc/react"
 import { ShareIcon } from "lucide-react"
 import Image from "next/image"
-import { use } from "react"
-
-// This would normally come from an API or database
-// const mangaData = {
-//   id: "1",
-//   title: "One Piece",
-//   coverImage: "/one-piece-cover.webp?height=600&width=400",
-//   author: "Eiichiro Oda",
-//   artist: "Eiichiro Oda",
-//   status: "Ongoing",
-//   rating: 9.2,
-//   ratingCount: 12453,
-//   genres: ["Action", "Adventure", "Comedy", "Fantasy", "Shounen"],
-//   synopsis:
-//     "Gol D. Roger, a man referred to as the 'Pirate King,' is set to be executed by the World Government. But just before his death, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to reach it, the Pirate King is executed and the Great Age of Pirates begins. Twenty-two years later, a young man by the name of Monkey D. Luffy is ready to embark on his own adventure, searching for One Piece and striving to become the new Pirate King.",
-//   startDate: "1997-07-22",
-//   volumes: 104,
-//   chapters: 1088,
-// }
+import { use, useState } from "react"
 
 export default function MangaPage({
   params,
@@ -113,7 +93,7 @@ export default function MangaPage({
 
           <div className="mb-8">
             <h2 className="mb-2 text-xl font-semibold">Synopsis</h2>
-            <p className="text-muted-foreground">{manga?.description}</p>
+            <ReadMoreText text={manga?.description || ""} />
           </div>
         </div>
       </div>
@@ -124,10 +104,42 @@ export default function MangaPage({
           <TabsTrigger value="volumes">Volumes & Chapters</TabsTrigger>
         </TabsList>
 
-        {/* <TabsContent value="volumes">
+        <TabsContent value="volumes">
           <VolumeList mangaId={mangaId} />
-        </TabsContent> */}
+        </TabsContent>
       </Tabs>
+    </div>
+  )
+}
+
+function ReadMoreText({
+  text,
+  wordLimit = 50,
+}: {
+  text: string
+  wordLimit?: number
+}) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const words = text?.split(" ") || []
+  const shouldShowReadMore = words.length > wordLimit
+
+  const displayText = isExpanded
+    ? text
+    : words.slice(0, wordLimit).join(" ") + (shouldShowReadMore ? "..." : "")
+
+  return (
+    <div className="space-y-1">
+      <p className="text-muted-foreground">{displayText}</p>
+      {shouldShowReadMore && (
+        <Button
+          variant="link"
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="pl-0"
+        >
+          {isExpanded ? "Read Less" : "Read More"}
+        </Button>
+      )}
     </div>
   )
 }
