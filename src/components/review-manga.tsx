@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils"
 import { api } from "@/trpc/react"
 import { useSession } from "@supabase/auth-helpers-react"
 import { StarIcon, Trash } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export function ReviewManga({
   mangaId,
@@ -46,9 +46,16 @@ export function ReviewManga({
 
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
-  const [comment, setComment] = useState(review?.comment ?? "")
-  const [rating, setRating] = useState(review?.rating ?? 0)
+  const [comment, setComment] = useState("")
+  const [rating, setRating] = useState(0)
   const [isConfirmingDelete, setIsConfirmingDelete] = useState(false)
+
+  useEffect(() => {
+    if (review) {
+      setComment(review.comment ?? "")
+      setRating(review.rating)
+    }
+  }, [review])
 
   const { mutate: upsertReview } = api.review.upsert.useMutation({
     onSuccess: () => {
@@ -65,6 +72,9 @@ export function ReviewManga({
         mangaId,
         userId: session?.user?.id ?? "",
       })
+      setIsConfirmingDelete(false)
+      setRating(0)
+      setComment("")
     },
   })
 
@@ -81,7 +91,6 @@ export function ReviewManga({
 
   function handleDeleteReview() {
     deleteReview(review?.id ?? "")
-    setIsConfirmingDelete(false)
   }
 
   return (
