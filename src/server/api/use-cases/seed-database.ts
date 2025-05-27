@@ -1,13 +1,22 @@
 import { db } from "@/server/db"
-import { chapters, images, mangas, volumes } from "@/server/db/schema"
+import {
+  chapters,
+  images,
+  mangas,
+  reviews,
+  users,
+  volumes,
+} from "@/server/db/schema"
 import fs from "fs"
 
 async function clearDatabase() {
   // Delete in reverse order of dependencies
+  await db.delete(users)
   await db.delete(images)
   await db.delete(chapters)
   await db.delete(volumes)
   await db.delete(mangas)
+  await db.delete(reviews)
 }
 
 async function seedMangas() {
@@ -25,6 +34,14 @@ async function seedMangas() {
   return await db.insert(mangas).values(parsedMangasList).returning()
 }
 
+async function seedUsers() {
+  const usersList = JSON.parse(
+    fs.readFileSync("src/data/seeds/users.json", "utf8"),
+  )
+
+  console.log("🌱 Seeding users...")
+  return await db.insert(users).values(usersList).returning()
+}
 async function seedVolumes() {
   const volumesList = JSON.parse(
     fs.readFileSync("src/data/seeds/volumes.json", "utf8"),
@@ -66,15 +83,33 @@ async function seedImages() {
   return await db.insert(images).values(imagesList).returning()
 }
 
+async function seedReviews() {
+  const mangaReviewsList = JSON.parse(
+    fs.readFileSync("src/data/seeds/manga-reviews.json", "utf8"),
+  )
+
+  const chapterReviewsList = JSON.parse(
+    fs.readFileSync("src/data/seeds/chapter-reviews.json", "utf8"),
+  )
+
+  console.log("🌱 Seeding reviews...")
+  return await db
+    .insert(reviews)
+    .values([...mangaReviewsList, ...chapterReviewsList])
+    .returning()
+}
+
 export async function seedDatabase() {
   try {
     console.log("🧹 Clearing database...")
     await clearDatabase()
 
+    await seedUsers()
     await seedMangas()
     await seedVolumes()
     await seedChapters()
     await seedImages()
+    await seedReviews()
 
     console.log("✅ Database seeded successfully!")
     return "Database seeded successfully"
