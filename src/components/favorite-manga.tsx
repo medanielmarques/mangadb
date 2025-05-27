@@ -33,7 +33,43 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
   )
 
   const { mutate: favoriteMangaMutation } = api.manga.favorite.useMutation({
-    onSuccess: () => {
+    onMutate: async () => {
+      // Cancel any outgoing refetches
+      await utils.manga.isFavorite.cancel({
+        mangaId,
+        userId: userId ?? "",
+      })
+
+      // Snapshot the previous value
+      const previousIsFavorite = utils.manga.isFavorite.getData({
+        mangaId,
+        userId: userId ?? "",
+      })
+
+      // Optimistically update to the new value
+      utils.manga.isFavorite.setData(
+        {
+          mangaId,
+          userId: userId ?? "",
+        },
+        (old) => !old,
+      )
+
+      // Return a context object with the snapshotted value
+      return { previousIsFavorite }
+    },
+    onError: (err, newTodo, context) => {
+      // If the mutation fails, use the context returned from onMutate to roll back
+      utils.manga.isFavorite.setData(
+        {
+          mangaId,
+          userId: userId ?? "",
+        },
+        context?.previousIsFavorite,
+      )
+    },
+    onSettled: () => {
+      // Always refetch after error or success to ensure we're in sync with server
       void utils.manga.isFavorite.invalidate({
         mangaId,
         userId: userId ?? "",
