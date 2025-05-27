@@ -5,6 +5,7 @@ import { deleteMangaUseCase } from "@/server/api/use-cases/manga/delete-manga"
 import { favoriteMangaUseCase } from "@/server/api/use-cases/manga/favorite-manga"
 import { getMangaByIdUseCase } from "@/server/api/use-cases/manga/get-manga-by-id"
 import { getMangasUseCase } from "@/server/api/use-cases/manga/get-mangas"
+import { isFavoriteMangaUseCase } from "@/server/api/use-cases/manga/is-favorite-manga"
 import { updateMangaUseCase } from "@/server/api/use-cases/manga/update-manga"
 import {
   manga_demographic,
@@ -85,5 +86,11 @@ export const mangaRouter = createTRPCRouter({
     .input(z.object({ mangaId: z.string(), userId: z.string() }))
     .mutation(async ({ input }) => {
       return await favoriteMangaUseCase(input)
+    }),
+
+  isFavorite: publicProcedure
+    .input(z.object({ mangaId: z.string(), userId: z.string() }))
+    .query(async ({ input }) => {
+      return await isFavoriteMangaUseCase(input)
     }),
 })

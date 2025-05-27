@@ -1,5 +1,22 @@
 [
   {
+    "id": "tHAK8L_MA1SWNaiQp9fi8",
+    "number": 1,
+    "mangaId": "mzuviufkrdch",
+    "title": "Romance Dawn",
+    "publishedAtJapan": "1997-12-24T00:00:00.000Z",
+    "publishedAtUs": "2003-06-30T00:00:00.000Z",
+    "isbnJapan": "978-4-08-872509-3",
+    "isbnUs": "978-1-56931-901-7",
+    "pagesInJapan": 208,
+    "pagesInUs": 216,
+    "firstChapter": 1,
+    "lastChapter": null,
+    "completedAt": null,
+    "isComplete": false,
+    "isLatestCompleteVolume": false
+  },
+  {
     "id": "5J01z69neXUFG0lx1iySz",
     "number": 2,
     "mangaId": "mzuviufkrdch",
@@ -1867,7 +1884,7 @@
     "lastChapter": null,
     "completedAt": null,
     "isComplete": false,
-    "isLatestCompleteVolume": false
+    "isLatestCompleteVolume": true
   },
   {
     "id": "j1-0XUOdHpq5UjbXlS6uK",
@@ -1881,23 +1898,6 @@
     "pagesInJapan": null,
     "pagesInUs": null,
     "firstChapter": 0,
-    "lastChapter": null,
-    "completedAt": null,
-    "isComplete": false,
-    "isLatestCompleteVolume": false
-  },
-  {
-    "id": "tHAK8L_MA1SWNaiQp9fi8",
-    "number": 1,
-    "mangaId": "mzuviufkrdch",
-    "title": "Romance Dawn",
-    "publishedAtJapan": "1997-12-24T00:00:00.000Z",
-    "publishedAtUs": "2003-06-30T00:00:00.000Z",
-    "isbnJapan": "978-4-08-872509-3",
-    "isbnUs": "978-1-56931-901-7",
-    "pagesInJapan": 208,
-    "pagesInUs": 216,
-    "firstChapter": 1,
     "lastChapter": null,
     "completedAt": null,
     "isComplete": false,
