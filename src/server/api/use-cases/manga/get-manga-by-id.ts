@@ -64,5 +64,6 @@ export async function getMangaByIdUseCase({ id }: { id: string }) {
   return {
     ...manga[0],
     coverArtUrl,
+    avgRating: Number(manga[0].avgRating),
   }
 }

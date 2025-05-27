@@ -50,7 +50,7 @@ export default function MangaPage({
         <div className="md:col-span-1">
           <div className="relative aspect-[2/3] overflow-hidden rounded-lg shadow-lg">
             <Image
-              src={manga?.coverImage || "/one-piece-cover.webp"}
+              src={manga?.coverArtUrl || "/one-piece-cover.webp"}
               alt={manga?.title || "Manga Cover"}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
@@ -88,20 +88,13 @@ export default function MangaPage({
             {manga?.title}
           </h1>
           <div className="mb-4 flex items-center gap-4">
-            <StarRating rating={manga?.rating || 0} />
+            <StarRating rating={manga?.avgRating || 0} />
             <span className="text-muted-foreground">
-              {manga?.rating}/10 ({manga?.ratingCount.toLocaleString()} ratings)
+              {manga?.avgRating}/10 ({manga?.totalChapters} ratings)
             </span>
           </div>
 
           <div className="mb-6">
-            <div className="mb-4 flex flex-wrap gap-2">
-              {manga?.genres?.map((genre) => (
-                <Badge key={genre} variant="secondary">
-                  {genre}
-                </Badge>
-              ))}
-            </div>
             <div className="mb-4 grid grid-cols-2 gap-y-2 text-sm">
               <div className="text-muted-foreground">Author</div>
               <div>{manga?.authors}</div>
@@ -110,11 +103,11 @@ export default function MangaPage({
               <div className="text-muted-foreground">Status</div>
               <div>{manga?.status}</div>
               <div className="text-muted-foreground">Start Date</div>
-              <div>{new Date(manga?.startDate).toLocaleDateString()}</div>
+              <div>{manga?.releaseDate?.toLocaleDateString()}</div>
               <div className="text-muted-foreground">Volumes</div>
-              <div>{manga?.volumes}</div>
+              <div>{manga?.totalVolumes}</div>
               <div className="text-muted-foreground">Chapters</div>
-              <div>{manga?.chapters}</div>
+              <div>{manga?.totalChapters}</div>
             </div>
           </div>
 
@@ -129,16 +122,11 @@ export default function MangaPage({
       <Tabs defaultValue="volumes" className="w-full">
         <TabsList className="mb-8 grid w-full grid-cols-1">
           <TabsTrigger value="volumes">Volumes & Chapters</TabsTrigger>
-          {/* <TabsTrigger value="arcs">Story Arcs</TabsTrigger> */}
         </TabsList>
 
-        <TabsContent value="volumes">
+        {/* <TabsContent value="volumes">
           <VolumeList mangaId={mangaId} />
-        </TabsContent>
-
-        <TabsContent value="arcs">
-          <ArcList mangaId={mangaId} />
-        </TabsContent>
+        </TabsContent> */}
       </Tabs>
     </div>
   )
