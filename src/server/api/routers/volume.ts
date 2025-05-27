@@ -4,13 +4,22 @@ import { createVolumeUseCase } from "@/server/api/use-cases/volume/create-volume
 import { deleteVolumeUseCase } from "@/server/api/use-cases/volume/delete-volume"
 import { getVolumeByIdUseCase } from "@/server/api/use-cases/volume/get-volume-by-id"
 import { getVolumesUseCase } from "@/server/api/use-cases/volume/get-volumes"
+import { getVolumesWithChaptersUseCase } from "@/server/api/use-cases/volume/get-volumes-with-chapters"
 import { updateVolumeUseCase } from "@/server/api/use-cases/volume/update-volume"
 import { z } from "zod"
 
 export const volumeRouter = createTRPCRouter({
-  getAll: publicProcedure.query(async () => {
-    return await getVolumesUseCase()
-  }),
+  getAll: publicProcedure
+    .input(z.object({ mangaId: z.string() }))
+    .query(async ({ input }) => {
+      return await getVolumesUseCase(input)
+    }),
+
+  getVolumesWithChapters: publicProcedure
+    .input(z.object({ mangaId: z.string() }))
+    .query(async ({ input }) => {
+      return await getVolumesWithChaptersUseCase(input)
+    }),
 
   getById: publicProcedure.input(z.string()).query(async ({ input }) => {
     return await getVolumeByIdUseCase(input)
