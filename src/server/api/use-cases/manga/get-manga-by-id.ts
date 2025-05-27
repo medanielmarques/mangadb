@@ -19,6 +19,13 @@ export async function getMangaByIdUseCase({ id }: { id: string }) {
     .from(volumes)
     .where(eq(volumes.mangaId, id))
 
+  const totalReviewsSubQuery = db
+    .select({
+      totalReviews: count(reviews.id),
+    })
+    .from(reviews)
+    .where(eq(reviews.mangaId, id))
+
   const manga = await db
     .select({
       title: mangas.title,
@@ -32,6 +39,7 @@ export async function getMangaByIdUseCase({ id }: { id: string }) {
       avgRating: sql<number>`CAST(AVG(${reviews.rating}) AS DECIMAL(10, 2))`,
       totalChapters: sql<number>`(${totalChaptersSubQuery})`,
       totalVolumes: sql<number>`(${totalVolumesSubQuery})`,
+      totalReviews: sql<number>`(${totalReviewsSubQuery})`,
     })
     .from(mangas)
     .innerJoin(volumes, eq(mangas.id, volumes.mangaId))
