@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
+import { api } from "@/trpc/react"
 import Link from "next/link"
 
 import { StarRating } from "./star-rating"
@@ -66,6 +67,8 @@ const volumeData = [
 ]
 
 export function VolumeList({ mangaId }: { mangaId: string }) {
+  const { data: volumes } = api.volume.getAll.useQuery()
+
   return (
     <div className="space-y-6">
       {volumeData.map((volume) => (
