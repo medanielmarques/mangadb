@@ -18,6 +18,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
+import { api } from "@/trpc/react"
+import { useSession } from "@supabase/auth-helpers-react"
 import { StarIcon } from "lucide-react"
 import { useState } from "react"
 
@@ -28,12 +30,48 @@ export function ReviewManga({
   mangaId: string
   mangaTitle: string
 }) {
-  const [isHovering, setIsHovering] = useState(false)
+  const session = useSession()
+  const utils = api.useUtils()
 
-  const hasReview = false
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
+
+  const { data: review, isLoading: isLoadingReview } =
+    api.review.getMangaReview.useQuery(
+      {
+        mangaId,
+        userId: session?.user?.id ?? "",
+      },
+      {
+        enabled: isReviewModalOpen,
+      },
+    )
+
+  const [isHovering, setIsHovering] = useState(false)
+  const [comment, setComment] = useState(review?.comment ?? "")
+  const [rating, setRating] = useState(review?.rating ?? 0)
+
+  const { mutate: upsertReview } = api.review.upsert.useMutation({
+    onSuccess: () => {
+      utils.review.getMangaReview.invalidate({
+        mangaId,
+        userId: session?.user?.id ?? "",
+      })
+    },
+  })
+
+  function handleSubmitReview() {
+    upsertReview({
+      mangaId,
+      review: {
+        userId: session?.user?.id ?? "",
+        rating,
+        comment,
+      },
+    })
+  }
 
   return (
-    <Dialog>
+    <Dialog open={isReviewModalOpen} onOpenChange={setIsReviewModalOpen}>
       <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -48,8 +86,7 @@ export function ReviewManga({
                 <StarIcon
                   className={cn(
                     "h-5 w-5",
-                    (isHovering || hasReview) &&
-                      "fill-yellow-500 text-yellow-500",
+                    (isHovering || review) && "fill-yellow-500 text-yellow-500",
                   )}
                 />
                 <span className="sr-only">Review {mangaTitle}</span>
@@ -61,7 +98,7 @@ export function ReviewManga({
             side="bottom"
             className={cn(isHovering && "opacity-100")}
           >
-            <p>Review {mangaTitle}</p>
+            <p>{review ? "Edit review" : `Review ${mangaTitle}`}</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
@@ -76,17 +113,31 @@ export function ReviewManga({
         </DialogDescription>
 
         <div className="bg-card mb-12 rounded-lg pt-4">
-          <div className="mb-6">
-            <StarRating editable size="lg" />
+          <div
+            className="mb-6"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
+            <StarRating
+              editable={!review || isHovering}
+              size="lg"
+              rating={rating}
+              onChange={setRating}
+            />
           </div>
 
           <div className="mb-4">
             <Textarea
               placeholder="Write your review (optional)"
               className="min-h-32"
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
             />
           </div>
-          <Button>Submit Review</Button>
+
+          <Button onClick={handleSubmitReview}>
+            {review ? "Update Review" : "Submit Review"}
+          </Button>
         </div>
       </DialogContent>
     </Dialog>

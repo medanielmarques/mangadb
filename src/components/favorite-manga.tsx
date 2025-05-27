@@ -104,7 +104,7 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
           </Button>
         </TooltipTrigger>
         <TooltipContent side="bottom">
-          <p>Favorite</p>
+          <p>{isFavorite ? "Remove from favorites" : "Add to favorites"}</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
