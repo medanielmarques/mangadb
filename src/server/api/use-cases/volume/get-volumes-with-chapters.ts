@@ -12,16 +12,15 @@ export async function getVolumesWithChaptersUseCase({
     with: {
       chapters: {
         extras: {
-          averageRating: sql<number>`
+          avgRating: sql<number>`
             COALESCE(
               (
-                SELECT AVG(${reviews.rating})
-                FROM ${reviews}
-                WHERE ${reviews.chapterId} = ${chapters.id}
-                AND ${reviews.mangaId} = ${volumes.mangaId}
-              ),
+                SELECT AVG(r.rating)
+                FROM ${reviews} r
+                WHERE r.chapter_id = ${chapters.id}
+              )::numeric,
               0
-            )`.as("average_rating"),
+            )`.as("avg_rating"),
         },
         orderBy: [asc(chapters.number)],
       },

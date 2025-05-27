@@ -48,10 +48,7 @@ export function VolumeList({ mangaId }: { mangaId: string }) {
                         <Badge variant="outline">{chapter.number}</Badge>
                       </div>
                       <div className="flex-1">{chapter.title}</div>
-                      <StarRating
-                        rating={chapter.chapterLength ?? 0}
-                        size="sm"
-                      />
+                      <StarRating rating={chapter.avgRating ?? 0} size="sm" />
                     </Link>
                   ))}
                 </div>
