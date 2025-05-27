@@ -2,43 +2,51 @@ import { storageService } from "@/server/api/services/storage"
 import { db } from "@/server/db"
 import { chapters, images, mangas, reviews, volumes } from "@/server/db/schema"
 import { TRPCError } from "@trpc/server"
-import { and, avg, count, eq } from "drizzle-orm"
+import { and, count, eq, sql } from "drizzle-orm"
 
 export async function getMangaByIdUseCase({ id }: { id: string }) {
+  const totalChaptersSubQuery = db
+    .select({
+      totalChapters: count(chapters.id),
+    })
+    .from(chapters)
+    .where(eq(chapters.mangaId, id))
+
+  const totalVolumesSubQuery = db
+    .select({
+      totalVolumes: count(volumes.id),
+    })
+    .from(volumes)
+    .where(eq(volumes.mangaId, id))
+
   const manga = await db
     .select({
-      id: mangas.id,
       title: mangas.title,
-      description: mangas.description,
-      coverArtUrl: images.url,
       authors: mangas.authors,
       artists: mangas.artists,
+      description: mangas.description,
       status: mangas.status,
-      publishedAt: mangas.publishedAt,
-      volumes: count(volumes.id),
-      chapters: count(chapters.id),
-      avgRating: avg(reviews.rating),
+      releaseDate: mangas.publishedAt,
+      volumeNumber: volumes.number,
+      coverArtUrl: images.url,
+      avgRating: sql<number>`CAST(AVG(${reviews.rating}) AS DECIMAL(10, 2))`,
+      totalChapters: sql<number>`(${totalChaptersSubQuery})`,
+      totalVolumes: sql<number>`(${totalVolumesSubQuery})`,
     })
     .from(mangas)
-    .where(eq(mangas.id, id))
     .innerJoin(volumes, eq(mangas.id, volumes.mangaId))
-    .innerJoin(
-      chapters,
-      and(
-        eq(chapters.mangaId, mangas.id),
-        eq(chapters.volumeNumber, volumes.number),
-      ),
-    )
-    .innerJoin(images, and(eq(images.entityId, volumes.id)))
-    .innerJoin(reviews, eq(mangas.id, reviews.mangaId))
+    .innerJoin(images, eq(images.entityId, volumes.id))
+    .innerJoin(reviews, eq(reviews.mangaId, mangas.id))
+    .where(and(eq(volumes.isLatestCompleteVolume, true), eq(mangas.id, id)))
     .groupBy(
       mangas.id,
       mangas.title,
-      mangas.description,
       mangas.authors,
       mangas.artists,
+      mangas.description,
       mangas.status,
       mangas.publishedAt,
+      volumes.number,
       images.url,
     )
 
