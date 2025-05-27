@@ -1,6 +1,6 @@
 import { db } from "@/server/db"
-import { chapters, volumes } from "@/server/db/schema"
-import { asc, eq } from "drizzle-orm"
+import { chapters, reviews, volumes } from "@/server/db/schema"
+import { asc, eq, sql } from "drizzle-orm"
 
 export async function getVolumesWithChaptersUseCase({
   mangaId,
@@ -11,6 +11,18 @@ export async function getVolumesWithChaptersUseCase({
     where: eq(volumes.mangaId, mangaId),
     with: {
       chapters: {
+        extras: {
+          averageRating: sql<number>`
+            COALESCE(
+              (
+                SELECT AVG(${reviews.rating})
+                FROM ${reviews}
+                WHERE ${reviews.chapterId} = ${chapters.id}
+                AND ${reviews.mangaId} = ${volumes.mangaId}
+              ),
+              0
+            )`.as("average_rating"),
+        },
         orderBy: [asc(chapters.number)],
       },
     },
