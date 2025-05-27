@@ -172,6 +172,10 @@ export const chaptersRelations = relations(chapters, ({ one, many }) => ({
     references: [mangas.id],
   }),
   reviews: many(reviews),
+  volume: one(volumes, {
+    fields: [chapters.volumeNumber],
+    references: [volumes.number],
+  }),
 }))
 
 export const reviews = pgTable(
