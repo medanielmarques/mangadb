@@ -50,7 +50,7 @@ export default function MangaPage({ params }: { params: { id: string } }) {
             <div className="flex gap-2">
               <ReviewManga mangaId={params.id} mangaTitle={mangaData.title} />
 
-              <FavoriteManga />
+              <FavoriteManga mangaId={params.id} />
 
               <TooltipProvider delayDuration={100}>
                 <Tooltip>

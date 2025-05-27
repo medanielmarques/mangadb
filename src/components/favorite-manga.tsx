@@ -8,13 +8,38 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
+import { api } from "@/trpc/react"
+import { useSession } from "@supabase/auth-helpers-react"
 import { HeartIcon } from "lucide-react"
 import { useState } from "react"
 
-export function FavoriteManga() {
+export function FavoriteManga({ mangaId }: { mangaId: string }) {
+  const utils = api.useUtils()
+
+  const session = useSession()
+  const userId = session?.user?.id
+
   const [isHovering, setIsHovering] = useState(false)
 
-  const isFavorite = false
+  const { data: isFavorite } = api.manga.isFavorite.useQuery(
+    {
+      mangaId,
+      userId: userId ?? "",
+    },
+    {
+      refetchOnWindowFocus: false,
+      enabled: !!userId,
+    },
+  )
+
+  const { mutate: favoriteMangaMutation } = api.manga.favorite.useMutation({
+    onSuccess: () => {
+      void utils.manga.isFavorite.invalidate({
+        mangaId,
+        userId: userId ?? "",
+      })
+    },
+  })
 
   return (
     <TooltipProvider delayDuration={100}>
@@ -26,6 +51,13 @@ export function FavoriteManga() {
             className="flex-1"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
+            onClick={() => {
+              if (isFavorite) {
+                favoriteMangaMutation({ mangaId, userId: userId ?? "" })
+              } else {
+                favoriteMangaMutation({ mangaId, userId: userId ?? "" })
+              }
+            }}
           >
             <HeartIcon
               className={cn(
