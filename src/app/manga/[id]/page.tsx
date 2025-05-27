@@ -1,3 +1,5 @@
+"use client"
+
 import { ArcList } from "@/components/arc-list"
 import { FavoriteManga } from "@/components/favorite-manga"
 import { ReviewManga } from "@/components/review-manga"
@@ -11,6 +13,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { VolumeList } from "@/components/volume-list"
 import { ShareIcon } from "lucide-react"
 import Image from "next/image"
+import { use } from "react"
 
 // This would normally come from an API or database
 const mangaData = {
@@ -30,7 +33,13 @@ const mangaData = {
   chapters: 1088,
 }
 
-export default function MangaPage({ params }: { params: { id: string } }) {
+export default function MangaPage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const { id: mangaId } = use(params)
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -40,17 +49,18 @@ export default function MangaPage({ params }: { params: { id: string } }) {
             <Image
               src={mangaData.coverImage || "/one-piece-cover.webp"}
               alt={mangaData.title}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
               className="object-cover"
               priority
             />
           </div>
-          <div className="mt-4 flex flex-col gap-2">
-            {/* <Button className="w-full">Add to Library</Button> */}
-            <div className="flex gap-2">
-              <ReviewManga mangaId={params.id} mangaTitle={mangaData.title} />
 
-              <FavoriteManga mangaId={params.id} />
+          <div className="mt-4 flex flex-col gap-2">
+            <div className="flex gap-2">
+              <ReviewManga mangaId={mangaId} mangaTitle={mangaData.title} />
+
+              <FavoriteManga mangaId={mangaId} />
 
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
@@ -59,6 +69,7 @@ export default function MangaPage({ params }: { params: { id: string } }) {
                       <ShareIcon className="h-5 w-5" />
                     </Button>
                   </TooltipTrigger>
+
                   <TooltipContent side="bottom">
                     <p>Share</p>
                   </TooltipContent>
@@ -120,11 +131,11 @@ export default function MangaPage({ params }: { params: { id: string } }) {
         </TabsList>
 
         <TabsContent value="volumes">
-          <VolumeList mangaId={params.id} />
+          <VolumeList mangaId={mangaId} />
         </TabsContent>
 
         <TabsContent value="arcs">
-          <ArcList mangaId={params.id} />
+          <ArcList mangaId={mangaId} />
         </TabsContent>
       </Tabs>
     </div>
