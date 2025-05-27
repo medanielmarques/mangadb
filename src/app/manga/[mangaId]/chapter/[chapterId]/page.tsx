@@ -1,9 +1,13 @@
+"use client"
+
 import { ReviewList } from "@/components/review-list"
 import { StarRating } from "@/components/star-rating"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
+import { api } from "@/trpc/react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
+import { use } from "react"
 
 // This would normally come from an API or database
 const chapterData = {
@@ -22,13 +26,19 @@ const chapterData = {
 export default function ChapterPage({
   params,
 }: {
-  params: { id: string; chapterId: string }
+  params: Promise<{ mangaId: string; chapterId: string }>
 }) {
+  const { mangaId, chapterId } = use(params)
+
+  const { data: chapter } = api.chapter.getById.useQuery({
+    id: chapterId,
+  })
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
         <Link
-          href={`/manga/${params.id}`}
+          href={`/manga/${mangaId}`}
           className="text-primary flex items-center gap-1 hover:underline"
         >
           <ChevronLeft className="h-4 w-4" />
@@ -85,7 +95,7 @@ export default function ChapterPage({
       {/* Reviews Section */}
       <div>
         <h2 className="mb-6 text-2xl font-bold">Reviews</h2>
-        <ReviewList chapterId={params.chapterId} />
+        <ReviewList chapterId={chapterId} />
       </div>
     </div>
   )

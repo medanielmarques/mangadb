@@ -18,9 +18,9 @@ import { toast } from "sonner"
 export default function MangaPage({
   params,
 }: {
-  params: Promise<{ id: string }>
+  params: Promise<{ mangaId: string }>
 }) {
-  const { id: mangaId } = use(params)
+  const { mangaId } = use(params)
 
   const { data: manga } = api.manga.getById.useQuery(
     { id: mangaId },
@@ -86,7 +86,7 @@ export default function MangaPage({
           <div className="mb-4 flex items-center gap-4">
             <StarRating rating={manga?.avgRating || 0} />
             <span className="text-muted-foreground">
-              {manga?.avgRating}/10 ({manga?.totalChapters} ratings)
+              {manga?.avgRating}/10 ({manga?.totalReviews} reviews)
             </span>
           </div>
 
