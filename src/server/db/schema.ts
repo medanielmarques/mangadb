@@ -77,6 +77,8 @@ export const mangas = pgTable("mangas", {
 export const mangasRelations = relations(mangas, ({ many }) => ({
   volumes: many(volumes),
   favorites: many(manga_favorites),
+  reviews: many(reviews),
+  chapters: many(chapters),
 }))
 
 export const volumes = pgTable(
@@ -138,6 +140,15 @@ export const storyArcs = pgTable("story_arcs", {
     .$onUpdate(() => new Date()),
 })
 
+export const storyArcsRelations = relations(storyArcs, ({ one, many }) => ({
+  manga: one(mangas, {
+    fields: [storyArcs.mangaId],
+    references: [mangas.id],
+  }),
+  chapters: many(chapters),
+  reviews: many(reviews),
+}))
+
 export const chapters = pgTable("chapters", {
   id: text("id").notNull().unique().$default(nanoid()),
   number: integer("number").notNull(),
@@ -154,6 +165,14 @@ export const chapters = pgTable("chapters", {
     .defaultNow()
     .$onUpdate(() => new Date()),
 })
+
+export const chaptersRelations = relations(chapters, ({ one, many }) => ({
+  manga: one(mangas, {
+    fields: [chapters.mangaId],
+    references: [mangas.id],
+  }),
+  reviews: many(reviews),
+}))
 
 export const reviews = pgTable(
   "reviews",
@@ -179,6 +198,21 @@ export const reviews = pgTable(
     unique("user_id_chapter_id_unique").on(table.userId, table.chapterId),
   ],
 )
+
+export const reviewsRelations = relations(reviews, ({ one }) => ({
+  manga: one(mangas, {
+    fields: [reviews.mangaId],
+    references: [mangas.id],
+  }),
+  storyArc: one(storyArcs, {
+    fields: [reviews.storyArcId],
+    references: [storyArcs.id],
+  }),
+  chapter: one(chapters, {
+    fields: [reviews.chapterId],
+    references: [chapters.id],
+  }),
+}))
 
 export const images = pgTable(
   "images",
