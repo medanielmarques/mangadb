@@ -9,20 +9,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
 import { use } from "react"
 
-// This would normally come from an API or database
-const chapterData = {
-  id: "101",
-  mangaId: "1",
-  mangaTitle: "One Piece",
-  title: "Romance Dawn",
-  number: 1,
-  volume: 1,
-  releaseDate: "1997-07-22",
-  rating: 8.7,
-  ratingCount: 9876,
-  saga: "Romance Dawn",
-}
-
 export default function ChapterPage({
   params,
 }: {
@@ -42,28 +28,22 @@ export default function ChapterPage({
           className="text-primary flex items-center gap-1 hover:underline"
         >
           <ChevronLeft className="h-4 w-4" />
-          Back to {chapterData.mangaTitle}
+          Back to {chapter?.mangaTitle}
         </Link>
       </div>
 
       <div className="mb-12">
         <h1 className="mb-2 text-3xl font-bold">
-          Chapter {chapterData.number}: {chapterData.title}
+          Chapter {chapter?.number}: {chapter?.title}
         </h1>
         <div className="text-muted-foreground mb-4">
-          Volume {chapterData.volume} • Released{" "}
-          {new Date(chapterData.releaseDate).toLocaleDateString()}
-        </div>
-
-        <div className="text-muted-foreground mb-4">
-          Saga {chapterData.saga}
+          Volume {chapter?.volumeNumber} • {chapter?.volumeTitle}
         </div>
 
         <div className="mb-6 flex items-center gap-4">
-          <StarRating rating={chapterData.rating} />
+          <StarRating rating={chapter?.avgRating} />
           <span className="text-muted-foreground">
-            {chapterData.rating}/10 ({chapterData.ratingCount.toLocaleString()}{" "}
-            ratings)
+            {chapter?.avgRating}/10 ({chapter?.totalReviews} reviews)
           </span>
         </div>
 

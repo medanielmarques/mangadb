@@ -1,5 +1,5 @@
 import { db } from "@/server/db"
-import { chapters, reviews, volumes } from "@/server/db/schema"
+import { chapters, mangas, reviews, volumes } from "@/server/db/schema"
 import { TRPCError } from "@trpc/server"
 import { count, eq, sql } from "drizzle-orm"
 
@@ -19,12 +19,14 @@ export async function getChapterByIdUseCase({ id }: { id: string }) {
       volumeTitle: volumes.title,
       volumeNumber: volumes.number,
       releaseDate: chapters.publishedAt,
+      mangaTitle: mangas.title,
       avgRating: sql<number>`CAST(AVG(${reviews.rating}) AS DECIMAL(10, 2))`,
       totalReviews: sql<number>`(${totalReviewsSubQuery})`,
     })
     .from(chapters)
     .leftJoin(volumes, eq(chapters.volumeNumber, volumes.number))
     .leftJoin(reviews, eq(chapters.id, reviews.chapterId))
+    .leftJoin(mangas, eq(volumes.mangaId, mangas.id))
     .where(eq(chapters.id, id))
     .groupBy(
       chapters.id,
@@ -33,6 +35,7 @@ export async function getChapterByIdUseCase({ id }: { id: string }) {
       volumes.title,
       volumes.number,
       chapters.publishedAt,
+      mangas.title,
     )
 
   if (!chapter[0]) {
