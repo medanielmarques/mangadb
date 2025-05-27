@@ -16,7 +16,7 @@ export function MangaGrid() {
         <Link key={manga.id} href={`/manga/${manga.id}`} className="group">
           <div className="bg-muted relative mb-2 aspect-[2/3] overflow-hidden rounded-md">
             <Image
-              src={manga.coverArtUrl || "/one-piece-cover.webp"}
+              src={manga.coverArtUrl}
               alt={manga.title}
               fill
               className="object-cover transition-transform group-hover:scale-105"
@@ -25,7 +25,7 @@ export function MangaGrid() {
           <h3 className="group-hover:text-primary line-clamp-1 font-medium transition-colors">
             {manga.title}
           </h3>
-          {/* <StarRating rating={manga.rating} /> */}
+          <StarRating rating={manga.avgRating} />
         </Link>
       ))}
     </div>
