@@ -20,7 +20,7 @@ import {
 import { cn } from "@/lib/utils"
 import { api } from "@/trpc/react"
 import { useSession } from "@supabase/auth-helpers-react"
-import { StarIcon } from "lucide-react"
+import { StarIcon, Trash } from "lucide-react"
 import { useState } from "react"
 
 export function ReviewManga({
@@ -33,8 +33,6 @@ export function ReviewManga({
   const session = useSession()
   const utils = api.useUtils()
 
-  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
-
   const { data: review, isLoading: isLoadingReview } =
     api.review.getMangaReview.useQuery(
       {
@@ -42,15 +40,26 @@ export function ReviewManga({
         userId: session?.user?.id ?? "",
       },
       {
-        enabled: isReviewModalOpen,
+        refetchOnWindowFocus: false,
       },
     )
 
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
   const [comment, setComment] = useState(review?.comment ?? "")
   const [rating, setRating] = useState(review?.rating ?? 0)
+  const [isConfirmingDelete, setIsConfirmingDelete] = useState(false)
 
   const { mutate: upsertReview } = api.review.upsert.useMutation({
+    onSuccess: () => {
+      utils.review.getMangaReview.invalidate({
+        mangaId,
+        userId: session?.user?.id ?? "",
+      })
+    },
+  })
+
+  const { mutate: deleteReview } = api.review.delete.useMutation({
     onSuccess: () => {
       utils.review.getMangaReview.invalidate({
         mangaId,
@@ -68,6 +77,11 @@ export function ReviewManga({
         comment,
       },
     })
+  }
+
+  function handleDeleteReview() {
+    deleteReview(review?.id ?? "")
+    setIsConfirmingDelete(false)
   }
 
   return (
@@ -135,9 +149,29 @@ export function ReviewManga({
             />
           </div>
 
-          <Button onClick={handleSubmitReview}>
-            {review ? "Update Review" : "Submit Review"}
-          </Button>
+          <div className="flex justify-between">
+            <Button
+              variant="secondary"
+              onClick={handleSubmitReview}
+              disabled={isLoadingReview}
+            >
+              {review ? "Update Review" : "Submit Review"}
+            </Button>
+
+            {!isConfirmingDelete ? (
+              <Button
+                variant="outline"
+                disabled={isLoadingReview || !review}
+                onClick={() => setIsConfirmingDelete(true)}
+              >
+                <Trash />
+              </Button>
+            ) : (
+              <Button variant="destructive" onClick={handleDeleteReview}>
+                Confirm
+              </Button>
+            )}
+          </div>
         </div>
       </DialogContent>
     </Dialog>
