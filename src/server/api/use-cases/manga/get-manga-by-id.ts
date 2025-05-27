@@ -22,20 +22,36 @@ export async function getMangaByIdUseCase({ id }: { id: string }) {
     .from(mangas)
     .where(eq(mangas.id, id))
     .innerJoin(volumes, eq(mangas.id, volumes.mangaId))
+    .innerJoin(
+      chapters,
+      and(
+        eq(chapters.mangaId, mangas.id),
+        eq(chapters.volumeNumber, volumes.number),
+      ),
+    )
     .innerJoin(images, and(eq(images.entityId, volumes.id)))
     .innerJoin(reviews, eq(mangas.id, reviews.mangaId))
-    .groupBy(mangas.id, mangas.title, images.url)
+    .groupBy(
+      mangas.id,
+      mangas.title,
+      mangas.description,
+      mangas.authors,
+      mangas.artists,
+      mangas.status,
+      mangas.publishedAt,
+      images.url,
+    )
 
-  const coverArtUrl = await storageService.getSignedUrl(
-    manga[0]?.coverArtUrl ?? "",
-  )
-
-  if (!manga) {
+  if (!manga[0]) {
     throw new TRPCError({
       code: "NOT_FOUND",
       message: "Manga not found",
     })
   }
+
+  const coverArtUrl = await storageService.getSignedUrl(
+    manga[0].coverArtUrl ?? "",
+  )
 
   return {
     ...manga[0],

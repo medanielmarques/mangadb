@@ -11,12 +11,12 @@ import fs from "fs"
 
 async function clearDatabase() {
   // Delete in reverse order of dependencies
-  await db.delete(users)
   await db.delete(images)
+  await db.delete(reviews)
   await db.delete(chapters)
   await db.delete(volumes)
   await db.delete(mangas)
-  await db.delete(reviews)
+  await db.delete(users)
 }
 
 async function seedMangas() {
