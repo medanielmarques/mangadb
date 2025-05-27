@@ -75,6 +75,7 @@ export function ReviewManga({
       setIsConfirmingDelete(false)
       setRating(0)
       setComment("")
+      setIsReviewModalOpen(false)
     },
   })
 

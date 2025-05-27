@@ -13,6 +13,7 @@ import { api } from "@/trpc/react"
 import { ShareIcon } from "lucide-react"
 import Image from "next/image"
 import { use, useState } from "react"
+import { toast } from "sonner"
 
 export default function MangaPage({
   params,
@@ -27,6 +28,11 @@ export default function MangaPage({
       refetchOnWindowFocus: false,
     },
   )
+
+  function handleShare() {
+    navigator.clipboard.writeText(window.location.href)
+    toast.success("Link copied to clipboard")
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -53,7 +59,12 @@ export default function MangaPage({
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <Button variant="outline" size="icon" className="flex-1">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="flex-1"
+                      onClick={handleShare}
+                    >
                       <ShareIcon className="h-5 w-5" />
                     </Button>
                   </TooltipTrigger>
