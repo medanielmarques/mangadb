@@ -1,4 +1,4 @@
-import { sql } from "drizzle-orm"
+import { relations } from "drizzle-orm"
 import {
   boolean,
   index,
@@ -70,6 +70,10 @@ export const mangas = pgTable("mangas", {
     .$onUpdate(() => new Date()),
 })
 
+export const mangasRelations = relations(mangas, ({ many }) => ({
+  volumes: many(volumes),
+}))
+
 export const volumes = pgTable(
   "volumes",
   {
@@ -107,6 +111,13 @@ export const volumes = pgTable(
     ]
   },
 )
+
+export const volumesRelations = relations(volumes, ({ one }) => ({
+  manga: one(mangas, {
+    fields: [volumes.mangaId],
+    references: [mangas.id],
+  }),
+}))
 
 export const storyArcs = pgTable("story_arcs", {
   id: text("id").notNull().unique().$default(nanoid()),

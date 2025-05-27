@@ -1,19 +1,18 @@
 import { db } from "@/server/db"
-import { volumes } from "@/server/db/schema"
+import { images, mangas, volumes } from "@/server/db/schema"
 import { and, eq } from "drizzle-orm"
 
 export async function getMangasUseCase() {
-  const mangas = await db.query.mangas.findMany({
-    with: {
-      volumes: {
-        where: and(
-          eq(volumes.isComplete, true),
-          eq(volumes.isLatestCompleteVolume, true),
-        ),
-        limit: 1,
-      },
-    },
-  })
+  const results = await db
+    .select({
+      manga: mangas,
+      volumeNumber: volumes.number,
+      coverUrl: images.url,
+    })
+    .from(mangas)
+    .innerJoin(volumes, eq(mangas.id, volumes.mangaId))
+    .innerJoin(images, and(eq(images.entityId, volumes.id)))
+    .where(eq(volumes.isLatestCompleteVolume, true))
 
-  return mangas
+  return results
 }
