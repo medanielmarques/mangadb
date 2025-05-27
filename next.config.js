@@ -12,6 +12,20 @@ const config = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "nwbvyzjtlajkhfgkkiys.supabase.co",
+        pathname: "/storage/v1/s3/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cuybvqcatcaeffftpgwx.supabase.co",
+        pathname: "/storage/v1/s3/**",
+      },
+    ],
+  },
 }
 
 export default config

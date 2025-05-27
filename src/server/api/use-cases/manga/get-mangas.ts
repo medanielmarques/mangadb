@@ -1,12 +1,12 @@
+import { storageService } from "@/server/api/services/storage"
 import { db } from "@/server/db"
 import { images, mangas, volumes } from "@/server/db/schema"
 import { and, eq } from "drizzle-orm"
 
 export async function getMangasUseCase() {
-  const results = await db
+  const allMangas = await db
     .select({
       manga: mangas,
-      volumeNumber: volumes.number,
       coverUrl: images.url,
     })
     .from(mangas)
@@ -14,5 +14,15 @@ export async function getMangasUseCase() {
     .innerJoin(images, and(eq(images.entityId, volumes.id)))
     .where(eq(volumes.isLatestCompleteVolume, true))
 
-  return results
+  const mangasWithCoverArtUrls = await Promise.all(
+    allMangas.map(async (data) => {
+      const coverArtUrl = await storageService.getSignedUrl(data.coverUrl)
+      return {
+        ...data.manga,
+        coverArtUrl,
+      }
+    }),
+  )
+
+  return mangasWithCoverArtUrls
 }
