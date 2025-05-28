@@ -43,7 +43,7 @@ export function StarRating({
           key={index}
           className={cn(
             sizeClasses[size],
-            "cursor-pointer transition-colors",
+            editable && "cursor-pointer transition-colors",
             index < displayRating
               ? "fill-yellow-500 text-yellow-500"
               : "text-muted-foreground",
