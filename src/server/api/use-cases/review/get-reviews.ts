@@ -19,7 +19,7 @@ export async function getReviewsUseCase({
         users: {
           id: users.id,
           username: users.email,
-          // avatarUrl: users.imageUrl,
+          avatarUrl: users.avatarUrl,
         },
       })
       .from(reviews)
@@ -38,7 +38,7 @@ export async function getReviewsUseCase({
         users: {
           id: users.id,
           username: users.email,
-          // avatarUrl: users.imageUrl,
+          avatarUrl: users.avatarUrl,
         },
       })
       .from(reviews)

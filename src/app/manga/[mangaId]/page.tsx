@@ -196,7 +196,10 @@ function MangaReviews({
               <div key={review.id} className="mb-4 rounded-lg border p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <Avatar>
-                    <AvatarImage src="/default-avatar.png" />
+                    <AvatarImage
+                      src={review.users.avatarUrl || ""}
+                      alt={review.users.username || ""}
+                    />
                   </Avatar>
                   <span className="font-medium">{review.users.username}</span>
                 </div>
