@@ -18,7 +18,7 @@ export async function getReviewsUseCase({
         createdAt: reviews.createdAt,
         users: {
           id: users.id,
-          username: users.email,
+          username: users.name,
           avatarUrl: users.avatarUrl,
         },
       })
@@ -37,7 +37,7 @@ export async function getReviewsUseCase({
         createdAt: reviews.createdAt,
         users: {
           id: users.id,
-          username: users.email,
+          username: users.name,
           avatarUrl: users.avatarUrl,
         },
       })

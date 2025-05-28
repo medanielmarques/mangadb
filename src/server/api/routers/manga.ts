@@ -78,10 +78,6 @@ export const mangaRouter = createTRPCRouter({
       return await deleteMangaUseCase(input)
     }),
 
-  sync: publicProcedure.query(async () => {
-    return await syncManga()
-  }),
-
   favorite: publicProcedure
     .input(z.object({ mangaId: z.string(), userId: z.string() }))
     .mutation(async ({ input }) => {

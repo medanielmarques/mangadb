@@ -57,8 +57,4 @@ export const volumeRouter = createTRPCRouter({
   delete: publicProcedure.input(z.string()).mutation(async ({ input }) => {
     return await deleteVolumeUseCase(input)
   }),
-
-  sync: publicProcedure.query(async () => {
-    return await syncVolumes()
-  }),
 })

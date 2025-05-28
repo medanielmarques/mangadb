@@ -58,12 +58,4 @@ export const chapterRouter = createTRPCRouter({
     .mutation(async ({ input }) => {
       return await deleteChapterUseCase(input)
     }),
-
-  sync: publicProcedure.query(async () => {
-    return await syncChapters()
-  }),
-
-  syncLocal: publicProcedure.query(async () => {
-    return await syncChaptersLocal()
-  }),
 })
