@@ -4,7 +4,6 @@ import { ReviewChapter } from "@/components/review-chapter"
 import { ReviewList } from "@/components/review-list"
 import { StarRating } from "@/components/star-rating"
 import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
 import { api } from "@/trpc/react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Link from "next/link"
@@ -27,8 +26,8 @@ export default function ChapterPage({
   )
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-8">
+    <div className="container mx-auto px-4 py-4">
+      <div className="mb-4">
         <Link
           href={`/manga/${mangaId}`}
           className="text-primary flex items-center gap-1 hover:underline"
@@ -54,12 +53,18 @@ export default function ChapterPage({
         </div>
 
         <div className="flex gap-4">
-          <Button variant="outline">
-            <ChevronLeft className="mr-2 h-4 w-4" /> Previous Chapter
+          <Button variant="outline" asChild>
+            <Link
+              href={`/manga/${mangaId}/chapter/${chapter?.previousChapterId}`}
+            >
+              <ChevronLeft className="h-4 w-4" /> Previous Chapter
+            </Link>
           </Button>
 
-          <Button variant="outline">
-            Next Chapter <ChevronRight className="ml-2 h-4 w-4" />
+          <Button variant="outline" asChild>
+            <Link href={`/manga/${mangaId}/chapter/${chapter?.nextChapterId}`}>
+              Next Chapter <ChevronRight className="h-4 w-4" />
+            </Link>
           </Button>
 
           <ReviewChapter
