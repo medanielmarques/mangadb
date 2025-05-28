@@ -3,7 +3,16 @@
 import { FavoriteManga } from "@/components/favorite-manga"
 import { ReviewManga } from "@/components/review-manga"
 import { StarRating } from "@/components/star-rating"
+import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { TooltipContent } from "@/components/ui/tooltip"
 import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip"
@@ -160,9 +169,38 @@ function MangaReviews({
 
   return (
     <div>
-      <span className="text-muted-foreground">
-        {avgRating || 0}/10 ({totalReviews || 0} reviews)
-      </span>
+      <Dialog>
+        <DialogTrigger asChild>
+          <Button variant="link" className="text-muted-foreground">
+            {avgRating || 0}/10 ({totalReviews || 0} reviews)
+          </Button>
+        </DialogTrigger>
+
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Reviews</DialogTitle>
+          </DialogHeader>
+
+          <DialogDescription>Manga Reviews</DialogDescription>
+
+          {reviews?.map((review) => (
+            <div key={review.id}>
+              <div className="flex items-center gap-2">
+                <Avatar>
+                  <AvatarImage
+                    src={review.users.avatarUrl || "/one-piece-cover.webp"}
+                  />
+                </Avatar>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <StarRating rating={review.rating} />
+                <p>{review.comment}</p>
+              </div>
+            </div>
+          ))}
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }
