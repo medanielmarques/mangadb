@@ -1,5 +1,6 @@
 "use client"
 
+import { ReviewChapter } from "@/components/review-chapter"
 import { ReviewList } from "@/components/review-list"
 import { StarRating } from "@/components/star-rating"
 import { Button } from "@/components/ui/button"
@@ -16,9 +17,14 @@ export default function ChapterPage({
 }) {
   const { mangaId, chapterId } = use(params)
 
-  const { data: chapter } = api.chapter.getById.useQuery({
-    id: chapterId,
-  })
+  const { data: chapter } = api.chapter.getById.useQuery(
+    {
+      id: chapterId,
+    },
+    {
+      refetchOnWindowFocus: false,
+    },
+  )
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -51,25 +57,17 @@ export default function ChapterPage({
           <Button variant="outline">
             <ChevronLeft className="mr-2 h-4 w-4" /> Previous Chapter
           </Button>
+
           <Button variant="outline">
             Next Chapter <ChevronRight className="ml-2 h-4 w-4" />
           </Button>
-        </div>
-      </div>
 
-      {/* Chapter Rating Section */}
-      <div className="bg-card mb-12 rounded-lg border p-6">
-        <h2 className="mb-4 text-xl font-semibold">Rate This Chapter</h2>
-        <div className="mb-6">
-          <StarRating editable size="lg" />
-        </div>
-        <div className="mb-4">
-          <Textarea
-            placeholder="Write your review (optional)"
-            className="min-h-32"
+          <ReviewChapter
+            chapterId={chapterId}
+            chapterNumber={chapter?.number || 0}
+            chapterTitle={chapter?.title || ""}
           />
         </div>
-        <Button>Submit Rating</Button>
       </div>
 
       {/* Reviews Section */}
