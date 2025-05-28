@@ -1,5 +1,5 @@
 import { db } from "@/server/db"
-import { manga_favorites } from "@/server/db/schema"
+import { mangaFavorites } from "@/server/db/schema"
 import { and } from "drizzle-orm"
 import { eq } from "drizzle-orm"
 
@@ -10,10 +10,10 @@ export async function isFavoriteMangaUseCase({
   mangaId: string
   userId: string
 }) {
-  const favoriteManga = await db.query.manga_favorites.findFirst({
+  const favoriteManga = await db.query.mangaFavorites.findFirst({
     where: and(
-      eq(manga_favorites.mangaId, mangaId),
-      eq(manga_favorites.userId, userId),
+      eq(mangaFavorites.mangaId, mangaId),
+      eq(mangaFavorites.userId, userId),
     ),
   })
 

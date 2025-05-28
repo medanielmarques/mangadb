@@ -1,5 +1,5 @@
 import { db } from "@/server/db"
-import { manga_favorites, mangas } from "@/server/db/schema"
+import { mangaFavorites, mangas } from "@/server/db/schema"
 import { TRPCError } from "@trpc/server"
 import { and, eq } from "drizzle-orm"
 
@@ -21,20 +21,20 @@ export async function favoriteMangaUseCase({
     })
   }
 
-  const isFavorite = await db.query.manga_favorites.findFirst({
+  const isFavorite = await db.query.mangaFavorites.findFirst({
     where: and(
-      eq(manga_favorites.mangaId, mangaId),
-      eq(manga_favorites.userId, userId),
+      eq(mangaFavorites.mangaId, mangaId),
+      eq(mangaFavorites.userId, userId),
     ),
   })
 
   if (isFavorite) {
     await db
-      .delete(manga_favorites)
+      .delete(mangaFavorites)
       .where(
         and(
-          eq(manga_favorites.mangaId, mangaId),
-          eq(manga_favorites.userId, userId),
+          eq(mangaFavorites.mangaId, mangaId),
+          eq(mangaFavorites.userId, userId),
         ),
       )
 
@@ -44,7 +44,7 @@ export async function favoriteMangaUseCase({
     }
   }
 
-  await db.insert(manga_favorites).values({
+  await db.insert(mangaFavorites).values({
     mangaId,
     userId,
   })

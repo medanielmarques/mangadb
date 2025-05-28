@@ -52,7 +52,7 @@ export const users = pgTable("users", {
 })
 
 export const usersRelations = relations(users, ({ many }) => ({
-  favorites: many(manga_favorites),
+  favorites: many(mangaFavorites),
 }))
 
 export const mangas = pgTable("mangas", {
@@ -78,7 +78,7 @@ export const mangas = pgTable("mangas", {
 
 export const mangasRelations = relations(mangas, ({ many }) => ({
   volumes: many(volumes),
-  favorites: many(manga_favorites),
+  favorites: many(mangaFavorites),
   reviews: many(reviews),
   chapters: many(chapters),
 }))
@@ -238,7 +238,7 @@ export const images = pgTable(
   (table) => [unique("entity_id_type_unique").on(table.entityId, table.type)],
 )
 
-export const manga_favorites = pgTable(
+export const mangaFavorites = pgTable(
   "manga_favorites",
   {
     id: text("id").notNull().primaryKey().$default(nanoid()),
@@ -258,16 +258,13 @@ export const manga_favorites = pgTable(
   ],
 )
 
-export const mangaFavoritesRelations = relations(
-  manga_favorites,
-  ({ one }) => ({
-    user: one(users, {
-      fields: [manga_favorites.userId],
-      references: [users.id],
-    }),
-    manga: one(mangas, {
-      fields: [manga_favorites.mangaId],
-      references: [mangas.id],
-    }),
+export const mangaFavoritesRelations = relations(mangaFavorites, ({ one }) => ({
+  user: one(users, {
+    fields: [mangaFavorites.userId],
+    references: [users.id],
   }),
-)
+  manga: one(mangas, {
+    fields: [mangaFavorites.mangaId],
+    references: [mangas.id],
+  }),
+}))

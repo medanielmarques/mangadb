@@ -2,6 +2,7 @@ import { db } from "@/server/db"
 import {
   chapters,
   images,
+  mangaFavorites,
   mangas,
   reviews,
   users,
@@ -11,6 +12,7 @@ import fs from "fs"
 
 async function clearDatabase() {
   // Delete in reverse order of dependencies
+  await db.delete(mangaFavorites)
   await db.delete(images)
   await db.delete(reviews)
   await db.delete(chapters)
