@@ -43,6 +43,8 @@ export const image_type = pgEnum("image_type", ["volume_cover", "manga_cover"])
 export const users = pgTable("users", {
   id: text("id").notNull().unique(),
   email: text("email").notNull(),
+  name: text("name"),
+  avatarUrl: text("avatar_url"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")
     .defaultNow()
