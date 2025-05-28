@@ -12,6 +12,27 @@ export async function upsertReviewUseCase({
   storyArcId?: string
   chapterId?: string
 }) {
+  let conflictTarget: [
+    typeof reviews.userId,
+    (
+      | typeof reviews.mangaId
+      | typeof reviews.storyArcId
+      | typeof reviews.chapterId
+    ),
+  ]
+
+  if (mangaId) {
+    conflictTarget = [reviews.userId, reviews.mangaId]
+  } else if (storyArcId) {
+    conflictTarget = [reviews.userId, reviews.storyArcId]
+  } else if (chapterId) {
+    conflictTarget = [reviews.userId, reviews.chapterId]
+  } else {
+    throw new Error(
+      "At least one of mangaId, storyArcId, or chapterId must be provided",
+    )
+  }
+
   const newReview = await db
     .insert(reviews)
     .values({
@@ -21,7 +42,7 @@ export async function upsertReviewUseCase({
       chapterId,
     })
     .onConflictDoUpdate({
-      target: [reviews.mangaId, reviews.userId],
+      target: conflictTarget,
       set: review,
     })
 
