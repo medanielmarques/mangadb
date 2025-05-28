@@ -9,6 +9,7 @@ import { TooltipContent } from "@/components/ui/tooltip"
 import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { VolumeList } from "@/components/volume-list"
+import type { mangas } from "@/server/db/schema"
 import { api } from "@/trpc/react"
 import { ShareIcon } from "lucide-react"
 import Image from "next/image"
@@ -85,9 +86,11 @@ export default function MangaPage({
           </h1>
           <div className="mb-4 flex items-center gap-4">
             <StarRating rating={manga?.avgRating || 0} />
-            <span className="text-muted-foreground">
-              {manga?.avgRating}/10 ({manga?.totalReviews} reviews)
-            </span>
+            <MangaReviews
+              mangaId={mangaId}
+              avgRating={manga?.avgRating}
+              totalReviews={manga?.totalReviews}
+            />
           </div>
 
           <div className="mb-6">
@@ -129,6 +132,37 @@ export default function MangaPage({
           <VolumeList mangaId={mangaId} />
         </TabsContent>
       </Tabs>
+    </div>
+  )
+}
+
+function MangaReviews({
+  mangaId,
+  avgRating,
+  totalReviews,
+}: {
+  mangaId: string
+  avgRating?: number
+  totalReviews?: number
+}) {
+  const { data: reviews } = api.review.getAll.useQuery(
+    { mangaId },
+    { refetchOnWindowFocus: false },
+  )
+
+  if (reviews?.length === 0) {
+    return (
+      <div className="text-muted-foreground py-12 text-center">
+        No reviews yet. Be the first to review this manga!
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <span className="text-muted-foreground">
+        {avgRating || 0}/10 ({totalReviews || 0} reviews)
+      </span>
     </div>
   )
 }
