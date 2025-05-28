@@ -87,6 +87,7 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
             className="flex-1"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
+            disabled={!session?.user}
             onClick={() => {
               if (isFavorite) {
                 favoriteMangaMutation({ mangaId, userId: userId ?? "" })

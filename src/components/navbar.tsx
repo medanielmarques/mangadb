@@ -109,7 +109,9 @@ export default function Navbar() {
           </nav>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <ToggleTheme />
+
           {session?.user ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -147,8 +149,6 @@ export default function Navbar() {
               <SignInDialog />
             </div>
           )}
-
-          <ToggleTheme />
         </div>
       </div>
     </header>

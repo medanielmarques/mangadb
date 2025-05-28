@@ -106,6 +106,7 @@ export function ReviewManga({
                 className="flex-1"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
+                disabled={!session?.user}
               >
                 <StarIcon
                   className={cn(
