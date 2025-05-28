@@ -1,5 +1,5 @@
 import { db } from "@/server/db"
-import { reviews } from "@/server/db/schema"
+import { reviews, users } from "@/server/db/schema"
 import { eq } from "drizzle-orm"
 
 export async function getReviewsUseCase({
@@ -24,8 +24,20 @@ export async function getReviewsUseCase({
 
   if (chapterId) {
     return await db
-      .select()
+      .select({
+        id: reviews.id,
+        rating: reviews.rating,
+        comment: reviews.comment,
+        createdAt: reviews.createdAt,
+        users: {
+          id: users.id,
+          username: users.email,
+          // avatarUrl: users.imageUrl,
+        },
+      })
       .from(reviews)
       .where(eq(reviews.chapterId, chapterId))
+      .innerJoin(users, eq(reviews.userId, users.id))
+      .limit(10)
   }
 }
