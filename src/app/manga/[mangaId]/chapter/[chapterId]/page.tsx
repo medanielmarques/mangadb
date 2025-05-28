@@ -1,7 +1,7 @@
 "use client"
 
+import { ChapterReviews } from "@/components/chapter-reviews"
 import { ReviewChapter } from "@/components/review-chapter"
-import { ReviewList } from "@/components/review-list"
 import { StarRating } from "@/components/star-rating"
 import { Button } from "@/components/ui/button"
 import { api } from "@/trpc/react"
@@ -78,7 +78,7 @@ export default function ChapterPage({
       {/* Reviews Section */}
       <div>
         <h2 className="mb-6 text-2xl font-bold">Reviews</h2>
-        <ReviewList chapterId={chapterId} />
+        <ChapterReviews chapterId={chapterId} />
       </div>
     </div>
   )
