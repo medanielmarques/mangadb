@@ -154,9 +154,15 @@ function MangaReviews({
   avgRating?: number
   totalReviews?: number
 }) {
+  const [isMangaReviewsDialogOpen, setIsMangaReviewsDialogOpen] =
+    useState(false)
+
   const { data: reviews } = api.review.getAll.useQuery(
     { mangaId },
-    { refetchOnWindowFocus: false },
+    {
+      refetchOnWindowFocus: false,
+      enabled: isMangaReviewsDialogOpen,
+    },
   )
 
   if (reviews?.length === 0) {
@@ -169,36 +175,41 @@ function MangaReviews({
 
   return (
     <div>
-      <Dialog>
+      <Dialog
+        open={isMangaReviewsDialogOpen}
+        onOpenChange={setIsMangaReviewsDialogOpen}
+      >
         <DialogTrigger asChild>
           <Button variant="link" className="text-muted-foreground">
             {avgRating || 0}/10 ({totalReviews || 0} reviews)
           </Button>
         </DialogTrigger>
 
-        <DialogContent>
-          <DialogHeader>
+        <DialogContent className="max-h-[80vh]">
+          <DialogHeader className="pb-4">
             <DialogTitle>Reviews</DialogTitle>
+            <DialogDescription>Manga Reviews</DialogDescription>
           </DialogHeader>
 
-          <DialogDescription>Manga Reviews</DialogDescription>
+          <div className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted-foreground/20 hover:scrollbar-thumb-muted-foreground/40 max-h-[calc(80vh-8rem)] overflow-y-auto pr-4">
+            {reviews?.map((review) => (
+              <div key={review.id} className="mb-4 rounded-lg border p-4">
+                <div className="mb-2 flex items-center gap-2">
+                  <Avatar>
+                    <AvatarImage src="/default-avatar.png" />
+                  </Avatar>
+                  <span className="font-medium">{review.users.username}</span>
+                </div>
 
-          {reviews?.map((review) => (
-            <div key={review.id}>
-              <div className="flex items-center gap-2">
-                <Avatar>
-                  <AvatarImage
-                    src={review.users.avatarUrl || "/one-piece-cover.webp"}
-                  />
-                </Avatar>
+                <div className="space-y-2">
+                  <StarRating rating={review.rating} />
+                  <p className="text-muted-foreground text-sm">
+                    {review.comment}
+                  </p>
+                </div>
               </div>
-
-              <div className="flex items-center gap-2">
-                <StarRating rating={review.rating} />
-                <p>{review.comment}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </DialogContent>
       </Dialog>
     </div>
