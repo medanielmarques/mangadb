@@ -3,23 +3,13 @@
   "tasks": [
     {
       "label": "Run MangaDB",
-      "dependsOn": ["mangadb", "db-servers"],
+      "dependsOn": ["mangadb", "db", "db:studio"],
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "runOptions": {
         "runOn": "folderOpen"
-      }
-    },
-    {
-      "label": "db-servers",
-      "dependsOrder": "parallel",
-      "dependsOn": ["db", "db:studio"],
-      "presentation": {
-        "group": "db-servers",
-        "panel": "shared",
-        "reveal": "always"
       }
     },
     {
@@ -36,8 +26,7 @@
       "type": "shell",
       "command": "docker compose up",
       "presentation": {
-        "group": "db-servers",
-        "panel": "shared"
+        "panel": "dedicated"
       },
       "problemMatcher": []
     },
@@ -46,8 +35,7 @@
       "type": "shell",
       "command": "pnpm db:studio",
       "presentation": {
-        "group": "db-servers",
-        "panel": "shared"
+        "panel": "dedicated"
       },
       "problemMatcher": []
     }
