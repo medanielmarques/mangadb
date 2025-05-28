@@ -190,6 +190,13 @@
       "when": 1748446674832,
       "tag": "0026_mature_lionheart",
       "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1748448562773,
+      "tag": "0027_melted_quentin_quire",
+      "breakpoints": true
     }
   ]
 }

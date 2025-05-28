@@ -159,7 +159,7 @@ export const chapters = pgTable("chapters", {
     .notNull()
     .references(() => mangas.id),
   volumeNumber: integer("volume_number").notNull(),
-  storyArcId: text("story_arc_id"),
+  storyArcId: text("story_arc_id").references(() => storyArcs.id),
   title: text("title").notNull(),
   chapterLength: integer("chapter_length"),
   publishedAt: timestamp("published_at"),
@@ -178,6 +178,10 @@ export const chaptersRelations = relations(chapters, ({ one, many }) => ({
   volume: one(volumes, {
     fields: [chapters.volumeNumber],
     references: [volumes.number],
+  }),
+  storyArc: one(storyArcs, {
+    fields: [chapters.storyArcId],
+    references: [storyArcs.id],
   }),
 }))
 
