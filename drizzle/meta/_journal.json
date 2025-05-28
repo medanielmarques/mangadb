@@ -155,6 +155,41 @@
       "when": 1748436545416,
       "tag": "0021_wealthy_marten_broadcloak",
       "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1748446485678,
+      "tag": "0022_glossy_quentin_quire",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1748446503076,
+      "tag": "0023_lush_dragon_lord",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1748446557137,
+      "tag": "0024_rich_mimic",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1748446629169,
+      "tag": "0025_round_gideon",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1748446674832,
+      "tag": "0026_mature_lionheart",
+      "breakpoints": true
     }
   ]
 }

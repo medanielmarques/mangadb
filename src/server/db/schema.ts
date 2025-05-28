@@ -41,7 +41,7 @@ export const manga_demographic = pgEnum("demographic", [
 export const image_type = pgEnum("image_type", ["volume_cover", "manga_cover"])
 
 export const users = pgTable("users", {
-  id: text("id").notNull().unique(),
+  id: text("id").notNull().primaryKey(),
   email: text("email").notNull(),
   name: text("name"),
   avatarUrl: text("avatar_url"),
@@ -56,7 +56,7 @@ export const usersRelations = relations(users, ({ many }) => ({
 }))
 
 export const mangas = pgTable("mangas", {
-  id: text("id").notNull().unique().$default(nanoid(12)),
+  id: text("id").notNull().primaryKey().$default(nanoid(12)),
   title: text("title").notNull(),
   description: text("description").notNull(),
   authors: varchar("authors").array().notNull(),
@@ -86,7 +86,7 @@ export const mangasRelations = relations(mangas, ({ many }) => ({
 export const volumes = pgTable(
   "volumes",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     number: integer("number").notNull(),
     mangaId: text("manga_id")
       .notNull()
@@ -130,7 +130,7 @@ export const volumesRelations = relations(volumes, ({ one, many }) => ({
 }))
 
 export const storyArcs = pgTable("story_arcs", {
-  id: text("id").notNull().unique().$default(nanoid()),
+  id: text("id").notNull().primaryKey().$default(nanoid()),
   mangaId: text("manga_id")
     .notNull()
     .references(() => mangas.id),
@@ -153,7 +153,7 @@ export const storyArcsRelations = relations(storyArcs, ({ one, many }) => ({
 }))
 
 export const chapters = pgTable("chapters", {
-  id: text("id").notNull().unique().$default(nanoid()),
+  id: text("id").notNull().primaryKey().$default(nanoid()),
   number: integer("number").notNull(),
   mangaId: text("manga_id")
     .notNull()
@@ -184,7 +184,7 @@ export const chaptersRelations = relations(chapters, ({ one, many }) => ({
 export const reviews = pgTable(
   "reviews",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     userId: text("user_id")
       .notNull()
       .references(() => users.id),
@@ -224,7 +224,7 @@ export const reviewsRelations = relations(reviews, ({ one }) => ({
 export const images = pgTable(
   "images",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     url: text("url").notNull(),
     type: image_type("type").notNull(),
     entityId: text("entity_id").notNull(),
@@ -241,7 +241,7 @@ export const images = pgTable(
 export const manga_favorites = pgTable(
   "manga_favorites",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     userId: text("user_id")
       .notNull()
       .references(() => users.id),
