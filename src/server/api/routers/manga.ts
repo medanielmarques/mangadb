@@ -1,5 +1,8 @@
-import { syncManga } from "@/server/api/services/manga-sync"
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "@/server/api/trpc"
 import { createMangaUseCase } from "@/server/api/use-cases/manga/create-manga"
 import { deleteMangaUseCase } from "@/server/api/use-cases/manga/delete-manga"
 import { favoriteMangaUseCase } from "@/server/api/use-cases/manga/favorite-manga"
@@ -25,7 +28,7 @@ export const mangaRouter = createTRPCRouter({
       return await getMangaByIdUseCase(input)
     }),
 
-  create: publicProcedure
+  create: protectedProcedure
     .input(
       z.object({
         title: z.string(),
@@ -47,7 +50,7 @@ export const mangaRouter = createTRPCRouter({
       await createMangaUseCase(input)
     }),
 
-  update: publicProcedure
+  update: protectedProcedure
     .input(
       z.object({
         id: z.string(),
@@ -72,19 +75,19 @@ export const mangaRouter = createTRPCRouter({
       await updateMangaUseCase(input)
     }),
 
-  delete: publicProcedure
+  delete: protectedProcedure
     .input(z.object({ id: z.string() }))
     .mutation(async ({ input }) => {
       return await deleteMangaUseCase(input)
     }),
 
-  favorite: publicProcedure
+  favorite: protectedProcedure
     .input(z.object({ mangaId: z.string(), userId: z.string() }))
     .mutation(async ({ input }) => {
       return await favoriteMangaUseCase(input)
     }),
 
-  isFavorite: publicProcedure
+  isFavorite: protectedProcedure
     .input(z.object({ mangaId: z.string(), userId: z.string() }))
     .query(async ({ input }) => {
       return await isFavoriteMangaUseCase(input)

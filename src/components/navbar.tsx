@@ -22,7 +22,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { signInWithDiscord, signOut } from "@/lib/supabase"
+import { signInWithDiscord, signOut } from "@/lib/supabase/client"
 import { useSession } from "@supabase/auth-helpers-react"
 import { BookOpen, LogOut, Menu, User } from "lucide-react"
 import Link from "next/link"

@@ -1,7 +1,7 @@
 import { env } from "@/env"
-import { createClient } from "@supabase/supabase-js"
+import { createBrowserClient } from "@supabase/ssr"
 
-export const supabase = createClient(
+export const createClient = createBrowserClient(
   env.NEXT_PUBLIC_SUPABASE_URL!,
   env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
 )
@@ -15,7 +15,7 @@ function getBaseUrl() {
 }
 
 export async function signInWithDiscord() {
-  await supabase.auth.signInWithOAuth({
+  await createClient.auth.signInWithOAuth({
     provider: "discord",
     options: {
       redirectTo: getBaseUrl(),
@@ -24,10 +24,10 @@ export async function signInWithDiscord() {
 }
 
 export async function signOut() {
-  await supabase.auth.signOut()
+  await createClient.auth.signOut()
 }
 
 export async function getUserAvatar() {
-  const { data } = await supabase.auth.getSession()
+  const { data } = await createClient.auth.getSession()
   return data.session?.user.user_metadata.avatar_url as string
 }

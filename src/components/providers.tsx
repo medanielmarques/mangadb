@@ -1,13 +1,13 @@
 "use client"
 
 import { ThemeProvider } from "@/components/theme-provider"
-import { supabase } from "@/lib/supabase"
+import { createClient } from "@/lib/supabase/client"
 import { TRPCReactProvider } from "@/trpc/react"
 import { SessionContextProvider } from "@supabase/auth-helpers-react"
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <SessionContextProvider supabaseClient={supabase}>
+    <SessionContextProvider supabaseClient={createClient}>
       <TRPCReactProvider>
         <ThemeProvider
           attribute="class"
