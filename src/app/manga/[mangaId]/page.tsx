@@ -18,7 +18,6 @@ import { TooltipContent } from "@/components/ui/tooltip"
 import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { VolumeList } from "@/components/volume-list"
-import type { mangas } from "@/server/db/schema"
 import { api } from "@/trpc/react"
 import { ShareIcon } from "lucide-react"
 import Image from "next/image"
@@ -51,8 +50,8 @@ export default function MangaPage({
         <div className="md:col-span-1">
           <div className="relative aspect-[2/3] overflow-hidden rounded-lg shadow-lg">
             <Image
-              src={manga?.coverArtUrl || "/one-piece-cover.webp"}
-              alt={manga?.title || "Manga Cover"}
+              src={manga?.coverArtUrl ?? "/one-piece-cover.webp"}
+              alt={manga?.title ?? "Manga Cover"}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
               className="object-cover"
@@ -62,7 +61,7 @@ export default function MangaPage({
 
           <div className="mt-4 flex flex-col gap-2">
             <div className="flex gap-2">
-              <ReviewManga mangaId={mangaId} mangaTitle={manga?.title || ""} />
+              <ReviewManga mangaId={mangaId} mangaTitle={manga?.title ?? ""} />
 
               <FavoriteManga mangaId={mangaId} />
 
@@ -94,7 +93,7 @@ export default function MangaPage({
             {manga?.title}
           </h1>
           <div className="mb-4 flex items-center gap-4">
-            <StarRating rating={manga?.avgRating || 0} />
+            <StarRating rating={manga?.avgRating ?? 0} />
             <MangaReviews
               mangaId={mangaId}
               avgRating={manga?.avgRating}
@@ -126,7 +125,7 @@ export default function MangaPage({
 
           <div className="mb-8">
             <h2 className="mb-2 text-xl font-semibold">Synopsis</h2>
-            <ReadMoreText text={manga?.description || ""} />
+            <ReadMoreText text={manga?.description ?? ""} />
           </div>
         </div>
       </div>
@@ -181,7 +180,7 @@ function MangaReviews({
       >
         <DialogTrigger asChild>
           <Button variant="link" className="text-muted-foreground">
-            {avgRating || 0}/10 ({totalReviews || 0} reviews)
+            {avgRating ?? 0}/10 ({totalReviews ?? 0} reviews)
           </Button>
         </DialogTrigger>
 
@@ -197,11 +196,13 @@ function MangaReviews({
                 <div className="mb-2 flex items-center gap-2">
                   <Avatar>
                     <AvatarImage
-                      src={review.users.avatarUrl || ""}
-                      alt={review.users.username || ""}
+                      src={review.users.avatarUrl ?? ""}
+                      alt={review.users.username ?? ""}
                     />
                   </Avatar>
-                  <span className="font-medium">{review.users.username}</span>
+                  <span className="font-medium">
+                    {review.users.username ?? ""}
+                  </span>
                 </div>
 
                 <div className="space-y-2">
@@ -228,7 +229,7 @@ function ReadMoreText({
 }) {
   const [isExpanded, setIsExpanded] = useState(false)
 
-  const words = text?.split(" ") || []
+  const words = text?.split(" ") ?? []
   const shouldShowReadMore = words.length > wordLimit
 
   const displayText = isExpanded
