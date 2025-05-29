@@ -1,6 +1,8 @@
-import { syncChapters } from "@/server/api/services/chapters-sync"
-import { syncChaptersLocal } from "@/server/api/services/chapters-sync-local"
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "@/server/api/trpc"
 import { createChapterUseCase } from "@/server/api/use-cases/chapter/create-chapter"
 import { deleteChapterUseCase } from "@/server/api/use-cases/chapter/delete-chapter"
 import { getChapterByIdUseCase } from "@/server/api/use-cases/chapter/get-chapter-by-id"
@@ -26,7 +28,7 @@ export const chapterRouter = createTRPCRouter({
       return await getChapterByIdUseCase(input)
     }),
 
-  create: publicProcedure
+  create: protectedProcedure
     .input(
       z.object({
         number: z.number(),
@@ -38,7 +40,7 @@ export const chapterRouter = createTRPCRouter({
     )
     .mutation(async ({ input }) => await createChapterUseCase(input)),
 
-  update: publicProcedure
+  update: protectedProcedure
     .input(
       z.object({
         id: z.string(),
@@ -53,7 +55,7 @@ export const chapterRouter = createTRPCRouter({
       await updateChapterUseCase(input)
     }),
 
-  delete: publicProcedure
+  delete: protectedProcedure
     .input(z.object({ id: z.string() }))
     .mutation(async ({ input }) => {
       return await deleteChapterUseCase(input)

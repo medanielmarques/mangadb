@@ -1,4 +1,8 @@
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "@/server/api/trpc"
 import { deleteReviewUseCase } from "@/server/api/use-cases/review/delete-review"
 import { getChapterReviewUseCase } from "@/server/api/use-cases/review/get-chapter-review"
 import { getMangaReviewUseCase } from "@/server/api/use-cases/review/get-manga-review"
@@ -24,19 +28,19 @@ export const reviewRouter = createTRPCRouter({
     return await getReviewByIdUseCase(input)
   }),
 
-  getMangaReview: publicProcedure
+  getMangaReview: protectedProcedure
     .input(z.object({ mangaId: z.string(), userId: z.string() }))
     .query(async ({ input }) => {
       return await getMangaReviewUseCase(input)
     }),
 
-  getChapterReview: publicProcedure
+  getChapterReview: protectedProcedure
     .input(z.object({ chapterId: z.string(), userId: z.string() }))
     .query(async ({ input }) => {
       return await getChapterReviewUseCase(input)
     }),
 
-  upsert: publicProcedure
+  upsert: protectedProcedure
     .input(
       z.object({
         mangaId: z.string().optional(),
@@ -54,7 +58,7 @@ export const reviewRouter = createTRPCRouter({
       return await upsertReviewUseCase(input)
     }),
 
-  delete: publicProcedure.input(z.string()).mutation(async ({ input }) => {
+  delete: protectedProcedure.input(z.string()).mutation(async ({ input }) => {
     return await deleteReviewUseCase(input)
   }),
 })

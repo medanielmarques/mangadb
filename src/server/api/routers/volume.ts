@@ -1,5 +1,8 @@
-import { syncVolumes } from "@/server/api/services/volumes-sync"
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "@/server/api/trpc"
 import { createVolumeUseCase } from "@/server/api/use-cases/volume/create-volume"
 import { deleteVolumeUseCase } from "@/server/api/use-cases/volume/delete-volume"
 import { getVolumeByIdUseCase } from "@/server/api/use-cases/volume/get-volume-by-id"
@@ -25,7 +28,7 @@ export const volumeRouter = createTRPCRouter({
     return await getVolumeByIdUseCase(input)
   }),
 
-  create: publicProcedure
+  create: protectedProcedure
     .input(
       z.object({
         mangaId: z.string(),
@@ -39,7 +42,7 @@ export const volumeRouter = createTRPCRouter({
       return await createVolumeUseCase(input)
     }),
 
-  update: publicProcedure
+  update: protectedProcedure
     .input(
       z.object({
         id: z.string(),
@@ -54,7 +57,7 @@ export const volumeRouter = createTRPCRouter({
       return await updateVolumeUseCase(input)
     }),
 
-  delete: publicProcedure.input(z.string()).mutation(async ({ input }) => {
+  delete: protectedProcedure.input(z.string()).mutation(async ({ input }) => {
     return await deleteVolumeUseCase(input)
   }),
 })
