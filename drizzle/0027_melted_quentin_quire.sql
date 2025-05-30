@@ -1,0 +1,1 @@
+ALTER TABLE "chapters" ADD CONSTRAINT "chapters_story_arc_id_story_arcs_id_fk" FOREIGN KEY ("story_arc_id") REFERENCES "public"."story_arcs"("id") ON DELETE no action ON UPDATE no action;

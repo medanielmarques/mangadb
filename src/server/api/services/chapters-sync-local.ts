@@ -9,7 +9,7 @@ type LocalChapterData = {
   volumeNumber: number
 }
 
-export async function syncChapters() {
+export async function syncChaptersLocal() {
   const MANGA_ID = "mzuviufkrdch" // One Piece manga ID
   const BATCH_SIZE = 100
 

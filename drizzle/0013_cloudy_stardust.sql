@@ -1,0 +1,1 @@
+ALTER TABLE "volumes" ADD COLUMN "is_complete" boolean DEFAULT false NOT NULL;

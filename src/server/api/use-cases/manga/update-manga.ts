@@ -5,12 +5,19 @@ import { eq } from "drizzle-orm"
 export async function updateMangaUseCase(
   manga: Partial<typeof mangas.$inferInsert>,
 ) {
-  return await db
+  const mangaToUpdate = await db.query.mangas.findFirst({
+    where: eq(mangas.id, manga.id ?? ""),
+  })
+
+  if (!mangaToUpdate) {
+    throw new Error("Manga not found")
+  }
+
+  const updatedManga = await db
     .update(mangas)
-    .set({
-      ...manga,
-      updatedAt: new Date(),
-    })
-    .where(eq(mangas.id, manga.id ?? ""))
+    .set(manga)
+    .where(eq(mangas.id, mangaToUpdate.id))
     .returning()
+
+  return updatedManga
 }

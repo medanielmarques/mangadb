@@ -1,0 +1,1 @@
+ALTER TABLE "chapters" ALTER COLUMN "volume_number" TYPE integer USING (volume_number::integer);

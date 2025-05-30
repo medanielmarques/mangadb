@@ -18,8 +18,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
-import { StarIcon } from "lucide-react"
-import { useState } from "react"
+import { api } from "@/trpc/react"
+import { useSession } from "@supabase/auth-helpers-react"
+import { StarIcon, Trash } from "lucide-react"
+import { useEffect, useState } from "react"
 
 export function ReviewManga({
   mangaId,
@@ -28,12 +30,72 @@ export function ReviewManga({
   mangaId: string
   mangaTitle: string
 }) {
-  const [isHovering, setIsHovering] = useState(false)
+  const session = useSession()
+  const utils = api.useUtils()
 
-  const hasReview = false
+  const { data: review, isLoading: isLoadingReview } =
+    api.review.getMangaReview.useQuery(
+      {
+        mangaId,
+        userId: session?.user?.id ?? "",
+      },
+      {
+        refetchOnWindowFocus: false,
+      },
+    )
+
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false)
+  const [isHovering, setIsHovering] = useState(false)
+  const [comment, setComment] = useState("")
+  const [rating, setRating] = useState(0)
+  const [isConfirmingDelete, setIsConfirmingDelete] = useState(false)
+
+  useEffect(() => {
+    if (review) {
+      setComment(review.comment ?? "")
+      setRating(review.rating)
+    }
+  }, [review])
+
+  const { mutate: upsertReview } = api.review.upsert.useMutation({
+    onSuccess: () => {
+      utils.review.getMangaReview.invalidate({
+        mangaId,
+        userId: session?.user?.id ?? "",
+      })
+    },
+  })
+
+  const { mutate: deleteReview } = api.review.delete.useMutation({
+    onSuccess: () => {
+      utils.review.getMangaReview.invalidate({
+        mangaId,
+        userId: session?.user?.id ?? "",
+      })
+      setIsConfirmingDelete(false)
+      setRating(0)
+      setComment("")
+      setIsReviewModalOpen(false)
+    },
+  })
+
+  function handleSubmitReview() {
+    upsertReview({
+      mangaId,
+      review: {
+        userId: session?.user?.id ?? "",
+        rating,
+        comment,
+      },
+    })
+  }
+
+  function handleDeleteReview() {
+    deleteReview(review?.id ?? "")
+  }
 
   return (
-    <Dialog>
+    <Dialog open={isReviewModalOpen} onOpenChange={setIsReviewModalOpen}>
       <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -44,12 +106,12 @@ export function ReviewManga({
                 className="flex-1"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
+                disabled={!session?.user}
               >
                 <StarIcon
                   className={cn(
                     "h-5 w-5",
-                    (isHovering || hasReview) &&
-                      "fill-yellow-500 text-yellow-500",
+                    (isHovering || review) && "fill-yellow-500 text-yellow-500",
                   )}
                 />
                 <span className="sr-only">Review {mangaTitle}</span>
@@ -61,7 +123,7 @@ export function ReviewManga({
             side="bottom"
             className={cn(isHovering && "opacity-100")}
           >
-            <p>Review {mangaTitle}</p>
+            <p>{review ? "Edit review" : `Review ${mangaTitle}`}</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
@@ -76,17 +138,51 @@ export function ReviewManga({
         </DialogDescription>
 
         <div className="bg-card mb-12 rounded-lg pt-4">
-          <div className="mb-6">
-            <StarRating editable size="lg" />
+          <div
+            className="mb-6"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
+            <StarRating
+              editable={!review || isHovering}
+              size="lg"
+              rating={rating}
+              onChange={setRating}
+            />
           </div>
 
           <div className="mb-4">
             <Textarea
               placeholder="Write your review (optional)"
               className="min-h-32"
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
             />
           </div>
-          <Button>Submit Review</Button>
+
+          <div className="flex justify-between">
+            <Button
+              variant="secondary"
+              onClick={handleSubmitReview}
+              disabled={isLoadingReview}
+            >
+              {review ? "Update Review" : "Submit Review"}
+            </Button>
+
+            {!isConfirmingDelete ? (
+              <Button
+                variant="outline"
+                disabled={isLoadingReview || !review}
+                onClick={() => setIsConfirmingDelete(true)}
+              >
+                <Trash />
+              </Button>
+            ) : (
+              <Button variant="destructive" onClick={handleDeleteReview}>
+                Confirm
+              </Button>
+            )}
+          </div>
         </div>
       </DialogContent>
     </Dialog>

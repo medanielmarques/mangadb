@@ -1,9 +1,14 @@
-import { createTRPCRouter, publicProcedure } from "@/server/api/trpc"
-import { createReviewUseCase } from "@/server/api/use-cases/review/create-review"
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "@/server/api/trpc"
 import { deleteReviewUseCase } from "@/server/api/use-cases/review/delete-review"
+import { getChapterReviewUseCase } from "@/server/api/use-cases/review/get-chapter-review"
+import { getMangaReviewUseCase } from "@/server/api/use-cases/review/get-manga-review"
 import { getReviewByIdUseCase } from "@/server/api/use-cases/review/get-review-by-id"
 import { getReviewsUseCase } from "@/server/api/use-cases/review/get-reviews"
-import { updateReviewUseCase } from "@/server/api/use-cases/review/update-review"
+import { upsertReviewUseCase } from "@/server/api/use-cases/review/upsert-review"
 import { z } from "zod"
 
 export const reviewRouter = createTRPCRouter({
@@ -13,6 +18,8 @@ export const reviewRouter = createTRPCRouter({
         mangaId: z.string().optional(),
         storyArcId: z.string().optional(),
         chapterId: z.string().optional(),
+        cursor: z.date().optional(),
+        limit: z.number().min(1).max(10).optional(),
       }),
     )
     .query(async ({ input }) => {
@@ -23,7 +30,19 @@ export const reviewRouter = createTRPCRouter({
     return await getReviewByIdUseCase(input)
   }),
 
-  create: publicProcedure
+  getMangaReview: protectedProcedure
+    .input(z.object({ mangaId: z.string(), userId: z.string() }))
+    .query(async ({ input }) => {
+      return await getMangaReviewUseCase(input)
+    }),
+
+  getChapterReview: protectedProcedure
+    .input(z.object({ chapterId: z.string(), userId: z.string() }))
+    .query(async ({ input }) => {
+      return await getChapterReviewUseCase(input)
+    }),
+
+  upsert: protectedProcedure
     .input(
       z.object({
         mangaId: z.string().optional(),
@@ -38,23 +57,10 @@ export const reviewRouter = createTRPCRouter({
       }),
     )
     .mutation(async ({ input }) => {
-      return await createReviewUseCase(input)
+      return await upsertReviewUseCase(input)
     }),
 
-  update: publicProcedure
-    .input(
-      z.object({
-        id: z.string(),
-        rating: z.number(),
-        comment: z.string().optional(),
-        spoiler: z.boolean().optional(),
-      }),
-    )
-    .mutation(async ({ input }) => {
-      return await updateReviewUseCase(input)
-    }),
-
-  delete: publicProcedure.input(z.string()).mutation(async ({ input }) => {
+  delete: protectedProcedure.input(z.string()).mutation(async ({ input }) => {
     return await deleteReviewUseCase(input)
   }),
 })

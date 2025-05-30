@@ -1,0 +1,85 @@
+"use client"
+
+import { ChapterReviews } from "@/components/chapter-reviews"
+import { ReviewChapter } from "@/components/review-chapter"
+import { StarRating } from "@/components/star-rating"
+import { Button } from "@/components/ui/button"
+import { api } from "@/trpc/react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import Link from "next/link"
+import { use } from "react"
+
+export default function ChapterPage({
+  params,
+}: {
+  params: Promise<{ mangaId: string; chapterId: string }>
+}) {
+  const { mangaId, chapterId } = use(params)
+
+  const { data: chapter } = api.chapter.getById.useQuery(
+    {
+      id: chapterId,
+    },
+    {
+      refetchOnWindowFocus: false,
+    },
+  )
+
+  return (
+    <div className="container mx-auto px-4 py-4">
+      <div className="mb-4">
+        <Link
+          href={`/manga/${mangaId}`}
+          className="text-primary flex items-center gap-1 hover:underline"
+        >
+          <ChevronLeft className="h-4 w-4" />
+          Back to {chapter?.mangaTitle}
+        </Link>
+      </div>
+
+      <div className="mb-12">
+        <h1 className="mb-2 text-3xl font-bold">
+          Chapter {chapter?.number}: {chapter?.title}
+        </h1>
+        <div className="text-muted-foreground mb-4">
+          Volume {chapter?.volumeNumber} • {chapter?.volumeTitle}
+        </div>
+
+        <div className="mb-6 flex items-center gap-4">
+          <StarRating rating={chapter?.avgRating} />
+          <span className="text-muted-foreground">
+            {chapter?.avgRating}/10 ({chapter?.totalReviews} reviews)
+          </span>
+        </div>
+
+        <div className="flex gap-4">
+          <Button variant="outline" asChild>
+            <Link
+              href={`/manga/${mangaId}/chapter/${chapter?.previousChapterId}`}
+            >
+              <ChevronLeft className="h-4 w-4" /> Previous Chapter
+            </Link>
+          </Button>
+
+          <Button variant="outline" asChild>
+            <Link href={`/manga/${mangaId}/chapter/${chapter?.nextChapterId}`}>
+              Next Chapter <ChevronRight className="h-4 w-4" />
+            </Link>
+          </Button>
+
+          <ReviewChapter
+            chapterId={chapterId}
+            chapterNumber={chapter?.number || 0}
+            chapterTitle={chapter?.title || ""}
+          />
+        </div>
+      </div>
+
+      {/* Reviews Section */}
+      <div>
+        <h2 className="mb-6 text-2xl font-bold">Reviews</h2>
+        <ChapterReviews chapterId={chapterId} />
+      </div>
+    </div>
+  )
+}

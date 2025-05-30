@@ -1,5 +1,7 @@
+import { relations } from "drizzle-orm"
 import {
   boolean,
+  index,
   integer,
   jsonb,
   pgEnum,
@@ -39,16 +41,22 @@ export const manga_demographic = pgEnum("demographic", [
 export const image_type = pgEnum("image_type", ["volume_cover", "manga_cover"])
 
 export const users = pgTable("users", {
-  id: text("id").notNull().unique(),
+  id: text("id").notNull().primaryKey(),
   email: text("email").notNull(),
+  name: text("name"),
+  avatarUrl: text("avatar_url"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")
     .defaultNow()
     .$onUpdate(() => new Date()),
 })
 
+export const usersRelations = relations(users, ({ many }) => ({
+  favorites: many(mangaFavorites),
+}))
+
 export const mangas = pgTable("mangas", {
-  id: text("id").notNull().unique().$default(nanoid(12)),
+  id: text("id").notNull().primaryKey().$default(nanoid(12)),
   title: text("title").notNull(),
   description: text("description").notNull(),
   authors: varchar("authors").array().notNull(),
@@ -68,10 +76,17 @@ export const mangas = pgTable("mangas", {
     .$onUpdate(() => new Date()),
 })
 
+export const mangasRelations = relations(mangas, ({ many }) => ({
+  volumes: many(volumes),
+  favorites: many(mangaFavorites),
+  reviews: many(reviews),
+  chapters: many(chapters),
+}))
+
 export const volumes = pgTable(
   "volumes",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     number: integer("number").notNull(),
     mangaId: text("manga_id")
       .notNull()
@@ -86,16 +101,36 @@ export const volumes = pgTable(
     firstChapter: integer("first_chapter"),
     lastChapter: integer("last_chapter"),
     completedAt: timestamp("completed_at"),
+    isComplete: boolean("is_complete").notNull().default(false),
+    isLatestCompleteVolume: boolean("is_latest_complete_volume")
+      .notNull()
+      .default(false),
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt: timestamp("updated_at")
       .defaultNow()
       .$onUpdate(() => new Date()),
   },
-  (table) => [unique("manga_id_number_unique").on(table.mangaId, table.number)],
+  (table) => {
+    return [
+      unique("manga_id_number_unique").on(table.mangaId, table.number),
+      index("volumes_manga_id_is_latest_complete_volume_idx").on(
+        table.mangaId,
+        table.isLatestCompleteVolume,
+      ),
+    ]
+  },
 )
 
+export const volumesRelations = relations(volumes, ({ one, many }) => ({
+  manga: one(mangas, {
+    fields: [volumes.mangaId],
+    references: [mangas.id],
+  }),
+  chapters: many(chapters),
+}))
+
 export const storyArcs = pgTable("story_arcs", {
-  id: text("id").notNull().unique().$default(nanoid()),
+  id: text("id").notNull().primaryKey().$default(nanoid()),
   mangaId: text("manga_id")
     .notNull()
     .references(() => mangas.id),
@@ -108,14 +143,23 @@ export const storyArcs = pgTable("story_arcs", {
     .$onUpdate(() => new Date()),
 })
 
+export const storyArcsRelations = relations(storyArcs, ({ one, many }) => ({
+  manga: one(mangas, {
+    fields: [storyArcs.mangaId],
+    references: [mangas.id],
+  }),
+  chapters: many(chapters),
+  reviews: many(reviews),
+}))
+
 export const chapters = pgTable("chapters", {
-  id: text("id").notNull().unique().$default(nanoid()),
+  id: text("id").notNull().primaryKey().$default(nanoid()),
   number: integer("number").notNull(),
   mangaId: text("manga_id")
     .notNull()
     .references(() => mangas.id),
   volumeNumber: integer("volume_number").notNull(),
-  storyArcId: text("story_arc_id"),
+  storyArcId: text("story_arc_id").references(() => storyArcs.id),
   title: text("title").notNull(),
   chapterLength: integer("chapter_length"),
   publishedAt: timestamp("published_at"),
@@ -125,10 +169,26 @@ export const chapters = pgTable("chapters", {
     .$onUpdate(() => new Date()),
 })
 
+export const chaptersRelations = relations(chapters, ({ one, many }) => ({
+  manga: one(mangas, {
+    fields: [chapters.mangaId],
+    references: [mangas.id],
+  }),
+  reviews: many(reviews),
+  volume: one(volumes, {
+    fields: [chapters.volumeNumber],
+    references: [volumes.number],
+  }),
+  storyArc: one(storyArcs, {
+    fields: [chapters.storyArcId],
+    references: [storyArcs.id],
+  }),
+}))
+
 export const reviews = pgTable(
   "reviews",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     userId: text("user_id")
       .notNull()
       .references(() => users.id),
@@ -150,10 +210,25 @@ export const reviews = pgTable(
   ],
 )
 
+export const reviewsRelations = relations(reviews, ({ one }) => ({
+  manga: one(mangas, {
+    fields: [reviews.mangaId],
+    references: [mangas.id],
+  }),
+  storyArc: one(storyArcs, {
+    fields: [reviews.storyArcId],
+    references: [storyArcs.id],
+  }),
+  chapter: one(chapters, {
+    fields: [reviews.chapterId],
+    references: [chapters.id],
+  }),
+}))
+
 export const images = pgTable(
   "images",
   {
-    id: text("id").notNull().unique().$default(nanoid()),
+    id: text("id").notNull().primaryKey().$default(nanoid()),
     url: text("url").notNull(),
     type: image_type("type").notNull(),
     entityId: text("entity_id").notNull(),
@@ -166,3 +241,34 @@ export const images = pgTable(
   },
   (table) => [unique("entity_id_type_unique").on(table.entityId, table.type)],
 )
+
+export const mangaFavorites = pgTable(
+  "manga_favorites",
+  {
+    id: text("id").notNull().primaryKey().$default(nanoid()),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id),
+    mangaId: text("manga_id")
+      .notNull()
+      .references(() => mangas.id),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    unique("manga_favorites_user_id_manga_id_unique").on(
+      table.userId,
+      table.mangaId,
+    ),
+  ],
+)
+
+export const mangaFavoritesRelations = relations(mangaFavorites, ({ one }) => ({
+  user: one(users, {
+    fields: [mangaFavorites.userId],
+    references: [users.id],
+  }),
+  manga: one(mangas, {
+    fields: [mangaFavorites.mangaId],
+    references: [mangas.id],
+  }),
+}))

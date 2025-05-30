@@ -6,8 +6,10 @@
  * TL;DR - This is where all the tRPC server stuff is created and plugged in. The pieces you will
  * need to use are documented accordingly near the end.
  */
+import { createClient } from "@/lib/supabase/server"
 import { db } from "@/server/db"
 import { TRPCError, initTRPC } from "@trpc/server"
+import { type CreateNextContextOptions } from "@trpc/server/adapters/next"
 import superjson from "superjson"
 import { ZodError } from "zod"
 
@@ -23,9 +25,15 @@ import { ZodError } from "zod"
  *
  * @see https://trpc.io/docs/server/context
  */
-export const createTRPCContext = async (opts: { headers: Headers }) => {
+
+export const createTRPCContext = async (opts: CreateNextContextOptions) => {
+  const supabase = await createClient()
+
+  const { data } = await supabase.auth.getUser()
+
   return {
     db,
+    user: data?.user,
     ...opts,
   }
 }
@@ -105,19 +113,16 @@ const timingMiddleware = t.middleware(async ({ next, path }) => {
 export const publicProcedure = t.procedure.use(timingMiddleware)
 
 const isAuthed = t.middleware(async ({ ctx, next }) => {
-  // if (!ctx.user) {
-  if (true) {
+  if (!ctx.user) {
     throw new TRPCError({
       code: "UNAUTHORIZED",
-      message: "You must be logged in to access this resource",
     })
   }
 
   return next({
     ctx: {
       ...ctx,
-      // Ensure user is available in ctx
-      // user: ctx.user,
+      user: ctx.user,
     },
   })
 })

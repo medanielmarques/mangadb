@@ -1,0 +1,1 @@
+ALTER TABLE "volumes" ADD COLUMN "is_latest_complete_volume" boolean DEFAULT false NOT NULL;

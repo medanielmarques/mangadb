@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX volumes_manga_id_is_latest_complete_volume_unique_idx ON volumes (manga_id, is_latest_complete_volume) WHERE is_latest_complete_volume = TRUE

@@ -13,7 +13,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {
@@ -22,20 +21,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { signInWithDiscord, signOut } from "@/lib/supabase"
+import { signInWithDiscord, signOut } from "@/lib/supabase/client"
 import { useSession } from "@supabase/auth-helpers-react"
-import { BookOpen, LogOut, Menu, User } from "lucide-react"
+import { BookOpen, LogOut, Menu } from "lucide-react"
 import Link from "next/link"
-
-// This would normally come from an authentication context
-
-const user = {
-  username: "mangafan123",
-  avatarUrl: "/one-piece-cover.webp?height=32&width=32",
-}
 
 export default function Navbar() {
   const session = useSession()
+  const user = session?.user
 
   return (
     <header className="bg-background/80 z-50 border-b backdrop-blur-md">
@@ -63,15 +56,6 @@ export default function Navbar() {
                 <Link href="/" className="hover:text-primary">
                   Home
                 </Link>
-                <Link href="/browse" className="hover:text-primary">
-                  Browse
-                </Link>
-                <Link href="/genres" className="hover:text-primary">
-                  Genres
-                </Link>
-                <Link href="/rankings" className="hover:text-primary">
-                  Rankings
-                </Link>
               </nav>
             </SheetContent>
           </Sheet>
@@ -80,69 +64,31 @@ export default function Navbar() {
             <BookOpen className="h-5 w-5" />
             <span className="hidden md:inline-block">MangaDB</span>
           </Link>
-
-          <nav className="ml-10 hidden items-center gap-6 md:flex">
-            <Link
-              href="/"
-              className="hover:text-primary text-sm font-medium transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="/browse"
-              className="hover:text-primary text-sm font-medium transition-colors"
-            >
-              Browse
-            </Link>
-            <Link
-              href="/genres"
-              className="hover:text-primary text-sm font-medium transition-colors"
-            >
-              Genres
-            </Link>
-            <Link
-              href="/rankings"
-              className="hover:text-primary text-sm font-medium transition-colors"
-            >
-              Rankings
-            </Link>
-          </nav>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
+          <ToggleTheme />
+
           {session?.user ? (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">
                   <Avatar className="h-8 w-8">
                     <AvatarImage
-                      src={user.avatarUrl || "/one-piece-cover.webp"}
-                      alt={user.username}
+                      src={
+                        user?.user_metadata.avatar_url ||
+                        "/one-piece-cover.webp"
+                      }
+                      alt={user?.user_metadata.name || "User Avatar"}
                     />
 
                     <AvatarFallback>
-                      {user.username.slice(0, 2).toUpperCase()}
+                      {user?.user_metadata.name?.slice(0, 2).toUpperCase()}
                     </AvatarFallback>
                   </Avatar>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem asChild>
-                  <Link href="/profile">
-                    <User className="mr-2 h-4 w-4" />
-                    <span>Profile</span>
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
-                  <Link href="/library">
-                    <BookOpen className="mr-2 h-4 w-4" />
-                    <span>My Library</span>
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuSeparator />
-
                 <DropdownMenuItem onClick={signOut}>
                   <LogOut className="mr-2 h-4 w-4" />
                   <span>Sign Out</span>
@@ -154,8 +100,6 @@ export default function Navbar() {
               <SignInDialog />
             </div>
           )}
-
-          <ToggleTheme />
         </div>
       </div>
     </header>
