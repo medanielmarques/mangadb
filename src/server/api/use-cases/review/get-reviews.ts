@@ -2,18 +2,6 @@ import { db } from "@/server/db"
 import { reviews, users } from "@/server/db/schema"
 import { and, desc, eq, lt } from "drizzle-orm"
 
-type ReviewWithUser = {
-  id: string
-  rating: number
-  comment: string | null
-  createdAt: Date
-  users: {
-    id: string
-    username: string | null
-    avatarUrl: string | null
-  }
-}
-
 export async function getReviewsUseCase({
   mangaId,
   chapterId,
@@ -22,7 +10,7 @@ export async function getReviewsUseCase({
 }: {
   mangaId?: string
   chapterId?: string
-  cursor?: string
+  cursor?: Date
   limit?: number
 }) {
   if (mangaId) {
@@ -41,7 +29,7 @@ export async function getReviewsUseCase({
       .from(reviews)
       .where(
         cursor
-          ? and(eq(reviews.mangaId, mangaId), lt(reviews.id, cursor))
+          ? and(eq(reviews.mangaId, mangaId), lt(reviews.createdAt, cursor))
           : eq(reviews.mangaId, mangaId),
       )
       .innerJoin(users, eq(reviews.userId, users.id))
@@ -51,7 +39,9 @@ export async function getReviewsUseCase({
     const hasMore = mangaReviews.length > limit
     const items = mangaReviews.slice(0, limit)
     const nextCursor =
-      hasMore && items.length > 0 ? items[items.length - 1].id : undefined
+      hasMore && items.length > 0
+        ? items[items.length - 1]?.createdAt
+        : undefined
 
     return {
       items,
@@ -75,7 +65,7 @@ export async function getReviewsUseCase({
       .from(reviews)
       .where(
         cursor
-          ? and(eq(reviews.chapterId, chapterId), lt(reviews.id, cursor))
+          ? and(eq(reviews.chapterId, chapterId), lt(reviews.createdAt, cursor))
           : eq(reviews.chapterId, chapterId),
       )
       .innerJoin(users, eq(reviews.userId, users.id))
@@ -85,7 +75,12 @@ export async function getReviewsUseCase({
     const hasMore = chapterReviews.length > limit
     const items = chapterReviews.slice(0, limit)
     const nextCursor =
-      hasMore && items.length > 0 ? items[items.length - 1]?.id : undefined
+      hasMore && items.length > 0
+        ? items[items.length - 1]?.createdAt
+        : undefined
+
+    console.log("🔑 nextCursor:", nextCursor)
+    console.log("🔑 hasMore:", hasMore)
 
     return {
       items,

@@ -11,7 +11,11 @@ export function ChapterReviews({ chapterId }: { chapterId: string }) {
         limit: 10,
       },
       {
-        getNextPageParam: (lastPage) => lastPage.nextCursor ?? undefined,
+        getNextPageParam: (lastPage) => {
+          return lastPage.nextCursor
+            ? new Date(lastPage.nextCursor).toISOString()
+            : undefined
+        },
         refetchOnWindowFocus: false,
       },
     )
@@ -75,12 +79,14 @@ export function ChapterReviews({ chapterId }: { chapterId: string }) {
             <Avatar>
               <AvatarImage
                 src={review.users.avatarUrl ?? "/one-piece-cover.webp"}
-                alt={review.users.username}
+                alt={review.users.username ?? "User Avatar"}
               />
             </Avatar>
             <div className="flex-1">
               <div className="mb-1 flex items-center gap-2">
-                <span className="font-medium">{review.users.username}</span>
+                <span className="font-medium">
+                  {review.users.username ?? "Unknown User"}
+                </span>
                 <span className="text-muted-foreground text-xs">
                   {review.createdAt.toLocaleDateString()}
                 </span>
