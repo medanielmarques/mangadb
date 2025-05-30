@@ -13,10 +13,7 @@ import { useEffect, useRef } from "react"
 export function VolumeList({ mangaId }: { mangaId: string }) {
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
     api.volume.getVolumesWithChapters.useInfiniteQuery(
-      {
-        mangaId,
-        limit: 10,
-      },
+      { mangaId },
       {
         getNextPageParam: (lastPage) => {
           return lastPage.nextCursor

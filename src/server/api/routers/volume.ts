@@ -23,7 +23,7 @@ export const volumeRouter = createTRPCRouter({
       z.object({
         mangaId: z.string(),
         cursor: z.number().optional(),
-        limit: z.number().optional(),
+        limit: z.number().min(1).max(20).optional(),
       }),
     )
     .query(async ({ input }) => {

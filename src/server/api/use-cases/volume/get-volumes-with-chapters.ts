@@ -5,7 +5,7 @@ import { and, asc, eq, gt, sql } from "drizzle-orm"
 export async function getVolumesWithChaptersUseCase({
   mangaId,
   cursor,
-  limit = 10,
+  limit = 20,
 }: {
   mangaId: string
   cursor?: number

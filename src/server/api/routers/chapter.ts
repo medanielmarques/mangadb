@@ -36,6 +36,8 @@ export const chapterRouter = createTRPCRouter({
         storyArcId: z.string(),
         title: z.string(),
         publishedAt: z.date(),
+        mangaId: z.string(),
+        volumeNumber: z.number(),
       }),
     )
     .mutation(async ({ input }) => await createChapterUseCase(input)),
