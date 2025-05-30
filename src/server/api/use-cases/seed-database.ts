@@ -97,14 +97,14 @@ async function seedReviews() {
   const mangaReviews = mangaReviewsList.map((review: any) => ({
     ...review,
     createdAt: new Date(
-      Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000,
+      Date.now() - Math.floor(Math.random() * 365 * 10) * 24 * 60 * 60 * 1000,
     ), // Random date within last 30 days
   }))
 
   const chapterReviews = chapterReviewsList.map((review: any) => ({
     ...review,
     createdAt: new Date(
-      Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000,
+      Date.now() - Math.floor(Math.random() * 365 * 10) * 24 * 60 * 60 * 1000,
     ), // Random date within last 30 days
   }))
 
