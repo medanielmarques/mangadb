@@ -21,7 +21,7 @@ import { VolumeList } from "@/components/volume-list"
 import { api } from "@/trpc/react"
 import { ShareIcon } from "lucide-react"
 import Image from "next/image"
-import { use, useState } from "react"
+import { use, useEffect, useRef, useState } from "react"
 import { toast } from "sonner"
 
 export default function MangaPage({
@@ -155,22 +155,47 @@ function MangaReviews({
 }) {
   const [isMangaReviewsDialogOpen, setIsMangaReviewsDialogOpen] =
     useState(false)
+  const observerRef = useRef<IntersectionObserver | null>(null)
+  const loadMoreRef = useRef<HTMLDivElement | null>(null)
 
-  const { data: reviews } = api.review.getAll.useQuery(
-    { mangaId },
-    {
-      refetchOnWindowFocus: false,
-      enabled: isMangaReviewsDialogOpen,
-    },
-  )
-
-  if (reviews?.length === 0) {
-    return (
-      <div className="text-muted-foreground py-12 text-center">
-        No reviews yet. Be the first to review this manga!
-      </div>
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
+    api.review.getAll.useInfiniteQuery(
+      {
+        mangaId,
+        limit: 10,
+      },
+      {
+        getNextPageParam: (lastPage) => {
+          return lastPage.nextCursor
+        },
+        refetchOnWindowFocus: false,
+        enabled: isMangaReviewsDialogOpen,
+      },
     )
-  }
+
+  useEffect(() => {
+    const element = loadMoreRef.current
+    if (!element) return
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting && hasNextPage && !isFetchingNextPage) {
+          void fetchNextPage()
+        }
+      },
+      { threshold: 0.1 },
+    )
+
+    observerRef.current.observe(element)
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect()
+      }
+    }
+  }, [fetchNextPage, hasNextPage, isFetchingNextPage])
+
+  const reviews = data?.pages.flatMap((page) => page.items) ?? []
 
   return (
     <div>
@@ -190,30 +215,60 @@ function MangaReviews({
             <DialogDescription>Manga Reviews</DialogDescription>
           </DialogHeader>
 
-          <div className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted-foreground/20 hover:scrollbar-thumb-muted-foreground/40 max-h-[calc(80vh-8rem)] overflow-y-auto pr-4">
-            {reviews?.map((review) => (
-              <div key={review.id} className="mb-4 rounded-lg border p-4">
-                <div className="mb-2 flex items-center gap-2">
-                  <Avatar>
-                    <AvatarImage
-                      src={review.users.avatarUrl ?? ""}
-                      alt={review.users.username ?? ""}
-                    />
-                  </Avatar>
-                  <span className="font-medium">
-                    {review.users.username ?? ""}
-                  </span>
-                </div>
+          {status === "pending" ? (
+            <div className="text-muted-foreground py-12 text-center">
+              Loading reviews...
+            </div>
+          ) : status === "error" ? (
+            <div className="text-muted-foreground py-12 text-center">
+              Error loading reviews. Please try again later.
+            </div>
+          ) : reviews.length === 0 ? (
+            <div className="text-muted-foreground py-12 text-center">
+              No reviews yet. Be the first to review this manga!
+            </div>
+          ) : (
+            <div className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-muted-foreground/20 hover:scrollbar-thumb-muted-foreground/40 max-h-[calc(80vh-8rem)] overflow-y-auto pr-4">
+              <div className="space-y-6">
+                {reviews.map((review) => (
+                  <div key={review.id} className="rounded-lg border p-4">
+                    <div className="flex items-start gap-4">
+                      <Avatar>
+                        <AvatarImage
+                          src={
+                            review.users.avatarUrl ?? "/one-piece-cover.webp"
+                          }
+                          alt={review.users.username ?? "User Avatar"}
+                        />
+                      </Avatar>
+                      <div className="flex-1">
+                        <div className="mb-1 flex items-center gap-2">
+                          <span className="font-medium">
+                            {review.users.username ?? "Unknown User"}
+                          </span>
+                          <span className="text-muted-foreground text-xs">
+                            {review.createdAt.toLocaleDateString()}
+                          </span>
+                        </div>
 
-                <div className="space-y-2">
-                  <StarRating rating={review.rating} />
-                  <p className="text-muted-foreground text-sm">
-                    {review.comment}
-                  </p>
+                        <StarRating rating={review.rating} />
+
+                        <p className="mt-4 text-sm">{review.comment}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+
+                <div ref={loadMoreRef} className="h-4 w-full">
+                  {isFetchingNextPage && (
+                    <div className="text-muted-foreground text-center">
+                      Loading more...
+                    </div>
+                  )}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </div>

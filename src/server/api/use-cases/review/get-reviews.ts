@@ -79,9 +79,6 @@ export async function getReviewsUseCase({
         ? items[items.length - 1]?.createdAt
         : undefined
 
-    console.log("🔑 nextCursor:", nextCursor)
-    console.log("🔑 hasMore:", hasMore)
-
     return {
       items,
       nextCursor,
