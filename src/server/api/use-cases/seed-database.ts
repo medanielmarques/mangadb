@@ -94,10 +94,24 @@ async function seedReviews() {
     fs.readFileSync("src/data/seeds/chapter-reviews.json", "utf8"),
   )
 
+  const mangaReviews = mangaReviewsList.map((review: any) => ({
+    ...review,
+    createdAt: new Date(
+      Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000,
+    ), // Random date within last 30 days
+  }))
+
+  const chapterReviews = chapterReviewsList.map((review: any) => ({
+    ...review,
+    createdAt: new Date(
+      Date.now() - Math.floor(Math.random() * 30) * 24 * 60 * 60 * 1000,
+    ), // Random date within last 30 days
+  }))
+
   console.log("🌱 Seeding reviews...")
   return await db
     .insert(reviews)
-    .values([...mangaReviewsList, ...chapterReviewsList])
+    .values([...mangaReviews, ...chapterReviews])
     .returning()
 }
 
