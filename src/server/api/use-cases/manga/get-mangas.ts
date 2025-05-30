@@ -14,7 +14,7 @@ export async function getMangasUseCase() {
     .from(mangas)
     .innerJoin(volumes, eq(mangas.id, volumes.mangaId))
     .innerJoin(images, and(eq(images.entityId, volumes.id)))
-    .innerJoin(reviews, eq(mangas.id, reviews.mangaId))
+    .leftJoin(reviews, eq(mangas.id, reviews.mangaId))
     .where(eq(volumes.isLatestCompleteVolume, true))
     .groupBy(mangas.id, mangas.title, images.url)
 
