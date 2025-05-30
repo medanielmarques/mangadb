@@ -13,8 +13,6 @@ export function ChapterReviews({ chapterId }: { chapterId: string }) {
       {
         getNextPageParam: (lastPage) => {
           return lastPage.nextCursor
-            ? new Date(lastPage.nextCursor).toISOString()
-            : undefined
         },
         refetchOnWindowFocus: false,
       },

@@ -18,7 +18,7 @@ export const reviewRouter = createTRPCRouter({
         mangaId: z.string().optional(),
         storyArcId: z.string().optional(),
         chapterId: z.string().optional(),
-        cursor: z.string().optional(),
+        cursor: z.date().optional(),
         limit: z.number().min(1).max(10).optional(),
       }),
     )
