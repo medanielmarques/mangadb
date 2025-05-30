@@ -8,19 +8,77 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { api } from "@/trpc/react"
 import Link from "next/link"
+import { useEffect, useRef } from "react"
 
 export function VolumeList({ mangaId }: { mangaId: string }) {
-  const { data: volumesWithChapters } =
-    api.volume.getVolumesWithChapters.useQuery(
-      { mangaId },
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
+    api.volume.getVolumesWithChapters.useInfiniteQuery(
       {
+        mangaId,
+        limit: 10,
+      },
+      {
+        getNextPageParam: (lastPage) => {
+          return lastPage.nextCursor
+        },
         refetchOnWindowFocus: false,
       },
     )
 
+  const observerRef = useRef<IntersectionObserver | null>(null)
+  const loadMoreRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    const element = loadMoreRef.current
+    if (!element) return
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting && hasNextPage && !isFetchingNextPage) {
+          void fetchNextPage()
+        }
+      },
+      { threshold: 0.1 },
+    )
+
+    observerRef.current.observe(element)
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect()
+      }
+    }
+  }, [fetchNextPage, hasNextPage, isFetchingNextPage])
+
+  if (status === "pending") {
+    return (
+      <div className="text-muted-foreground py-12 text-center">
+        Loading volumes...
+      </div>
+    )
+  }
+
+  if (status === "error") {
+    return (
+      <div className="text-muted-foreground py-12 text-center">
+        Error loading volumes. Please try again later.
+      </div>
+    )
+  }
+
+  const volumes = data?.pages.flatMap((page) => page.items) ?? []
+
+  if (volumes.length === 0) {
+    return (
+      <div className="text-muted-foreground py-12 text-center">
+        No volumes found.
+      </div>
+    )
+  }
+
   return (
     <div className="space-y-6">
-      {volumesWithChapters?.map((volume) => (
+      {volumes.map((volume) => (
         <div key={volume.id} className="overflow-hidden rounded-lg border">
           <div className="bg-muted/50 flex items-center p-4">
             <div className="font-semibold">
@@ -57,6 +115,14 @@ export function VolumeList({ mangaId }: { mangaId: string }) {
           </Accordion>
         </div>
       ))}
+
+      <div ref={loadMoreRef} className="h-4 w-full">
+        {isFetchingNextPage && (
+          <div className="text-muted-foreground text-center">
+            Loading more...
+          </div>
+        )}
+      </div>
     </div>
   )
 }

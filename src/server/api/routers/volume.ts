@@ -19,7 +19,13 @@ export const volumeRouter = createTRPCRouter({
     }),
 
   getVolumesWithChapters: publicProcedure
-    .input(z.object({ mangaId: z.string() }))
+    .input(
+      z.object({
+        mangaId: z.string(),
+        cursor: z.number().optional(),
+        limit: z.number().optional(),
+      }),
+    )
     .query(async ({ input }) => {
       return await getVolumesWithChaptersUseCase(input)
     }),
