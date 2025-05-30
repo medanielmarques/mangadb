@@ -103,9 +103,10 @@ export function ReviewManga({
               <Button
                 variant="outline"
                 size="icon"
-                className="flex-1"
+                className="flex-1 touch-none"
                 onMouseEnter={() => setIsHovering(true)}
                 onMouseLeave={() => setIsHovering(false)}
+                onClick={() => setIsReviewModalOpen(true)}
                 disabled={!session?.user}
               >
                 <StarIcon

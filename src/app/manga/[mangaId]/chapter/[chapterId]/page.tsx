@@ -52,7 +52,7 @@ export default function ChapterPage({
           </span>
         </div>
 
-        <div className="flex gap-4">
+        <div className="mb-4 flex gap-4">
           <Button variant="outline" asChild>
             <Link
               href={`/manga/${mangaId}/chapter/${chapter?.previousChapterId}`}
@@ -66,13 +66,13 @@ export default function ChapterPage({
               Next Chapter <ChevronRight className="h-4 w-4" />
             </Link>
           </Button>
-
-          <ReviewChapter
-            chapterId={chapterId}
-            chapterNumber={chapter?.number || 0}
-            chapterTitle={chapter?.title || ""}
-          />
         </div>
+
+        <ReviewChapter
+          chapterId={chapterId}
+          chapterNumber={chapter?.number || 0}
+          chapterTitle={chapter?.title || ""}
+        />
       </div>
 
       {/* Reviews Section */}
