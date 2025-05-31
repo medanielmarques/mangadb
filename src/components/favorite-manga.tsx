@@ -77,6 +77,10 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
     },
   })
 
+  function handleFavoriteManga() {
+    favoriteMangaMutation({ mangaId, userId: userId ?? "" })
+  }
+
   return (
     <TooltipProvider delayDuration={100}>
       <Tooltip>
@@ -88,13 +92,7 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             disabled={!session?.user}
-            onClick={() => {
-              if (isFavorite) {
-                favoriteMangaMutation({ mangaId, userId: userId ?? "" })
-              } else {
-                favoriteMangaMutation({ mangaId, userId: userId ?? "" })
-              }
-            }}
+            onClick={handleFavoriteManga}
           >
             <HeartIcon
               className={cn(
