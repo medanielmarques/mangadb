@@ -99,7 +99,9 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
             <HeartIcon
               className={cn(
                 "h-5 w-5",
-                (isHovering || isFavorite) && "fill-red-500 text-red-500",
+                isFavorite && "fill-red-500 text-red-500",
+                isHovering &&
+                  "fill-none text-inherit sm:fill-red-500 sm:text-red-500",
               )}
             />
           </Button>
