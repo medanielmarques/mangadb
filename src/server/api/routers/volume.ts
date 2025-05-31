@@ -3,7 +3,6 @@ import {
   protectedProcedure,
   publicProcedure,
 } from "@/server/api/trpc"
-import { createVolumeUseCase } from "@/server/api/use-cases/volume/create-volume"
 import { deleteVolumeUseCase } from "@/server/api/use-cases/volume/delete-volume"
 import { getVolumeByIdUseCase } from "@/server/api/use-cases/volume/get-volume-by-id"
 import { getVolumesUseCase } from "@/server/api/use-cases/volume/get-volumes"
@@ -19,7 +18,13 @@ export const volumeRouter = createTRPCRouter({
     }),
 
   getVolumesWithChapters: publicProcedure
-    .input(z.object({ mangaId: z.string() }))
+    .input(
+      z.object({
+        mangaId: z.string(),
+        cursor: z.number().optional(),
+        limit: z.number().min(1).max(20).optional(),
+      }),
+    )
     .query(async ({ input }) => {
       return await getVolumesWithChaptersUseCase(input)
     }),
@@ -27,20 +32,6 @@ export const volumeRouter = createTRPCRouter({
   getById: publicProcedure.input(z.string()).query(async ({ input }) => {
     return await getVolumeByIdUseCase(input)
   }),
-
-  create: protectedProcedure
-    .input(
-      z.object({
-        mangaId: z.string(),
-        number: z.number(),
-        title: z.string(),
-        publishedAt: z.date(),
-        completedAt: z.date().optional(),
-      }),
-    )
-    .mutation(async ({ input }) => {
-      return await createVolumeUseCase(input)
-    }),
 
   update: protectedProcedure
     .input(

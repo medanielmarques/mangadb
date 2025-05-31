@@ -18,6 +18,7 @@ export function MangaGrid() {
             <Image
               src={manga.coverArtUrl}
               alt={manga.title}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               fill
               className="object-cover transition-transform group-hover:scale-105"
             />

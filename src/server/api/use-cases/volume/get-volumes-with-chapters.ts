@@ -1,14 +1,20 @@
 import { db } from "@/server/db"
 import { chapters, reviews, volumes } from "@/server/db/schema"
-import { asc, eq, sql } from "drizzle-orm"
+import { and, asc, eq, gt, sql } from "drizzle-orm"
 
 export async function getVolumesWithChaptersUseCase({
   mangaId,
+  cursor,
+  limit = 20,
 }: {
   mangaId: string
+  cursor?: number
+  limit?: number
 }) {
-  return await db.query.volumes.findMany({
-    where: eq(volumes.mangaId, mangaId),
+  const volumesWithChapters = await db.query.volumes.findMany({
+    where: cursor
+      ? and(eq(volumes.mangaId, mangaId), gt(volumes.number, cursor))
+      : eq(volumes.mangaId, mangaId),
     with: {
       chapters: {
         extras: {
@@ -26,6 +32,16 @@ export async function getVolumesWithChaptersUseCase({
       },
     },
     orderBy: [asc(volumes.number)],
-    limit: 10,
+    limit: limit + 1,
   })
+
+  const hasMore = volumesWithChapters.length > limit
+  const items = volumesWithChapters.slice(0, limit)
+  const nextCursor =
+    hasMore && items.length > 0 ? items[items.length - 1]?.number : undefined
+
+  return {
+    items,
+    nextCursor,
+  }
 }

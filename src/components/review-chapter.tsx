@@ -22,6 +22,7 @@ import { api } from "@/trpc/react"
 import { useSession } from "@supabase/auth-helpers-react"
 import { StarIcon, Trash } from "lucide-react"
 import { useEffect, useState } from "react"
+import { toast } from "sonner"
 
 export function ReviewChapter({
   chapterId,
@@ -61,19 +62,33 @@ export function ReviewChapter({
 
   const { mutate: upsertReview } = api.review.upsert.useMutation({
     onSuccess: () => {
+      if (review) {
+        toast.success("Review updated")
+      } else {
+        toast.success("Review submitted")
+      }
+
       utils.review.getChapterReview.invalidate({
         chapterId,
         userId: session?.user?.id ?? "",
       })
+      utils.review.getAll.invalidate()
+
+      setIsReviewModalOpen(false)
     },
   })
 
   const { mutate: deleteReview } = api.review.delete.useMutation({
     onSuccess: () => {
+      toast.success("Review deleted")
+
       utils.review.getChapterReview.invalidate({
         chapterId,
         userId: session?.user?.id ?? "",
       })
+
+      utils.review.getAll.invalidate()
+
       setIsConfirmingDelete(false)
       setRating(0)
       setComment("")
