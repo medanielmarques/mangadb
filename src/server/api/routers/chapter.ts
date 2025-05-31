@@ -3,7 +3,6 @@ import {
   protectedProcedure,
   publicProcedure,
 } from "@/server/api/trpc"
-import { createChapterUseCase } from "@/server/api/use-cases/chapter/create-chapter"
 import { deleteChapterUseCase } from "@/server/api/use-cases/chapter/delete-chapter"
 import { getChapterByIdUseCase } from "@/server/api/use-cases/chapter/get-chapter-by-id"
 import { getChaptersUseCase } from "@/server/api/use-cases/chapter/get-chapters"
@@ -27,20 +26,6 @@ export const chapterRouter = createTRPCRouter({
     .query(async ({ input }) => {
       return await getChapterByIdUseCase(input)
     }),
-
-  create: protectedProcedure
-    .input(
-      z.object({
-        number: z.number(),
-        volumeId: z.string(),
-        storyArcId: z.string(),
-        title: z.string(),
-        publishedAt: z.date(),
-        mangaId: z.string(),
-        volumeNumber: z.number(),
-      }),
-    )
-    .mutation(async ({ input }) => await createChapterUseCase(input)),
 
   update: protectedProcedure
     .input(

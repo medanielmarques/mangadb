@@ -3,7 +3,6 @@ import {
   protectedProcedure,
   publicProcedure,
 } from "@/server/api/trpc"
-import { createMangaUseCase } from "@/server/api/use-cases/manga/create-manga"
 import { deleteMangaUseCase } from "@/server/api/use-cases/manga/delete-manga"
 import { favoriteMangaUseCase } from "@/server/api/use-cases/manga/favorite-manga"
 import { getMangaByIdUseCase } from "@/server/api/use-cases/manga/get-manga-by-id"
@@ -26,28 +25,6 @@ export const mangaRouter = createTRPCRouter({
     .input(z.object({ id: z.string() }))
     .query(async ({ input }) => {
       return await getMangaByIdUseCase(input)
-    }),
-
-  create: protectedProcedure
-    .input(
-      z.object({
-        title: z.string(),
-        description: z.string(),
-        authors: z.array(z.string()),
-        artists: z.array(z.string()),
-        status: z.enum(manga_status.enumValues),
-        translation_status: z.enum(manga_translation_status.enumValues),
-        demographic: z.enum(manga_demographic.enumValues),
-        genres: z.array(z.string()),
-        themes: z.array(z.string()),
-        format: z.array(z.string()),
-        publishers: z.array(z.string()),
-        publishedAt: z.date(),
-        completedAt: z.date(),
-      }),
-    )
-    .mutation(async ({ input }) => {
-      await createMangaUseCase(input)
     }),
 
   update: protectedProcedure
