@@ -11,15 +11,12 @@ import { cn } from "@/lib/utils"
 import { api } from "@/trpc/react"
 import { useSession } from "@supabase/auth-helpers-react"
 import { HeartIcon } from "lucide-react"
-import { useState } from "react"
 
 export function FavoriteManga({ mangaId }: { mangaId: string }) {
   const utils = api.useUtils()
 
   const session = useSession()
   const userId = session?.user?.id
-
-  const [isHovering, setIsHovering] = useState(false)
 
   const { data: isFavorite } = api.manga.isFavorite.useQuery(
     {
@@ -89,8 +86,6 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
             variant="outline"
             size="icon"
             className="flex-1"
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
             disabled={!session?.user}
             onClick={handleFavoriteManga}
           >
@@ -98,8 +93,6 @@ export function FavoriteManga({ mangaId }: { mangaId: string }) {
               className={cn(
                 "h-5 w-5",
                 isFavorite && "fill-red-500 text-red-500",
-                isHovering &&
-                  "fill-none text-inherit sm:fill-red-500 sm:text-red-500",
               )}
             />
           </Button>
