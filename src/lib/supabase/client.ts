@@ -6,12 +6,6 @@ export const createClient = createBrowserClient(
   env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
 )
 
-// function getPreviewEnvBaseUrl() {
-//   return process.env.VERCEL_URL
-//     ? `https://${process.env.VERCEL_URL}`
-//     : "http://localhost:3000"
-// }
-
 function getBaseUrl() {
   let url =
     process?.env?.NEXT_PUBLIC_BASE_URL ??
@@ -24,6 +18,15 @@ function getBaseUrl() {
 export async function signInWithDiscord() {
   await createClient.auth.signInWithOAuth({
     provider: "discord",
+    options: {
+      redirectTo: getBaseUrl(),
+    },
+  })
+}
+
+export async function signInWithGoogle() {
+  await createClient.auth.signInWithOAuth({
+    provider: "google",
     options: {
       redirectTo: getBaseUrl(),
     },
