@@ -57,6 +57,7 @@ export default function Navbar() {
                   <BookOpen className="h-5 w-5" />
                   <span>MangaDB</span>
                 </Link>
+
                 <Link href="/" className="hover:text-primary">
                   Home
                 </Link>
@@ -71,7 +72,15 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <ToggleTheme />
+          <Button variant="ghost">
+            <Link
+              href="https://mangadb.featurebase.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Roadmap
+            </Link>
+          </Button>
 
           {session?.user ? (
             <DropdownMenu>
@@ -104,6 +113,8 @@ export default function Navbar() {
               <SignInDialog />
             </div>
           )}
+
+          <ToggleTheme />
         </div>
       </div>
     </header>
@@ -114,7 +125,7 @@ function SignInDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline">Sign In</Button>
+        <Button variant="ghost">Sign In</Button>
       </DialogTrigger>
 
       <DialogContent closeButton={false}>

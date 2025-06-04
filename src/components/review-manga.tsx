@@ -42,6 +42,7 @@ export function ReviewManga({
       },
       {
         refetchOnWindowFocus: false,
+        enabled: !!session?.user,
       },
     )
 

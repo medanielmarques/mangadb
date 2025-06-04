@@ -44,6 +44,7 @@ export function ReviewChapter({
       },
       {
         refetchOnWindowFocus: false,
+        enabled: !!session?.user,
       },
     )
 
