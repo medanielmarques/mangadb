@@ -1,3 +1,4 @@
+import { logEvent } from "@/server/api/services/log-event"
 import { db } from "@/server/db"
 import { reviews } from "@/server/db/schema"
 
@@ -45,6 +46,28 @@ export async function upsertReviewUseCase({
       target: conflictTarget,
       set: review,
     })
+
+  await logEvent({
+    title: `New ${mangaId ? "Manga" : storyArcId ? "Story Arc" : "Chapter"} Review`,
+    fields: [
+      {
+        name: "User ID",
+        value: review.userId,
+      },
+      {
+        name: `${mangaId ? "Manga ID" : storyArcId ? "Story Arc ID" : "Chapter ID"}`,
+        value: mangaId ?? storyArcId ?? chapterId ?? "Unknown",
+      },
+      {
+        name: "Rating",
+        value: review.rating.toString(),
+      },
+      {
+        name: "Review",
+        value: review.comment ?? "No comment",
+      },
+    ],
+  })
 
   return newReview
 }

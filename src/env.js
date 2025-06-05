@@ -13,6 +13,8 @@ export const env = createEnv({
     SUPABASE_STORAGE_SECRET_ACCESS_KEY: z.string(),
     SUPABASE_STORAGE_BUCKET_NAME: z.string(),
     SUPABASE_STORAGE_ENDPOINT: z.string(),
+
+    DISCORD_WEBHOOK_URL: z.string().url(),
   },
 
   client: {
@@ -39,6 +41,8 @@ export const env = createEnv({
       process.env.SUPABASE_STORAGE_SECRET_ACCESS_KEY,
     SUPABASE_STORAGE_BUCKET_NAME: process.env.SUPABASE_STORAGE_BUCKET_NAME,
     SUPABASE_STORAGE_ENDPOINT: process.env.SUPABASE_STORAGE_ENDPOINT,
+
+    DISCORD_WEBHOOK_URL: process.env.DISCORD_WEBHOOK_URL,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
