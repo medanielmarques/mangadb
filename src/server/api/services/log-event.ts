@@ -48,9 +48,10 @@ type DiscordEmbed = {
 }
 
 export async function logEvent(message: string | DiscordEmbed) {
-  let environment = process.env.VERCEL_ENV
+  let environment = process.env.NODE_ENV
+  const isPreview = process.env.VERCEL_ENV === "preview"
 
-  if (environment === "preview") {
+  if (isPreview) {
     environment += ` (https://${process.env.NEXT_PUBLIC_VERCEL_BRANCH_URL})`
   }
 
@@ -61,7 +62,7 @@ export async function logEvent(message: string | DiscordEmbed) {
         : {
             embeds: [
               {
-                message,
+                ...message,
                 footer: {
                   text: `Env: ${environment}`,
                 },
